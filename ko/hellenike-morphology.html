@@ -1,0 +1,1736 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>생김새 — 형태론 · 독서하는 헬라어</title>
+<meta name="description" content="Machen을 기반으로, 한 Lesson을 5~6개의 짧은 강의로 나눠 익히는 헬라어 형태론. 강의 하나에 10분 내외.">
+<link rel="canonical" href="https://yehowanissi.org/ko/hellenike-morphology.html">
+<meta property="og:title" content="생김새 — 형태론 · 독서하는 헬라어">
+<meta property="og:description" content="Machen 기반, 한 Lesson을 짧게 나눈 헬라어 형태론 강의.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ko_KR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Gowun+Batang:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+<style>
+  :root{
+    --sans:'Pretendard',-apple-system,BlinkMacSystemFont,system-ui,'Apple SD Gothic Neo',sans-serif;
+    --script:'Nanum Brush Script',cursive;
+    --ink:#1d1d1f; --sub:#6e6e73; --faint:#86868b;
+    --line:#e6e6eb; --bg:#ffffff; --bg2:#f5f5f7;
+    --blue:#0071e3; --gold:#b0872f; --violet:#7c3aed;
+    --maxw:820px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{font-family:var(--sans);color:var(--ink);background:var(--bg);
+    -webkit-font-smoothing:antialiased;line-height:1.5;letter-spacing:-.015em}
+  a{color:var(--blue);text-decoration:none}
+
+  header{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.7);
+    backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);
+    border-bottom:1px solid rgba(0,0,0,.05)}
+  .nav{max-width:1040px;margin:0 auto;padding:0 28px;height:54px;display:flex;align-items:center;justify-content:space-between}
+  .brand{font-family:var(--script);font-size:2rem;line-height:1;color:var(--ink);padding-top:6px}
+  .nav-links{display:flex;gap:32px;align-items:center}
+  .nav-links a{color:var(--ink);font-size:.9rem;font-weight:500;opacity:.85}
+  .nav-links a:hover{opacity:1}
+
+  .intro{text-align:center;padding:88px 28px 30px}
+  .intro .eyebrow{font-size:.85rem;font-weight:700;letter-spacing:.02em;color:var(--gold)}
+  .intro h1{font-size:clamp(2.2rem,5.4vw,3.4rem);font-weight:800;letter-spacing:-.04em;line-height:1.08;margin-top:12px}
+  .intro p{margin:16px auto 0;max-width:540px;color:var(--sub);font-size:1.08rem;font-weight:500}
+  .paradigm-link{display:flex;align-items:center;gap:16px;max-width:720px;margin:0 auto 30px;padding:18px 22px;
+    border:1px solid var(--line);border-left:4px solid var(--violet);border-radius:14px;background:#faf7ff;
+    text-decoration:none;transition:box-shadow .18s,transform .18s}
+  .paradigm-link:hover{box-shadow:0 6px 22px rgba(124,58,237,.13);transform:translateY(-1px)}
+  .paradigm-link__ico{font-size:1.7rem;line-height:1}
+  .paradigm-link__body{flex:1;display:flex;flex-direction:column;gap:3px}
+  .paradigm-link__t{font-weight:800;color:var(--ink);font-size:1.05rem}
+  .paradigm-link__d{font-size:.9rem;color:var(--sub);line-height:1.5}
+  .paradigm-link__go{color:var(--violet);font-weight:700;font-size:.92rem;white-space:nowrap}
+  @media(max-width:560px){.paradigm-link{margin:0 18px 26px}.paradigm-link__go{display:none}}
+  .intro .note{margin:22px auto 0;max-width:520px;font-size:.9rem;color:var(--faint);
+    background:var(--bg2);border-radius:14px;padding:12px 18px}
+
+  .units{max-width:var(--maxw);margin:24px auto 0;padding:0 28px 120px;display:flex;flex-direction:column;gap:12px}
+
+  details.unit{border:1px solid var(--line);border-radius:20px;background:#fff;overflow:hidden;
+    transition:border-color .2s,box-shadow .2s}
+  details.unit[open]{border-color:#e3d9ff;box-shadow:0 10px 30px rgba(124,58,237,.08)}
+  summary.unit__head{list-style:none;cursor:pointer;display:flex;align-items:center;gap:20px;padding:22px 26px;
+    -webkit-tap-highlight-color:transparent}
+  summary.unit__head::-webkit-details-marker{display:none}
+  .unit__no{flex:0 0 auto;width:58px;height:58px;border-radius:15px;display:flex;align-items:center;justify-content:center;
+    font-weight:800;font-size:.82rem;letter-spacing:-.01em;background:var(--bg2);color:var(--gold);text-align:center;line-height:1.15}
+  details.unit[open] .unit__no{background:radial-gradient(120% 120% at 0% 0%,#5b5bd6,#9333ea);color:#fff}
+  .unit__body{flex:1;min-width:0;display:flex;flex-direction:column}
+  .unit__name{display:block;font-size:1.24rem;font-weight:800;letter-spacing:-.03em}
+  .unit__meta{display:block;margin-top:5px;color:var(--sub);font-size:.95rem}
+  .unit__chev{flex:0 0 auto;color:var(--faint);font-size:1.1rem;transition:transform .22s}
+  details.unit[open] .unit__chev{transform:rotate(180deg);color:var(--violet)}
+
+  .lessons{list-style:none;padding:4px 18px 18px;display:flex;flex-direction:column;gap:4px}
+  .lesson{display:flex;align-items:center;gap:16px;padding:14px 18px;border-radius:14px;color:var(--ink);
+    text-decoration:none;transition:background .16s}
+  a.lesson:hover{background:var(--bg2)}
+  .lesson__idx{flex:0 0 auto;width:26px;height:26px;border-radius:8px;background:var(--bg2);color:var(--faint);
+    display:flex;align-items:center;justify-content:center;font-size:.82rem;font-weight:700}
+  a.lesson .lesson__idx{background:#efeaff;color:var(--violet)}
+  .lesson__t{flex:1;min-width:0;font-weight:600;font-size:1.02rem}
+  .lesson__time{flex:0 0 auto;color:var(--faint);font-size:.85rem;font-weight:600}
+  .lesson__cta{flex:0 0 auto;color:var(--blue);font-weight:700;font-size:.9rem}
+  .lesson--soon{color:var(--faint)}
+  .lesson--soon .lesson__t{color:var(--faint);font-weight:500}
+
+  .back{max-width:var(--maxw);margin:0 auto;padding:0 28px 90px}
+  .back a{color:var(--faint);font-weight:600;font-size:.95rem}
+  .back a:hover{color:var(--ink)}
+
+  footer{border-top:1px solid var(--line);padding:50px 28px;text-align:center;color:var(--faint);font-size:.9rem}
+  footer .fmark{font-family:var(--script);font-size:1.7rem;color:var(--sub);display:block;margin-bottom:10px}
+
+  @media(max-width:560px){
+    summary.unit__head{gap:14px;padding:18px 18px}
+    .unit__no{width:50px;height:50px}
+    .lessons{padding:2px 10px 14px}
+    .lesson{gap:12px;padding:12px 12px}
+  }
+</style>
+</head>
+<body>
+<!-- 홈/코스 링크: 로컬 미리보기용 파일명. 배포 시 /ko/ 경로로 교체 -->
+<header>
+  <div class="nav">
+    <a class="brand" href="index.html">여호와 닛시</a>
+    <nav class="nav-links"><a href="reading-greek.html">헬라어</a><a href="index.html#course">Course</a></nav>
+  </div>
+</header>
+
+<main>
+  <section class="intro">
+    <p class="eyebrow">독서하는 헬라어 · 기초</p>
+    <h1>생김새 — 형태론</h1>
+    <p>낱말이 어떻게 생겼는지부터. Machen을 따라가되, 한 과를 짧게 나눠 한 걸음씩.</p>
+    <p class="note">Machen의 한 Lesson을 5~6개의 짧은 강의로 나눴습니다. 강의 하나는 10분 내외 — 부담 없이, 매일 조금씩.</p>
+  </section>
+
+    <a class="paradigm-link" href="lessons/hellenike-paradigms.html">
+      <span class="paradigm-link__ico">📋</span>
+      <span class="paradigm-link__body">
+        <span class="paradigm-link__t">패러다임 정리본 — 형태 총정리</span>
+        <span class="paradigm-link__d">명사·형용사·분사·대명사·동사(λύω·-μι)까지 모든 변화표를 한 장에. 언제든 펼쳐 찾아보세요.</span>
+      </span>
+      <span class="paradigm-link__go">열기 →</span>
+    </a>
+
+    <a class="paradigm-link" href="lessons/hellenike-vocabulary.html">
+      <span class="paradigm-link__ico">📖</span>
+      <span class="paradigm-link__body">
+        <span class="paradigm-link__t">어휘 정리본 — 낱말 총정리</span>
+        <span class="paradigm-link__d">Machen 33과의 어휘 430단어를 한 장에. 과별 표제어와 한국어 뜻으로 빠르게 찾아보세요.</span>
+      </span>
+      <span class="paradigm-link__go">열기 →</span>
+    </a>
+
+    <section class="units">
+
+    <details class="unit" open>
+      <summary class="unit__head">
+        <span class="unit__no">Lesson<br>1</span>
+        <span class="unit__body">
+          <span class="unit__name">알파벳과 발음</span>
+          <span class="unit__meta">스물네 자의 모양·소리부터 숨표·문장부호·쓰기·복습까지 · 6강</span>
+        </span>
+        <span class="unit__chev">⌄</span>
+      </summary>
+      <ul class="lessons">
+        <li><a class="lesson" href="lessons/hellenike-morphology-01-alphabet.html">
+          <span class="lesson__idx">1</span>
+          <span class="lesson__t">자음·모음 스물네 자</span>
+          <span class="lesson__time">약 10분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-morphology-02-vowels.html">
+          <span class="lesson__idx">2</span>
+          <span class="lesson__t">모음과 이중모음</span>
+          <span class="lesson__time">약 10분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-morphology-03-breathings.html">
+          <span class="lesson__idx">3</span>
+          <span class="lesson__t">숨표와 강세</span>
+          <span class="lesson__time">약 10분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-morphology-04-reading.html">
+          <span class="lesson__idx">4</span>
+          <span class="lesson__t">음절과 발음 연습</span>
+          <span class="lesson__time">약 10분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-morphology-05-writing.html">
+          <span class="lesson__idx">5</span>
+          <span class="lesson__t">직접 써 보기</span>
+          <span class="lesson__time">약 10분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-morphology-06-review.html">
+          <span class="lesson__idx">6</span>
+          <span class="lesson__t">종합 복습</span>
+          <span class="lesson__time">약 10분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+      </ul>
+    </details>
+
+    <details class="unit">
+      <summary class="unit__head">
+        <span class="unit__no">Lesson<br>2</span>
+        <span class="unit__body">
+          <span class="unit__name">강세</span>
+          <span class="unit__meta">음높이에서 형태·의미의 표지로 · 6강</span>
+        </span>
+        <span class="unit__chev">⌄</span>
+      </summary>
+      <ul class="lessons">
+        <li><a class="lesson" href="lessons/hellenike-accent-01-why.html">
+          <span class="lesson__idx">1</span>
+          <span class="lesson__t">강세, 왜 중요한가</span>
+          <span class="lesson__time">약 10분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-accent-02-stage.html">
+          <span class="lesson__idx">2</span>
+          <span class="lesson__t">강세가 움직이는 무대</span>
+          <span class="lesson__time">약 10분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-accent-03-rules.html">
+          <span class="lesson__idx">3</span>
+          <span class="lesson__t">강세 일반 규칙 6가지</span>
+          <span class="lesson__time">약 10분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-accent-04-verb.html">
+          <span class="lesson__idx">4</span>
+          <span class="lesson__t">동사 강세, 역행적</span>
+          <span class="lesson__time">약 10분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-accent-05-noun.html">
+          <span class="lesson__idx">5</span>
+          <span class="lesson__t">명사 강세, 지속적</span>
+          <span class="lesson__time">약 10분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-accent-06-review.html">
+          <span class="lesson__idx">6</span>
+          <span class="lesson__t">강세 규칙 총정리</span>
+          <span class="lesson__time">약 10분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+      </ul>
+    </details>
+
+    <details class="unit">
+      <summary class="unit__head">
+        <span class="unit__no">Lesson<br>3</span>
+        <span class="unit__body">
+          <span class="unit__name">현재 능동태 직설법</span>
+          <span class="unit__meta">동사의 첫 얼굴 · 5강</span>
+        </span>
+        <span class="unit__chev">⌄</span>
+      </summary>
+      <ul class="lessons">
+        <li><a class="lesson" href="lessons/hellenike-verb-01-meet.html">
+          <span class="lesson__idx">1</span>
+          <span class="lesson__t">현재형 동사와의 첫 만남</span>
+          <span class="lesson__time">약 10분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-verb-02-paradigm.html">
+          <span class="lesson__idx">2</span>
+          <span class="lesson__t">소리 내어 읽는 λύω 변화표</span>
+          <span class="lesson__time">약 10분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-verb-03-structure.html">
+          <span class="lesson__idx">3</span>
+          <span class="lesson__t">현재형의 구조</span>
+          <span class="lesson__time">약 10분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-verb-04-translate.html">
+          <span class="lesson__idx">4</span>
+          <span class="lesson__t">현재형은 어떻게 번역될까</span>
+          <span class="lesson__time">약 10분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-verb-05-review.html">
+          <span class="lesson__idx">5</span>
+          <span class="lesson__t">현재형 정리 연습</span>
+          <span class="lesson__time">약 10분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+      </ul>
+    </details>
+
+    <details class="unit">
+      <summary class="unit__head">
+        <span class="unit__no">Lesson<br>4</span>
+        <span class="unit__body">
+          <span class="unit__name">제2곡용 명사</span>
+          <span class="unit__meta">명사의 격과 어순 · 5강</span>
+        </span>
+        <span class="unit__chev">⌄</span>
+      </summary>
+      <ul class="lessons">
+        <li><a class="lesson" href="lessons/hellenike-noun2-01-meet.html">
+          <span class="lesson__idx">1</span>
+          <span class="lesson__t">제2곡용 명사를 만나다</span>
+          <span class="lesson__time">약 10분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-noun2-02-anthropos.html">
+          <span class="lesson__idx">2</span>
+          <span class="lesson__t">ἄνθρωπος 소리 내어 읽기</span>
+          <span class="lesson__time">약 10분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-noun2-03-structure.html">
+          <span class="lesson__idx">3</span>
+          <span class="lesson__t">제2곡용 구조 살펴보기</span>
+          <span class="lesson__time">약 10분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-noun2-04-neuter.html">
+          <span class="lesson__idx">4</span>
+          <span class="lesson__t">υἱός와 δῶρον으로 익히기</span>
+          <span class="lesson__time">약 10분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-noun2-05-review.html">
+          <span class="lesson__idx">5</span>
+          <span class="lesson__t">제2곡용 정리 연습</span>
+          <span class="lesson__time">약 10분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+      </ul>
+    </details>
+
+    <details class="unit">
+      <summary class="unit__head">
+        <span class="unit__no">Lesson<br>5</span>
+        <span class="unit__body">
+          <span class="unit__name">제1곡용 명사</span>
+          <span class="unit__meta">여성 명사의 결 · 5강</span>
+        </span>
+        <span class="unit__chev">⌄</span>
+      </summary>
+      <ul class="lessons">
+        <li><a class="lesson" href="lessons/hellenike-noun1-01-meet.html">
+          <span class="lesson__idx">1</span>
+          <span class="lesson__t">제1곡용 명사를 만나다</span>
+          <span class="lesson__time">약 10분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-noun1-02-hora.html">
+          <span class="lesson__idx">2</span>
+          <span class="lesson__t">ὥρα 소리 내어 읽기</span>
+          <span class="lesson__time">약 10분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-noun1-03-structure.html">
+          <span class="lesson__idx">3</span>
+          <span class="lesson__t">제1곡용 구조와 격</span>
+          <span class="lesson__time">약 10분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-noun1-04-types.html">
+          <span class="lesson__idx">4</span>
+          <span class="lesson__t">세 유형과 강세</span>
+          <span class="lesson__time">약 10분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-noun1-05-review.html">
+          <span class="lesson__idx">5</span>
+          <span class="lesson__t">제1곡용 정리 연습</span>
+          <span class="lesson__time">약 10분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+      </ul>
+    </details>
+
+    <details class="unit">
+      <summary class="unit__head">
+        <span class="unit__no">Lesson<br>6</span>
+        <span class="unit__body">
+          <span class="unit__name">관사와 형용사</span>
+          <span class="unit__meta">관사·형용사·수식과 서술 위치 · 5강</span>
+        </span>
+        <span class="unit__chev">⌄</span>
+      </summary>
+      <ul class="lessons">
+        <li><a class="lesson" href="lessons/hellenike-adj-01-article.html">
+          <span class="lesson__idx">1</span>
+          <span class="lesson__t">관사를 만나다</span>
+          <span class="lesson__time">약 10분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-adj-02-adjective.html">
+          <span class="lesson__idx">2</span>
+          <span class="lesson__t">형용사 (제1·2곡용)</span>
+          <span class="lesson__time">약 10분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-adj-03-agreement.html">
+          <span class="lesson__idx">3</span>
+          <span class="lesson__t">일치 (agreement)</span>
+          <span class="lesson__time">약 10분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-adj-04-position.html">
+          <span class="lesson__idx">4</span>
+          <span class="lesson__t">형용사의 위치</span>
+          <span class="lesson__time">약 10분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-adj-05-review.html">
+          <span class="lesson__idx">5</span>
+          <span class="lesson__t">명사적 용법과 정리</span>
+          <span class="lesson__time">약 10분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+      </ul>
+    </details>
+
+    <details class="unit">
+      <summary class="unit__head">
+        <span class="unit__no">Lesson<br>7</span>
+        <span class="unit__body">
+          <span class="unit__name">제1곡용 남성 명사와 전치사</span>
+          <span class="unit__meta">남성 -ης 명사와 전치사의 격 지배 · 5강</span>
+        </span>
+        <span class="unit__chev">⌄</span>
+      </summary>
+      <ul class="lessons">
+        <li><a class="lesson" href="lessons/hellenike-prep-01-masc.html">
+          <span class="lesson__idx">1</span>
+          <span class="lesson__t">제1곡용 남성 명사</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-prep-02-what.html">
+          <span class="lesson__idx">2</span>
+          <span class="lesson__t">전치사란 무엇인가</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-prep-03-onecase.html">
+          <span class="lesson__idx">3</span>
+          <span class="lesson__t">한 격만 취하는 전치사</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-prep-04-multicase.html">
+          <span class="lesson__idx">4</span>
+          <span class="lesson__t">여러 격을 취하는 전치사</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-prep-05-review.html">
+          <span class="lesson__idx">5</span>
+          <span class="lesson__t">정리 연습</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+      </ul>
+    </details>
+
+    <details class="unit">
+      <summary class="unit__head">
+        <span class="unit__no">Lesson<br>8</span>
+        <span class="unit__body">
+          <span class="unit__name">인칭대명사와 εἰμί</span>
+          <span class="unit__meta">전접어·인칭대명사·계사 εἰμί 현재 · 6강</span>
+        </span>
+        <span class="unit__chev">⌄</span>
+      </summary>
+      <ul class="lessons">
+        <li><a class="lesson" href="lessons/hellenike-eimi-01-enclitic.html">
+          <span class="lesson__idx">1</span>
+          <span class="lesson__t">후치사 δέ와 전접어</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-eimi-02-accent.html">
+          <span class="lesson__idx">2</span>
+          <span class="lesson__t">전접어 악센트 규칙</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-eimi-03-egosu.html">
+          <span class="lesson__idx">3</span>
+          <span class="lesson__t">1·2인칭 인칭대명사</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-eimi-04-autos.html">
+          <span class="lesson__idx">4</span>
+          <span class="lesson__t">3인칭 αὐτός와 대명사 사용법</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-eimi-05-eimi.html">
+          <span class="lesson__idx">5</span>
+          <span class="lesson__t">εἰμί 현재와 술어 주격</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-eimi-06-review.html">
+          <span class="lesson__idx">6</span>
+          <span class="lesson__t">정리 연습</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+      </ul>
+    </details>
+
+    <details class="unit">
+      <summary class="unit__head">
+        <span class="unit__no">Lesson<br>9</span>
+        <span class="unit__body">
+          <span class="unit__name">지시대명사와 αὐτός의 여러 쓰임</span>
+          <span class="unit__meta">οὗτος·ἐκεῖνος와 αὐτός의 강조·동일 용법 · 5강</span>
+        </span>
+        <span class="unit__chev">⌄</span>
+      </summary>
+      <ul class="lessons">
+        <li><a class="lesson" href="lessons/hellenike-demon-01-houtos.html">
+          <span class="lesson__idx">1</span>
+          <span class="lesson__t">지시대명사 οὗτος (이)</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-demon-02-ekeinos.html">
+          <span class="lesson__idx">2</span>
+          <span class="lesson__t">ἐκεῖνος와 명사와 함께</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-demon-03-alone.html">
+          <span class="lesson__idx">3</span>
+          <span class="lesson__t">지시대명사 단독 사용과 어휘</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-demon-04-autos3.html">
+          <span class="lesson__idx">4</span>
+          <span class="lesson__t">αὐτός의 세 얼굴</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-demon-05-review.html">
+          <span class="lesson__idx">5</span>
+          <span class="lesson__t">종합 정리와 문장 독해</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+      </ul>
+    </details>
+
+        <details class="unit">
+      <summary class="unit__head">
+        <span class="unit__no">Lesson<br>10</span>
+        <span class="unit__body">
+          <span class="unit__name">현재 중간태·수동태</span>
+          <span class="unit__meta">중간·수동 직설법, ὑπό+속격(행위자), 이태동사 · 6강</span>
+        </span>
+        <span class="unit__chev">⌄</span>
+      </summary>
+      <ul class="lessons">
+        <li><a class="lesson" href="lessons/hellenike-mp-01-voice.html">
+          <span class="lesson__idx">1</span>
+          <span class="lesson__t">세 가지 태 — 능동·중간·수동</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-mp-02-paradigm.html">
+          <span class="lesson__idx">2</span>
+          <span class="lesson__t">현재 중간·수동 직설법 λύομαι</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-mp-03-agent.html">
+          <span class="lesson__idx">3</span>
+          <span class="lesson__t">누구에 의해·무엇으로 (ὑπό·여격)</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-mp-04-deponent.html">
+          <span class="lesson__idx">4</span>
+          <span class="lesson__t">이태동사와 합성동사</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-mp-05-cases.html">
+          <span class="lesson__idx">5</span>
+          <span class="lesson__t">οὐ의 위치와 동사별 격</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-mp-06-review.html">
+          <span class="lesson__idx">6</span>
+          <span class="lesson__t">정리 연습</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+      </ul>
+    </details>
+
+    <details class="unit">
+      <summary class="unit__head">
+        <span class="unit__no">Lesson<br>11</span>
+        <span class="unit__body">
+          <span class="unit__name">미완료 능동태 직설법</span>
+          <span class="unit__meta">시상 접두(augment)·2차 어미·εἰμί의 미완료 · 6강</span>
+        </span>
+        <span class="unit__chev">⌄</span>
+      </summary>
+      <ul class="lessons">
+        <li><a class="lesson" href="lessons/hellenike-imperf-01-meaning.html">
+          <span class="lesson__idx">1</span>
+          <span class="lesson__t">미완료란 무엇인가</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-imperf-02-augment.html">
+          <span class="lesson__idx">2</span>
+          <span class="lesson__t">시상 접두 augment — 과거의 표지</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-imperf-03-paradigm.html">
+          <span class="lesson__idx">3</span>
+          <span class="lesson__t">미완료 능동 변화표 ἔλυον</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-imperf-04-compound.html">
+          <span class="lesson__idx">4</span>
+          <span class="lesson__t">합성동사의 augment</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-imperf-05-eimi.html">
+          <span class="lesson__idx">5</span>
+          <span class="lesson__t">εἰμί의 미완료 ἤμην과 ἔστι(ν)의 강세</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-imperf-06-review.html">
+          <span class="lesson__idx">6</span>
+          <span class="lesson__t">정리 연습</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+      </ul>
+    </details>
+
+    <details class="unit">
+      <summary class="unit__head">
+        <span class="unit__no">Lesson<br>12</span>
+        <span class="unit__body">
+          <span class="unit__name">미완료 중간태·수동태</span>
+          <span class="unit__meta">미완료 중·수동·이태동사·중성 복수 주어·καί/οὐδέ · 6강</span>
+        </span>
+        <span class="unit__chev">⌄</span>
+      </summary>
+      <ul class="lessons">
+        <li><a class="lesson" href="lessons/hellenike-impfmp-01-paradigm.html">
+          <span class="lesson__idx">1</span>
+          <span class="lesson__t">미완료 중·수동 변화표 ἐλυόμην</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-impfmp-02-voice.html">
+          <span class="lesson__idx">2</span>
+          <span class="lesson__t">중간이냐 수동이냐 — 뜻으로 읽기</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-impfmp-03-deponent.html">
+          <span class="lesson__idx">3</span>
+          <span class="lesson__t">이태동사의 미완료</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-impfmp-04-neuter.html">
+          <span class="lesson__idx">4</span>
+          <span class="lesson__t">중성 복수 주어 + 단수 동사</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-impfmp-05-kai.html">
+          <span class="lesson__idx">5</span>
+          <span class="lesson__t">καί와 οὐδέ의 여러 쓰임</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-impfmp-06-review.html">
+          <span class="lesson__idx">6</span>
+          <span class="lesson__t">정리 연습</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+      </ul>
+    </details>
+
+    <details class="unit">
+      <summary class="unit__head">
+        <span class="unit__no">Lesson<br>13</span>
+        <span class="unit__body">
+          <span class="unit__name">미래 능동태·중간태 직설법</span>
+          <span class="unit__meta">미래 어간(어간+σ)·자음 변화·여섯 기본형·이태 미래 · 6강</span>
+        </span>
+        <span class="unit__chev">⌄</span>
+      </summary>
+      <ul class="lessons">
+        <li><a class="lesson" href="lessons/hellenike-fut-01-form.html">
+          <span class="lesson__idx">1</span>
+          <span class="lesson__t">미래형 만들기 — 어간 + σ (λύσω)</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-fut-02-middle.html">
+          <span class="lesson__idx">2</span>
+          <span class="lesson__t">미래 중간태 λύσομαι</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-fut-03-consonant.html">
+          <span class="lesson__idx">3</span>
+          <span class="lesson__t">자음 어간의 변화 — ψ·ξ·치음 탈락</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-fut-04-principal.html">
+          <span class="lesson__idx">4</span>
+          <span class="lesson__t">여섯 기본형과 시제 체계</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-fut-05-irregular.html">
+          <span class="lesson__idx">5</span>
+          <span class="lesson__t">불규칙 미래 — 이태·기식·합성</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-fut-06-review.html">
+          <span class="lesson__idx">6</span>
+          <span class="lesson__t">정리 연습</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+      </ul>
+    </details>
+
+    <details class="unit">
+      <summary class="unit__head">
+        <span class="unit__no">Lesson<br>14</span>
+        <span class="unit__body">
+          <span class="unit__name">제1부정과거 능동태·중간태 직설법</span>
+          <span class="unit__meta">접두모음+σα·상(相)·자음 변화·πιστεύω 구문 · 6강</span>
+        </span>
+        <span class="unit__chev">⌄</span>
+      </summary>
+      <ul class="lessons">
+        <li><a class="lesson" href="lessons/hellenike-aor-01-active.html">
+          <span class="lesson__idx">1</span>
+          <span class="lesson__t">제1부정과거 능동 ἔλυσα — 접두모음+σα</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-aor-02-middle.html">
+          <span class="lesson__idx">2</span>
+          <span class="lesson__t">제1부정과거 중간 ἐλυσάμην</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-aor-03-aspect.html">
+          <span class="lesson__idx">3</span>
+          <span class="lesson__t">부정과거 vs 미완료 — 동작의 상(相)</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-aor-04-consonant.html">
+          <span class="lesson__idx">4</span>
+          <span class="lesson__t">자음 어간의 부정과거 — ψ·ξ·탈락</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-aor-05-vocab.html">
+          <span class="lesson__idx">5</span>
+          <span class="lesson__t">새 동사들과 πιστεύω 구문</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-aor-06-review.html">
+          <span class="lesson__idx">6</span>
+          <span class="lesson__t">정리 연습</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+      </ul>
+    </details>
+
+    <details class="unit">
+      <summary class="unit__head">
+        <span class="unit__no">Lesson<br>15</span>
+        <span class="unit__body">
+          <span class="unit__name">제2부정과거 능동태·중간태 직설법</span>
+          <span class="unit__meta">미완료 어미+바뀐 어간(ἔλιπον)·제1vs제2·어간 대치 동사군 · 6강</span>
+        </span>
+        <span class="unit__chev">⌄</span>
+      </summary>
+      <ul class="lessons">
+        <li><a class="lesson" href="lessons/hellenike-aor2-01-active.html">
+          <span class="lesson__idx">1</span>
+          <span class="lesson__t">제2부정과거 능동 ἔλιπον — 미완료 어미, 다른 어간</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-aor2-02-middle.html">
+          <span class="lesson__idx">2</span>
+          <span class="lesson__t">제2부정과거 중간 ἐλιπόμην</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-aor2-03-vs-imperfect.html">
+          <span class="lesson__idx">3</span>
+          <span class="lesson__t">제2부정과거 vs 미완료 — 어간을 보라</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-aor2-04-first-vs-second.html">
+          <span class="lesson__idx">4</span>
+          <span class="lesson__t">제1 vs 제2부정과거 — 뜻은 같고 형태만</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-aor2-05-vocab.html">
+          <span class="lesson__idx">5</span>
+          <span class="lesson__t">꼭 외울 제2부정과거 동사들</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-aor2-06-review.html">
+          <span class="lesson__idx">6</span>
+          <span class="lesson__t">정리 연습</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+      </ul>
+    </details>
+
+    <details class="unit">
+      <summary class="unit__head">
+        <span class="unit__no">Lesson<br>16</span>
+        <span class="unit__body">
+          <span class="unit__name">부정과거·미래 수동태 직설법</span>
+          <span class="unit__meta">-θη- 표지로 만드는 수동태(ἐλύθην·λυθήσομαι) · 6강</span>
+        </span>
+        <span class="unit__chev">⌄</span>
+      </summary>
+      <ul class="lessons">
+        <li><a class="lesson" href="lessons/hellenike-aorpass-01-voice.html">
+          <span class="lesson__idx">1</span>
+          <span class="lesson__t">수동태의 표지 -θη-</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-aorpass-02-paradigm.html">
+          <span class="lesson__idx">2</span>
+          <span class="lesson__t">제1부정과거 수동 ἐλύθην 변화표</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-aorpass-03-consonant.html">
+          <span class="lesson__idx">3</span>
+          <span class="lesson__t">자음 어간의 θ 결합 — φθ·χθ·σθ</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-aorpass-04-future.html">
+          <span class="lesson__idx">4</span>
+          <span class="lesson__t">미래 수동 λυθήσομαι</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-aorpass-05-second.html">
+          <span class="lesson__idx">5</span>
+          <span class="lesson__t">θ 없는 수동 — ἐγράφην·수동형 이태</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-aorpass-06-review.html">
+          <span class="lesson__idx">6</span>
+          <span class="lesson__t">정리 연습</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+      </ul>
+    </details>
+
+    <details class="unit">
+      <summary class="unit__head">
+        <span class="unit__no">Lesson<br>17</span>
+        <span class="unit__body">
+          <span class="unit__name">제3곡용 명사</span>
+          <span class="unit__meta">어간을 속격에서 찾는 명사들(νύξ·ἐλπίς·ὄνομα) · 6강</span>
+        </span>
+        <span class="unit__chev">⌄</span>
+      </summary>
+      <ul class="lessons">
+        <li><a class="lesson" href="lessons/hellenike-thirddec-01-intro.html">
+          <span class="lesson__idx">1</span>
+          <span class="lesson__t">제3곡용이란 — 속격으로 어간 찾기</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-thirddec-02-endings.html">
+          <span class="lesson__idx">2</span>
+          <span class="lesson__t">제3곡용 격어미와 ἐλπίς</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-thirddec-03-datplural.html">
+          <span class="lesson__idx">3</span>
+          <span class="lesson__t">자음이 부딪히는 곳 — νύξ·ἄρχων</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-thirddec-04-stemtypes.html">
+          <span class="lesson__idx">4</span>
+          <span class="lesson__t">어간의 여러 얼굴과 성(性)</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-thirddec-05-neuter.html">
+          <span class="lesson__idx">5</span>
+          <span class="lesson__t">중성 -μα 명사 — ὄνομα·πνεῦμα</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-thirddec-06-review.html">
+          <span class="lesson__idx">6</span>
+          <span class="lesson__t">정리 연습</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+      </ul>
+    </details>
+
+    <details class="unit">
+      <summary class="unit__head">
+        <span class="unit__no">Lesson<br>18</span>
+        <span class="unit__body">
+          <span class="unit__name">현재분사</span>
+          <span class="unit__meta">동사적 형용사(λύων·λυόμενος)와 그 용법 · 6강</span>
+        </span>
+        <span class="unit__chev">⌄</span>
+      </summary>
+      <ul class="lessons">
+        <li><a class="lesson" href="lessons/hellenike-partpres-01-intro.html">
+          <span class="lesson__idx">1</span>
+          <span class="lesson__t">분사란 — 동사적 형용사</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-partpres-02-active.html">
+          <span class="lesson__idx">2</span>
+          <span class="lesson__t">현재 능동 분사 λύων</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-partpres-03-midpass.html">
+          <span class="lesson__idx">3</span>
+          <span class="lesson__t">현재 중·수동 분사 · εἰμί 분사</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-partpres-04-tense.html">
+          <span class="lesson__idx">4</span>
+          <span class="lesson__t">분사의 시제 — 주동사와 같은 때</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-partpres-05-uses.html">
+          <span class="lesson__idx">5</span>
+          <span class="lesson__t">분사의 세 용법 — 관사가 가른다</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-partpres-06-review.html">
+          <span class="lesson__idx">6</span>
+          <span class="lesson__t">정리 연습</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+      </ul>
+    </details>
+
+    <details class="unit">
+      <summary class="unit__head">
+        <span class="unit__no">Lesson<br>19</span>
+        <span class="unit__body">
+          <span class="unit__name">부정과거 분사(능동·중간)</span>
+          <span class="unit__meta">‘먼저 일어난’ 동작의 분사(λύσας·ἰδών)·οὐ와 μή · 6강</span>
+        </span>
+        <span class="unit__chev">⌄</span>
+      </summary>
+      <ul class="lessons">
+        <li><a class="lesson" href="lessons/hellenike-partaor-01-meaning.html">
+          <span class="lesson__idx">1</span>
+          <span class="lesson__t">부정과거 분사의 뜻 — ‘먼저’</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-partaor-02-active.html">
+          <span class="lesson__idx">2</span>
+          <span class="lesson__t">제1부정과거 능동 분사 λύσας</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-partaor-03-middle.html">
+          <span class="lesson__idx">3</span>
+          <span class="lesson__t">제1부정과거 중간 분사 λυσάμενος</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-partaor-04-second.html">
+          <span class="lesson__idx">4</span>
+          <span class="lesson__t">제2부정과거 분사 ἰδών</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-partaor-05-vs-negatives.html">
+          <span class="lesson__idx">5</span>
+          <span class="lesson__t">부정과거 vs 현재 · οὐ와 μή</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-partaor-06-review.html">
+          <span class="lesson__idx">6</span>
+          <span class="lesson__t">정리 연습</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+      </ul>
+    </details>
+
+    <details class="unit">
+      <summary class="unit__head">
+        <span class="unit__no">Lesson<br>20</span>
+        <span class="unit__body">
+          <span class="unit__name">부정과거 수동 분사·속격 독립구문</span>
+          <span class="unit__meta">λυθείς와 속격 독립(genitive absolute) · 6강</span>
+        </span>
+        <span class="unit__chev">⌄</span>
+      </summary>
+      <ul class="lessons">
+        <li><a class="lesson" href="lessons/hellenike-partpass-01-meaning.html">
+          <span class="lesson__idx">1</span>
+          <span class="lesson__t">부정과거 수동 분사 λυθείς</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-partpass-02-paradigm.html">
+          <span class="lesson__idx">2</span>
+          <span class="lesson__t">λυθείς 곡용표</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-partpass-03-consonant.html">
+          <span class="lesson__idx">3</span>
+          <span class="lesson__t">제2부정과거 수동 γραφείς · 자음 어간</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-partpass-04-summary.html">
+          <span class="lesson__idx">4</span>
+          <span class="lesson__t">분사 여섯 얼굴 종합</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-partpass-05-genabs.html">
+          <span class="lesson__idx">5</span>
+          <span class="lesson__t">속격 독립구문</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-partpass-06-review.html">
+          <span class="lesson__idx">6</span>
+          <span class="lesson__t">정리 연습</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+      </ul>
+    </details>
+
+    <details class="unit">
+      <summary class="unit__head">
+        <span class="unit__no">Lesson<br>21</span>
+        <span class="unit__body">
+          <span class="unit__name">가정법</span>
+          <span class="unit__meta">긴 모음 ω/η·ἵνα 목적절·ἐάν 조건 · 6강</span>
+        </span>
+        <span class="unit__chev">⌄</span>
+      </summary>
+      <ul class="lessons">
+        <li><a class="lesson" href="lessons/hellenike-subj-01-meaning.html">
+          <span class="lesson__idx">1</span>
+          <span class="lesson__t">가정법이란 — 긴 모음 ω/η</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-subj-02-present.html">
+          <span class="lesson__idx">2</span>
+          <span class="lesson__t">현재 가정법 λύω · εἰμί</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-subj-03-aorist.html">
+          <span class="lesson__idx">3</span>
+          <span class="lesson__t">부정과거 가정법 λύσω·λυθῶ</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-subj-04-hortatory-purpose.html">
+          <span class="lesson__idx">4</span>
+          <span class="lesson__t">권유 가정법 · ἵνα 목적절</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-subj-05-conditions.html">
+          <span class="lesson__idx">5</span>
+          <span class="lesson__t">ἐάν 조건절 · εἰ와의 구별</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-subj-06-review.html">
+          <span class="lesson__idx">6</span>
+          <span class="lesson__t">정리 연습</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+      </ul>
+    </details>
+
+    <details class="unit">
+      <summary class="unit__head">
+        <span class="unit__no">Lesson<br>22</span>
+        <span class="unit__body">
+          <span class="unit__name">부정사·간접화법</span>
+          <span class="unit__meta">동사적 명사(λύειν·λῦσαι)·관사 부정사·ὅτι 간접화법 · 6강</span>
+        </span>
+        <span class="unit__chev">⌄</span>
+      </summary>
+      <ul class="lessons">
+        <li><a class="lesson" href="lessons/hellenike-inf-01-meaning.html">
+          <span class="lesson__idx">1</span>
+          <span class="lesson__t">부정사란 — 동사적 명사</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-inf-02-forms.html">
+          <span class="lesson__idx">2</span>
+          <span class="lesson__t">부정사 여섯 형태</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-inf-03-articular.html">
+          <span class="lesson__idx">3</span>
+          <span class="lesson__t">관사 부정사 · 전치사</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-inf-04-subject.html">
+          <span class="lesson__idx">4</span>
+          <span class="lesson__t">부정사의 주어=대격 · 비인칭</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-inf-05-indirect.html">
+          <span class="lesson__idx">5</span>
+          <span class="lesson__t">간접화법 · Ἰησοῦς</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-inf-06-review.html">
+          <span class="lesson__idx">6</span>
+          <span class="lesson__t">정리 연습</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+      </ul>
+    </details>
+
+    <details class="unit">
+      <summary class="unit__head">
+        <span class="unit__no">Lesson<br>23</span>
+        <span class="unit__body">
+          <span class="unit__name">축약동사</span>
+          <span class="unit__meta">-άω·-έω·-όω 모음 축약(τιμῶ·φιλῶ·δηλῶ) · 6강</span>
+        </span>
+        <span class="unit__chev">⌄</span>
+      </summary>
+      <ul class="lessons">
+        <li><a class="lesson" href="lessons/hellenike-contract-01-meaning.html">
+          <span class="lesson__idx">1</span>
+          <span class="lesson__t">축약동사란 — 모음 어간</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-contract-02-rules.html">
+          <span class="lesson__idx">2</span>
+          <span class="lesson__t">축약 규칙</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-contract-03-epsilon.html">
+          <span class="lesson__idx">3</span>
+          <span class="lesson__t">ε-축약 φιλέω</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-contract-04-alpha-omicron.html">
+          <span class="lesson__idx">4</span>
+          <span class="lesson__t">α-축약 τιμάω · ο-축약 δηλόω</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-contract-05-principal.html">
+          <span class="lesson__idx">5</span>
+          <span class="lesson__t">기본형과 어간 장음화</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-contract-06-review.html">
+          <span class="lesson__idx">6</span>
+          <span class="lesson__t">정리 연습</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+      </ul>
+    </details>
+
+    <details class="unit">
+      <summary class="unit__head">
+        <span class="unit__no">Lesson<br>24</span>
+        <span class="unit__body">
+          <span class="unit__name">유음동사 미래·제1부정과거</span>
+          <span class="unit__meta">λμνρ 어간의 특별한 미래·부정과거(κρινῶ·ἔμεινα)·재귀/상호대명사 · 6강</span>
+        </span>
+        <span class="unit__chev">⌄</span>
+      </summary>
+      <ul class="lessons">
+        <li><a class="lesson" href="lessons/hellenike-liquid-01-future.html">
+          <span class="lesson__idx">1</span>
+          <span class="lesson__t">유음동사와 그 미래 — κρινῶ</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-liquid-02-aorist.html">
+          <span class="lesson__idx">2</span>
+          <span class="lesson__t">유음동사 제1부정과거 — ἔμεινα</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-liquid-03-eimi-future.html">
+          <span class="lesson__idx">3</span>
+          <span class="lesson__t">εἰμί의 미래 · 준비의 there</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-liquid-04-reflexive.html">
+          <span class="lesson__idx">4</span>
+          <span class="lesson__t">재귀대명사</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-liquid-05-reciprocal.html">
+          <span class="lesson__idx">5</span>
+          <span class="lesson__t">상호대명사 · 재귀와 상호</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-liquid-06-review.html">
+          <span class="lesson__idx">6</span>
+          <span class="lesson__t">정리 연습</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+      </ul>
+    </details>
+
+    <details class="unit">
+      <summary class="unit__head">
+        <span class="unit__no">Lesson<br>25</span>
+        <span class="unit__body">
+          <span class="unit__name">제3곡용 명사·형용사 더</span>
+          <span class="unit__meta">πόλις·γένος·βασιλεύς·ἀληθής 유형 · 6강</span>
+        </span>
+        <span class="unit__chev">⌄</span>
+      </summary>
+      <ul class="lessons">
+        <li><a class="lesson" href="lessons/hellenike-thirddec2-01-charis.html">
+          <span class="lesson__idx">1</span>
+          <span class="lesson__t">χάρις 유형 — 대격 -ν</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-thirddec2-02-polis.html">
+          <span class="lesson__idx">2</span>
+          <span class="lesson__t">πόλις 유형(-ις,-εως 여성)</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-thirddec2-03-genos.html">
+          <span class="lesson__idx">3</span>
+          <span class="lesson__t">γένος 유형(-ος,-ους 중성)</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-thirddec2-04-basileus.html">
+          <span class="lesson__idx">4</span>
+          <span class="lesson__t">βασιλεύς 유형 · πατήρ</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-thirddec2-05-adjective.html">
+          <span class="lesson__idx">5</span>
+          <span class="lesson__t">제3곡용 형용사 ἀληθής</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-thirddec2-06-review.html">
+          <span class="lesson__idx">6</span>
+          <span class="lesson__t">정리 연습</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+      </ul>
+    </details>
+
+    <details class="unit">
+      <summary class="unit__head">
+        <span class="unit__no">Lesson<br>26</span>
+        <span class="unit__body">
+          <span class="unit__name">πᾶς·πολύς·μέγας와 수사</span>
+          <span class="unit__meta">πᾶς 곡용·수사(εἷς·δύο·τρεῖς)·전치사구의 수식 용법 · 6강</span>
+        </span>
+        <span class="unit__chev">⌄</span>
+      </summary>
+      <ul class="lessons">
+        <li><a class="lesson" href="lessons/hellenike-pas-01-declension.html">
+          <span class="lesson__idx">1</span>
+          <span class="lesson__t">πᾶς, πᾶσα, πᾶν 곡용</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-pas-02-use.html">
+          <span class="lesson__idx">2</span>
+          <span class="lesson__t">πᾶς의 용법 — 모든·온·매</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-pas-03-polys-megas.html">
+          <span class="lesson__idx">3</span>
+          <span class="lesson__t">πολύς와 μέγας</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-pas-04-numerals.html">
+          <span class="lesson__idx">4</span>
+          <span class="lesson__t">수사 — εἷς·δύο·τρεῖς·τέσσαρες</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-pas-05-attributive.html">
+          <span class="lesson__idx">5</span>
+          <span class="lesson__t">전치사구·속격의 수식 용법</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-pas-06-review.html">
+          <span class="lesson__idx">6</span>
+          <span class="lesson__t">정리 연습</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+      </ul>
+    </details>
+
+    <details class="unit">
+      <summary class="unit__head">
+        <span class="unit__no">Lesson<br>27</span>
+        <span class="unit__body">
+          <span class="unit__name">의문·부정·관계 대명사</span>
+          <span class="unit__meta">τίς·τις·ὅς·조건 관계절(ὃς ἄν) · 6강</span>
+        </span>
+        <span class="unit__chev">⌄</span>
+      </summary>
+      <ul class="lessons">
+        <li><a class="lesson" href="lessons/hellenike-relpron-01-interrog.html">
+          <span class="lesson__idx">1</span>
+          <span class="lesson__t">의문대명사 τίς, τί</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-relpron-02-indef.html">
+          <span class="lesson__idx">2</span>
+          <span class="lesson__t">부정대명사 τις, τι</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-relpron-03-questions.html">
+          <span class="lesson__idx">3</span>
+          <span class="lesson__t">간접의문·숙고 가정법</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-relpron-04-relative.html">
+          <span class="lesson__idx">4</span>
+          <span class="lesson__t">관계대명사 ὅς</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-relpron-05-uses.html">
+          <span class="lesson__idx">5</span>
+          <span class="lesson__t">관계대명사의 용법 · 조건 관계절</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-relpron-06-review.html">
+          <span class="lesson__idx">6</span>
+          <span class="lesson__t">정리 연습</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+      </ul>
+    </details>
+
+    <details class="unit">
+      <summary class="unit__head">
+        <span class="unit__no">Lesson<br>28</span>
+        <span class="unit__body">
+          <span class="unit__name">명령법</span>
+          <span class="unit__meta">명령·금지의 법(λῦε·λῦσον·μὴ+가정)·주기도문 · 6강</span>
+        </span>
+        <span class="unit__chev">⌄</span>
+      </summary>
+      <ul class="lessons">
+        <li><a class="lesson" href="lessons/hellenike-imper-01-meaning.html">
+          <span class="lesson__idx">1</span>
+          <span class="lesson__t">명령법이란</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-imper-02-present.html">
+          <span class="lesson__idx">2</span>
+          <span class="lesson__t">현재 명령법 λῦε·λύου</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-imper-03-aorist.html">
+          <span class="lesson__idx">3</span>
+          <span class="lesson__t">부정과거 명령법 λῦσον·λύθητι</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-imper-04-eimi-use.html">
+          <span class="lesson__idx">4</span>
+          <span class="lesson__t">εἰμί 명령·3인칭 용법</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-imper-05-prohibition.html">
+          <span class="lesson__idx">5</span>
+          <span class="lesson__t">금지 — μή+현재명령/부정과거 가정</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-imper-06-review.html">
+          <span class="lesson__idx">6</span>
+          <span class="lesson__t">정리 연습 — 주기도문</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+      </ul>
+    </details>
+
+    <details class="unit">
+      <summary class="unit__head">
+        <span class="unit__no">Lesson<br>29</span>
+        <span class="unit__body">
+          <span class="unit__name">완료 시제·λύω 복습</span>
+          <span class="unit__meta">과거 행동의 현재 결과(λέλυκα·γέγραπται)·중복·동사 전체 복습 · 6강</span>
+        </span>
+        <span class="unit__chev">⌄</span>
+      </summary>
+      <ul class="lessons">
+        <li><a class="lesson" href="lessons/hellenike-perf-01-meaning.html">
+          <span class="lesson__idx">1</span>
+          <span class="lesson__t">완료 시제란 — 과거 행동의 현재 결과</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-perf-02-active.html">
+          <span class="lesson__idx">2</span>
+          <span class="lesson__t">완료 능동 λέλυκα</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-perf-03-midpass.html">
+          <span class="lesson__idx">3</span>
+          <span class="lesson__t">완료 중·수동 λέλυμαι</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-perf-04-reduplication.html">
+          <span class="lesson__idx">4</span>
+          <span class="lesson__t">중복 규칙 — 자음·모음·제2완료</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-perf-05-use.html">
+          <span class="lesson__idx">5</span>
+          <span class="lesson__t">완료의 용법 — γέγραπται</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-perf-06-review.html">
+          <span class="lesson__idx">6</span>
+          <span class="lesson__t">정리 연습 — λύω 6기본형</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+      </ul>
+    </details>
+
+    <details class="unit">
+      <summary class="unit__head">
+        <span class="unit__no">Lesson<br>30</span>
+        <span class="unit__body">
+          <span class="unit__name">형용사 비교·μείζων 곡용</span>
+          <span class="unit__meta">비교급·최상급(μείζων·πλείων)·ἤ와 소유격 비교 · 6강</span>
+        </span>
+        <span class="unit__chev">⌄</span>
+      </summary>
+      <ul class="lessons">
+        <li><a class="lesson" href="lessons/hellenike-comp-01-degrees.html">
+          <span class="lesson__idx">1</span>
+          <span class="lesson__t">형용사의 비교 — 더·가장</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-comp-02-meizon.html">
+          <span class="lesson__idx">2</span>
+          <span class="lesson__t">μείζων 곡용 — 제3곡용 비교급</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-comp-03-than.html">
+          <span class="lesson__idx">3</span>
+          <span class="lesson__t">‘~보다’ — 비교의 소유격·ἤ</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-comp-04-adverbs.html">
+          <span class="lesson__idx">4</span>
+          <span class="lesson__t">부사 — 속격 복수 ν→ς</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-comp-05-cases.html">
+          <span class="lesson__idx">5</span>
+          <span class="lesson__t">격의 여러 쓰임 — 속격·여격·대격</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-comp-06-review.html">
+          <span class="lesson__idx">6</span>
+          <span class="lesson__t">정리 연습 — 소유형용사·μή·ἵνα</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+      </ul>
+    </details>
+
+    <details class="unit">
+      <summary class="unit__head">
+        <span class="unit__no">Lesson<br>31</span>
+        <span class="unit__body">
+          <span class="unit__name">δίδωμι — -μι 동사의 첫걸음</span>
+          <span class="unit__meta">중복 현재·부정과거 ἔδωκα·δούς 분사 · 6강</span>
+        </span>
+        <span class="unit__chev">⌄</span>
+      </summary>
+      <ul class="lessons">
+        <li><a class="lesson" href="lessons/hellenike-didomi-01-intro.html">
+          <span class="lesson__idx">1</span>
+          <span class="lesson__t">-μι 동사와 δίδωμι 기본형</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-didomi-02-present.html">
+          <span class="lesson__idx">2</span>
+          <span class="lesson__t">현재 조직 — δίδωμι·ἐδίδουν</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-didomi-03-participle.html">
+          <span class="lesson__idx">3</span>
+          <span class="lesson__t">분사 — διδούς(주는)·δούς(준)</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-didomi-04-aorist.html">
+          <span class="lesson__idx">4</span>
+          <span class="lesson__t">부정과거 ἔδωκα·γινώσκω ἔγνων</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-didomi-05-syntax.html">
+          <span class="lesson__idx">5</span>
+          <span class="lesson__t">구문 셋 — ὁ δέ·ἀποκριθεὶς εἶπεν</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-didomi-06-review.html">
+          <span class="lesson__idx">6</span>
+          <span class="lesson__t">정리 연습 — ἀποδίδωμι·παραδίδωμι</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+      </ul>
+    </details>
+
+    <details class="unit">
+      <summary class="unit__head">
+        <span class="unit__no">Lesson<br>32</span>
+        <span class="unit__body">
+          <span class="unit__name">τίθημι·ἀφίημι — 더 많은 -μι 동사</span>
+          <span class="unit__meta">두다 τίθημι·용서하다 ἀφίημι·ἔθηκα·ἀφῆκα · 6강</span>
+        </span>
+        <span class="unit__chev">⌄</span>
+      </summary>
+      <ul class="lessons">
+        <li><a class="lesson" href="lessons/hellenike-tithemi-01-present.html">
+          <span class="lesson__idx">1</span>
+          <span class="lesson__t">τίθημι(두다) — 기본형·현재</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-tithemi-02-aorist.html">
+          <span class="lesson__idx">2</span>
+          <span class="lesson__t">부정과거 ἔθηκα·분사 θείς</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-tithemi-03-aphiemi.html">
+          <span class="lesson__idx">3</span>
+          <span class="lesson__t">ἀφίημι — 놓다·용서하다</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-tithemi-04-deiknymi.html">
+          <span class="lesson__idx">4</span>
+          <span class="lesson__t">δείκνυμι·ἀπόλλυμι — -νυμι 동사</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-tithemi-05-hoste-heos.html">
+          <span class="lesson__idx">5</span>
+          <span class="lesson__t">구문 둘 — ὥστε 결과·ἕως ἄν</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-tithemi-06-review.html">
+          <span class="lesson__idx">6</span>
+          <span class="lesson__t">정리 연습 — τίθημι τὴν ψυχήν</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+      </ul>
+    </details>
+
+    <details class="unit">
+      <summary class="unit__head">
+        <span class="unit__no">Lesson<br>33</span>
+        <span class="unit__body">
+          <span class="unit__name">ἵστημι·οἶδα·희구법 — Machen 마지막 과</span>
+          <span class="unit__meta">세우다/서다 ἵστημι·ἔστην·οἶδα·희구법 · 6강</span>
+        </span>
+        <span class="unit__chev">⌄</span>
+      </summary>
+      <ul class="lessons">
+        <li><a class="lesson" href="lessons/hellenike-histemi-01-present.html">
+          <span class="lesson__idx">1</span>
+          <span class="lesson__t">ἵστημι — 세우다·서다</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-histemi-02-perfect.html">
+          <span class="lesson__idx">2</span>
+          <span class="lesson__t">ἔστην(섰다)·ἕστηκα(서 있다)</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-histemi-03-oida.html">
+          <span class="lesson__idx">3</span>
+          <span class="lesson__t">οἶδα — 완료형인데 ‘안다’</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-histemi-04-optative.html">
+          <span class="lesson__idx">4</span>
+          <span class="lesson__t">희구법·사실 반대 조건</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-histemi-05-ginomai.html">
+          <span class="lesson__idx">5</span>
+          <span class="lesson__t">γίνομαι의 여러 쓰임·καὶ ἐγένετο</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+        <li><a class="lesson" href="lessons/hellenike-histemi-06-review.html">
+          <span class="lesson__idx">6</span>
+          <span class="lesson__t">정리 연습 · 형태론 완주</span>
+          <span class="lesson__time">약 8분</span>
+          <span class="lesson__cta">시작 →</span>
+        </a></li>
+      </ul>
+    </details>
+
+    <p style="text-align:center;color:var(--faint);font-size:.95rem;margin-top:22px;line-height:1.7">
+      🎉 <span style="color:var(--violet);font-weight:700">Machen 33과 형태론 전 과정 완주</span> — 알파벳부터 <span class="grk">-μι</span> 동사·희구법까지.<br>
+      이제 형태(생김새)의 지도가 손에 들어왔습니다. 다음 여정은 <b>실제 성경 본문 독해·구문 심화</b>입니다. <span style="color:var(--violet);font-weight:600">준비 중</span>
+    </p>
+
+  </section>
+
+  <div class="back"><a href="reading-greek.html">← 독서하는 헬라어</a></div>
+</main>
+
+<footer>
+  <span class="fmark">여호와 닛시</span>
+  여호와는 나의 깃발 · 출애굽기 17:15<br>© 2026 여호와 닛시 · 무료 신학·고전어 교육 사역
+</footer>
+</body>
+</html>

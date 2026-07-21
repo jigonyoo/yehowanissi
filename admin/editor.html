@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>관리자 편집기 · 여호와 닛시</title>
+<style>
+  :root{--sans:'Pretendard',-apple-system,BlinkMacSystemFont,system-ui,'Apple SD Gothic Neo',sans-serif;
+    --ink:#1d1d1f;--sub:#6e6e73;--faint:#86868b;--line:#e6e6eb;--bg2:#f5f5f7;--blue:#0071e3;--violet:#7c3aed;--ok:#178a4c}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%}
+  body{font-family:var(--sans);color:var(--ink);background:#e9e9ee;display:flex;flex-direction:column;overflow:hidden;-webkit-font-smoothing:antialiased}
+  .bar{background:#111;color:#fff;display:flex;align-items:center;gap:12px;padding:10px 16px;flex-wrap:wrap;flex:0 0 auto}
+  a.title{color:#fff;font-weight:700;text-decoration:none;font-size:1rem;white-space:nowrap}
+  a.title:hover{color:#c9b8f5}
+  .path{font-size:.8rem;color:#9aa0a6;font-family:ui-monospace,monospace;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:240px}
+  .status{font-size:.8rem;color:#9aa0a6;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:260px}
+  .sp{flex:1}
+  .btn{border:0;border-radius:9px;padding:9px 14px;font-size:.88rem;font-weight:600;cursor:pointer;font-family:inherit}
+  .btn-g{background:#2a2a2e;color:#fff}.btn-d{background:var(--blue);color:#fff}.btn-save{background:var(--ok);color:#fff}
+  .btn:disabled{opacity:.45;cursor:not-allowed}
+  .openbar{background:#1b1b1f;padding:7px 16px;display:flex;gap:8px;align-items:center;flex-wrap:wrap;flex:0 0 auto}
+  .openbar label{color:#9aa0a6;font-size:.78rem;white-space:nowrap}
+  .openbar input#openUrl{flex:1;min-width:180px;border:1px solid #333;background:#000;color:#fff;border-radius:8px;padding:7px 10px;font-size:.8rem;font-family:ui-monospace,monospace}
+  .toolbar{background:var(--bg2);border-bottom:1px solid var(--line);display:flex;align-items:center;gap:5px;padding:8px 14px;flex-wrap:wrap;flex:0 0 auto}
+  .tb{border:1px solid #d2d2d7;background:#fff;border-radius:7px;padding:6px 11px;font-size:.88rem;cursor:pointer;font-weight:600;color:var(--ink);line-height:1}
+  .tb:hover{background:#ececf0;border-color:#b8b8bf}
+  .tb.b{font-weight:800}.tb.i{font-style:italic}.tb.u{text-decoration:underline}
+  .sep{width:1px;height:20px;background:#d2d2d7;margin:0 5px}
+  .tlabel{font-size:.78rem;color:var(--sub);margin:0 2px}
+  input#fc{width:30px;height:30px;border:1px solid #d2d2d7;border-radius:7px;background:#fff;cursor:pointer;padding:2px}
+  .canvas{flex:1 1 auto;position:relative;overflow:hidden;background:#e9e9ee}
+  .canvas iframe{width:100%;height:100%;border:0;background:#fff}
+  .hint{position:absolute;top:10px;left:50%;transform:translateX(-50%);background:rgba(17,17,17,.82);color:#fff;font-size:.78rem;padding:6px 15px;border-radius:20px;pointer-events:none;z-index:5;transition:opacity .4s}
+</style>
+</head>
+<body>
+<div class="bar">
+  <a class="title" href="index.html" title="첫 화면(대시보드)으로">🔧 관리자 편집기</a>
+  <span class="path" id="pathLabel"></span>
+  <span class="status" id="status"></span>
+  <span class="sp"></span>
+  <input type="file" id="fileInput" accept=".html,text/html" style="display:none">
+  <button class="btn btn-g" id="btnFile" title="로컬 HTML 파일 열기">파일</button>
+  <button class="btn btn-g" id="btnReload">↻ 불러오기</button>
+  <button class="btn btn-save" id="btnSave" disabled title="저장하면 사이트에 자동 반영됩니다">💾 저장</button>
+  <button class="btn btn-g" id="btnExport" disabled title="파일로 내려받기(수동 배포용)">⬇ 내보내기</button>
+</div>
+<div class="openbar">
+  <label>다른 페이지 열기</label>
+  <input id="openUrl" placeholder="/ko/lessons/hellenike-mp-01-voice.html" spellcheck="false">
+  <button class="btn btn-g" id="btnOpen">열기</button>
+</div>
+<div class="toolbar" id="toolbar">
+  <button class="tb b" data-cmd="bold" title="굵게">B</button>
+  <button class="tb i" data-cmd="italic" title="기울임">I</button>
+  <button class="tb u" data-cmd="underline" title="밑줄">U</button>
+  <span class="sep"></span>
+  <span class="tlabel">글자 크기</span>
+  <button class="tb" data-size="2">작게</button>
+  <button class="tb" data-size="3">보통</button>
+  <button class="tb" data-size="5">크게</button>
+  <button class="tb" data-size="6">더 크게</button>
+  <span class="sep"></span>
+  <span class="tlabel">글자색</span>
+  <input type="color" id="fc" value="#1d1d1f" title="글자색">
+  <button class="tb" data-color="reset" title="색 기본으로">↺</button>
+  <span class="sep"></span>
+  <span class="tlabel">정렬</span>
+  <button class="tb" data-align="justifyLeft" title="왼쪽">⬅</button>
+  <button class="tb" data-align="justifyCenter" title="가운데">↔</button>
+  <button class="tb" data-align="justifyRight" title="오른쪽">➡</button>
+  <span class="sep"></span>
+  <button class="tb" data-cmd="undo" title="실행취소">↶</button>
+  <button class="tb" data-cmd="redo" title="다시">↷</button>
+</div>
+<div class="canvas">
+  <div class="hint" id="hint">편집할 곳(보라 점선)을 클릭해 고치세요 · 그리스어 글자는 실수로 지우지 않게 주의</div>
+  <iframe id="pv" title="편집 캔버스"></iframe>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  var params=new URLSearchParams(location.search);
+  var targetPath=params.get('page')||'/ko/index.html';
+  var fileName=targetPath.split('/').pop()||'index.html';
+  var $=function(id){return document.getElementById(id);};
+  $('pathLabel').textContent=targetPath;
+  $('openUrl').value=targetPath;
+  function dirOf(p){var d=p.replace(/[^/]*$/,''); return d||'/';}
+  function setStatus(m){$('status').textContent=m||'';}
+  function iframe(){return $('pv');}
+
+  // 편집 대상 — 홈은 data-ek, 강의는 산문·목록·표셀·서지 (그리스어 포함 전부 편집; 원문 훼손 주의)
+  function selectSlots(doc){
+    var eks=doc.querySelectorAll('[data-ek]');
+    if(eks.length) return Array.prototype.slice.call(eks);
+    var art=doc.querySelector('article.lesson'); if(!art) return [];
+    var nodes=Array.prototype.slice.call(art.querySelectorAll('h1, h2, p, li, .callout, table td'));
+    return nodes.filter(function(el){
+      return !el.closest('.lesson-nav, .progress-bar, #flashcards');
+    });
+  }
+
+  function buildDoc(html){
+    var d=new DOMParser().parseFromString(html,'text/html');
+    var base=d.createElement('base'); base.setAttribute('href',dirOf(targetPath)); base.id='__base';
+    d.head.insertBefore(base,d.head.firstChild);
+    var st=d.createElement('style'); st.id='__edit';
+    st.textContent='[data-yn-edit]{outline:1.5px dashed rgba(124,58,237,.35);outline-offset:3px;border-radius:2px;transition:outline .12s,background .12s;cursor:text}'
+      +'[data-yn-edit]:hover{outline-color:#7c3aed}'
+      +'[data-yn-edit]:focus{outline:2px solid #7c3aed;background:rgba(124,58,237,.05)}';
+    d.head.appendChild(st);
+    selectSlots(d).forEach(function(el){ el.setAttribute('data-yn-edit','1'); el.setAttribute('contenteditable','true'); el.setAttribute('spellcheck','false'); });
+    return '<!DOCTYPE html>\n'+d.documentElement.outerHTML;
+  }
+
+  function loadHtml(html){ iframe().srcdoc=buildDoc(html); }
+
+  function onLoaded(){
+    var idoc=iframe().contentDocument; if(!idoc) return;
+    var n=idoc.querySelectorAll('[data-yn-edit]').length;
+    if(!n){ setStatus('편집 대상을 찾지 못했습니다.'); return; }
+    // 편집 중 링크 이동 방지
+    idoc.addEventListener('click',function(e){ var a=e.target.closest?e.target.closest('a'):null; if(a) e.preventDefault(); },true);
+    try{ idoc.execCommand('styleWithCSS',false,true); }catch(e){}
+    $('btnExport').disabled=false; $('btnSave').disabled=false;
+    setStatus('불러왔습니다 · 편집 가능 '+n+'곳');
+    setTimeout(function(){ var h=$('hint'); if(h) h.style.opacity='0'; }, 4000);
+  }
+
+  function fetchTarget(){
+    setStatus('불러오는 중…');
+    fetch(targetPath,{cache:'no-store'}).then(function(r){ if(!r.ok) throw new Error('HTTP '+r.status); return r.text(); })
+      .then(function(t){ loadHtml(t); }).catch(function(e){ setStatus('자동 불러오기 실패 — 「파일」 버튼으로 여세요.'); });
+  }
+
+  function exportHtml(){
+    var idoc=iframe().contentDocument;
+    var clone=idoc.documentElement.cloneNode(true);
+    var b=clone.querySelector('#__base'); if(b) b.remove();
+    var e=clone.querySelector('#__edit'); if(e) e.remove();
+    function strip(attr){ Array.prototype.forEach.call(clone.querySelectorAll('['+attr+']'),function(x){ x.removeAttribute(attr); }); }
+    strip('contenteditable'); strip('data-yn-edit'); strip('spellcheck');
+    return '<!DOCTYPE html>\n'+clone.outerHTML+'\n';
+  }
+  function download(){
+    var html=exportHtml(), blob=new Blob([html],{type:'text/html;charset=utf-8'});
+    var a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download=fileName;
+    document.body.appendChild(a); a.click(); setTimeout(function(){ URL.revokeObjectURL(a.href); a.remove(); }, 500);
+    setStatus('내보냈습니다: '+fileName+' — 이 파일을 배포하세요.');
+  }
+
+  // 서식 툴바 — 굵게/기울임/밑줄은 <b><i><u>(styleWithCSS off), 크기·색은 CSS
+  function exec(cmd,val,css){ var idoc=iframe().contentDocument; if(!idoc) return;
+    try{ idoc.execCommand('styleWithCSS',false,!!css); idoc.execCommand(cmd,false,val==null?null:val); }catch(e){}
+    iframe().contentWindow.focus();
+  }
+  // 툴바 클릭이 캔버스 선택을 잃지 않도록
+  $('toolbar').addEventListener('mousedown',function(e){ if(e.target.closest('.tb')) e.preventDefault(); });
+  $('toolbar').addEventListener('click',function(e){
+    var t=e.target.closest('.tb'); if(!t) return;
+    if(t.dataset.cmd){ exec(t.dataset.cmd,null,false); }
+    else if(t.dataset.size){ exec('fontSize',t.dataset.size,true); }
+    else if(t.dataset.align){ exec(t.dataset.align,null,true); }
+    else if(t.dataset.color==='reset'){ exec('foreColor','#1d1d1f',true); }
+  });
+  $('fc').addEventListener('input',function(){ exec('foreColor',$('fc').value,true); });
+
+  $('pv').addEventListener('load',onLoaded);
+  $('btnReload').addEventListener('click',function(){ if(confirm('편집 중인 내용을 버리고 다시 불러올까요?')) fetchTarget(); });
+  $('btnExport').addEventListener('click',download);
+  $('btnSave').addEventListener('click',saveLive);
+  function saveLive(){
+    var html=exportHtml();
+    setStatus('저장 중…'); $('btnSave').disabled=true;
+    fetch('/admin/api/save',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({path:targetPath,content:html})})
+      .then(function(r){ return r.json().then(function(j){ return {ok:r.ok, j:j}; }); })
+      .then(function(res){ $('btnSave').disabled=false;
+        if(res.ok && res.j && res.j.ok) setStatus('✅ 저장됨 · 1~2분 뒤 사이트에 반영됩니다');
+        else setStatus('⚠ 저장 실패: '+((res.j&&res.j.error)||'알 수 없는 오류'));
+      })
+      .catch(function(e){ $('btnSave').disabled=false; setStatus('⚠ 저장 오류: '+e.message); });
+  }
+  $('btnFile').addEventListener('click',function(){ $('fileInput').click(); });
+  $('fileInput').addEventListener('change',function(e){ var f=e.target.files[0]; if(!f) return; fileName=f.name||fileName;
+    var rd=new FileReader(); rd.onload=function(){ setStatus('파일 불러옴: '+f.name); loadHtml(String(rd.result)); }; rd.readAsText(f); });
+  $('btnOpen').addEventListener('click',function(){ var u=$('openUrl').value.trim(); if(u) location.href='editor.html?page='+encodeURIComponent(u); });
+  $('openUrl').addEventListener('keydown',function(e){ if(e.key==='Enter') $('btnOpen').click(); });
+
+  fetchTarget();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,292 @@
+/* ============================================================
+   여호와 닛시 (Jehovah-Nissi) — 공유 스타일
+   말씀을 원문으로 읽는 무료 학습 공간
+   2026-07-14: 목록 페이지와 디자인 통일 (흰 배경 · Pretendard 산세리프
+   · 붓글씨 워드마크 · 골드/바이올렛/블루 포인트). 헬라어 글자는 EB Garamond 유지.
+   ============================================================ */
+
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Nanum+Brush+Script&display=swap');
+
+:root {
+  --sans: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, 'Apple SD Gothic Neo', sans-serif;
+  --script: 'Nanum Brush Script', cursive;
+  --greek: 'EB Garamond', 'Noto Serif KR', Georgia, serif;
+
+  --bg: #ffffff;
+  --surface: #ffffff;
+  --surface-2: #f5f5f7;
+  --ink: #1d1d1f;
+  --ink-soft: #515158;
+  --ink-faint: #86868b;
+  --line: #e6e6eb;
+  --line-soft: #f0f0f2;
+
+  --accent: #7c3aed;        /* 바이올렛 — 키커·표·강조·참조카드 (브라운/골드 제거) */
+  --accent-deep: #6d28d9;
+  --accent-wash: #f5f5f7;   /* 중립 그레이 — 콜아웃·참조 카드 (아이보리 제거, 다른 요소와 통일) */
+  --violet: #7c3aed;        /* 섹션 번호·인터랙션 포인트 */
+  --violet-wash: #f4f0ff;
+  --blue: #0071e3;          /* 링크·버튼·CTA */
+  --greek-ink: #1d1d1f;
+
+  --maxw: 760px;
+  --radius: 16px;
+  --shadow: 0 1px 2px rgba(20,20,40,.04), 0 12px 34px rgba(30,28,70,.06);
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 17px;
+  line-height: 1.72;
+  letter-spacing: -.011em;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+.grk { font-family: var(--greek); color: var(--greek-ink); letter-spacing: 0; }
+
+/* ---------- 레이아웃 ---------- */
+.wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 22px; }
+.wrap--wide { max-width: 960px; }
+
+/* ---------- 헤더 ---------- */
+.site-head {
+  border-bottom: 1px solid rgba(0,0,0,.06);
+  background: rgba(255,255,255,.72);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  position: sticky; top: 0; z-index: 20;
+}
+.site-head__row {
+  max-width: 1040px; margin: 0 auto; padding: 10px 24px;
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+}
+.brand { display: flex; align-items: baseline; gap: 10px; text-decoration: none; color: inherit; }
+.brand__mark {
+  font-family: var(--script); font-weight: 400; font-size: 1.95rem; line-height: 1;
+  color: var(--ink); padding-top: 6px; letter-spacing: .01em;
+}
+.brand__mark b { color: var(--ink); font-weight: 400; }
+.brand__tag { display: none; }
+.site-nav { display: flex; gap: 26px; }
+.site-nav a {
+  color: var(--ink); text-decoration: none; font-size: .92rem; font-weight: 500; opacity: .82;
+  transition: opacity .15s, color .15s;
+}
+.site-nav a:hover { opacity: 1; color: var(--blue); }
+
+/* ---------- 히어로 (홈/코스) ---------- */
+.hero { padding: 78px 0 52px; text-align: center; }
+.hero__eyebrow {
+  font-size: .8rem; letter-spacing: .04em; font-weight: 700;
+  color: var(--accent); margin: 0 0 16px;
+}
+.hero__title {
+  font-family: var(--sans); font-weight: 800; letter-spacing: -.035em;
+  font-size: clamp(2rem, 5.4vw, 3rem); line-height: 1.12; margin: 0 0 20px; color: var(--ink);
+  word-break: keep-all;
+}
+.hero__lede { font-size: 1.1rem; color: var(--ink-soft); margin: 0 auto 30px; max-width: 560px; word-break: keep-all; }
+.hero__verse { color: var(--ink-faint); font-size: .95rem; margin-top: 34px; }
+.hero__verse .grk { color: var(--ink-soft); }
+
+/* ---------- 버튼 ---------- */
+.btn {
+  display: inline-block; text-decoration: none; cursor: pointer;
+  font-family: inherit; font-size: 1rem; font-weight: 600;
+  padding: 12px 24px; border-radius: 999px; border: 1px solid transparent;
+  transition: transform .12s ease, box-shadow .15s ease, background .15s, border-color .15s, color .15s;
+}
+.btn--primary { background: var(--blue); color: #fff; box-shadow: 0 6px 18px rgba(0,113,227,.22); }
+.btn--primary:hover { transform: translateY(-1px); background: #0063c6; }
+.btn--ghost { background: #fff; color: var(--blue); border-color: var(--line); }
+.btn--ghost:hover { border-color: var(--blue); background: #f4f9ff; }
+
+/* ---------- 섹션 (홈) ---------- */
+section { padding: 8px 0; }
+.section-title { font-family: var(--sans); font-weight: 800; letter-spacing: -.03em; font-size: 1.6rem; color: var(--ink); margin: 48px 0 6px; text-align: center; }
+.section-sub { text-align: center; color: var(--ink-faint); font-size: .95rem; margin: 0 0 26px; }
+
+/* ---------- 코스 카드 (홈) ---------- */
+.course { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); padding: 30px 30px 26px; margin: 22px auto; }
+.course__kicker { font-size: .78rem; letter-spacing: .04em; font-weight: 700; color: var(--accent); margin: 0 0 8px; }
+.course__title { font-family: var(--sans); font-weight: 800; letter-spacing: -.03em; font-size: 1.5rem; margin: 0 0 8px; }
+.course__desc { color: var(--ink-soft); font-size: .98rem; margin: 0 0 22px; word-break: keep-all; }
+.stage-list { display: grid; gap: 12px; }
+.stage { display: flex; align-items: center; gap: 14px; padding: 15px 16px; border: 1px solid var(--line); border-radius: 14px; background: var(--surface); text-decoration: none; color: inherit; transition: border-color .15s, box-shadow .15s, transform .12s; }
+.stage--live:hover { transform: translateY(-1px); border-color: #d9c6ff; box-shadow: var(--shadow); }
+.stage--soon { opacity: .66; cursor: default; }
+.stage__no { flex: none; width: 44px; height: 44px; border-radius: 12px; display: grid; place-items: center; font-size: .8rem; font-weight: 700; background: var(--surface-2); color: var(--accent); }
+.stage--live .stage__no { background: radial-gradient(120% 120% at 0% 0%, #6d5bd6, #9333ea); color: #fff; }
+.stage__body { flex: 1; }
+.stage__name { font-weight: 700; font-size: 1rem; color: var(--ink); }
+.stage__meta { font-size: .84rem; color: var(--ink-faint); }
+.stage__cta { font-size: .88rem; font-weight: 600; color: var(--blue); white-space: nowrap; }
+.stage__badge { font-size: .72rem; color: var(--ink-faint); border: 1px solid var(--line); border-radius: 999px; padding: 3px 11px; }
+
+/* ---------- 소개/원칙 (홈) ---------- */
+.about { max-width: 640px; margin: 40px auto 0; }
+.about p { color: var(--ink-soft); word-break: keep-all; }
+.about .lead { color: var(--ink); }
+.principle-grid { display: grid; gap: 14px; margin-top: 22px; }
+@media (min-width: 620px){ .principle-grid { grid-template-columns: 1fr 1fr; } }
+.principle { border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px; background: var(--surface); }
+.principle h4 { margin: 0 0 6px; font-size: 1rem; color: var(--accent); font-weight: 700; }
+.principle p { margin: 0; font-size: .92rem; }
+
+/* ---------- 이메일 가입 (홈) ---------- */
+.subscribe { background: var(--surface-2); border: 1px solid var(--line); border-radius: var(--radius); padding: 30px; text-align: center; margin: 48px auto 12px; max-width: 620px; }
+.subscribe h3 { margin: 0 0 6px; font-size: 1.3rem; font-weight: 800; letter-spacing: -.02em; }
+.subscribe p { margin: 0 0 18px; color: var(--ink-soft); font-size: .95rem; }
+.subscribe__form { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+.subscribe__form input[type=email] { flex: 1; min-width: 220px; max-width: 320px; padding: 12px 16px; font-family: inherit; font-size: .98rem; border: 1px solid var(--line); border-radius: 999px; background: #fff; color: var(--ink); }
+.subscribe__form input:focus { outline: none; border-color: var(--blue); }
+.subscribe__note { font-size: .8rem; color: var(--ink-faint); margin-top: 12px; }
+
+/* ---------- 푸터 ---------- */
+.site-foot { margin-top: 64px; border-top: 1px solid var(--line); padding: 40px 0 52px; text-align: center; color: var(--ink-faint); font-size: .86rem; }
+.site-foot .grk { color: var(--ink-soft); }
+.site-foot a { color: var(--ink-soft); }
+
+/* ============================================================
+   레슨 페이지
+   ============================================================ */
+.lesson { padding: 44px 0 20px; }
+.lesson__kicker { font-size: .78rem; letter-spacing: .04em; font-weight: 700; text-transform: none; color: var(--accent); margin: 0 0 12px; }
+.lesson__title { font-family: var(--sans); font-weight: 800; letter-spacing: -.035em; font-size: clamp(1.8rem, 4.6vw, 2.5rem); line-height: 1.22; margin: 0 0 10px; color: var(--ink); word-break: keep-all; }
+.lesson__title .grk { font-weight: 700; }
+.lesson__sub { color: var(--ink-faint); font-size: 1rem; margin: 0 0 8px; }
+.lesson hr.rule { border: none; border-top: 1px solid var(--line); margin: 30px 0; }
+
+.lesson h2 { font-family: var(--sans); font-weight: 800; letter-spacing: -.03em; font-size: 1.42rem; margin: 44px 0 8px; color: var(--ink); scroll-margin-top: 80px; }
+.lesson h2 .num { color: var(--violet); margin-right: .4em; font-weight: 800; }
+.lesson h3 { font-size: 1.08rem; font-weight: 700; margin: 26px 0 6px; color: var(--ink); }
+.lesson p { color: var(--ink); word-break: keep-all; }
+.lesson strong { color: var(--ink); font-weight: 700; }
+.lesson a { color: var(--blue); text-decoration: none; }
+.lesson a:hover { text-decoration: underline; }
+.lesson ul, .lesson ol { padding-left: 1.2em; }
+.lesson li { margin: 4px 0; color: var(--ink); }
+
+.callout { background: var(--surface-2); border: 1px solid var(--line); border-left: 3px solid var(--accent); border-radius: 14px; padding: 16px 20px; margin: 22px 0; font-size: .95rem; color: var(--ink-soft); }
+.callout b { color: var(--accent-deep); }
+/* 접이식 참조 카드(강세·명사 유닛): 페이지 스코프의 탄색 1px 테두리 덮어쓰기 */
+.lesson details.rulecard { border: 1px solid var(--line); border-left: 3px solid var(--accent); }
+
+.note { font-size: .9rem; color: var(--ink-faint); border-top: 1px solid var(--line-soft); padding-top: 14px; margin-top: 26px; }
+
+/* 표 */
+.tbl-scroll { overflow-x: auto; margin: 18px 0; border-radius: 14px; border: 1px solid var(--line); }
+table.gtbl { width: 100%; border-collapse: collapse; font-size: .94rem; background: var(--surface); min-width: 460px; }
+table.gtbl th { background: var(--surface-2); color: var(--ink-soft); font-weight: 700; text-align: left; padding: 11px 13px; border-bottom: 1px solid var(--line); font-size: .82rem; letter-spacing: .01em; }
+table.gtbl td { padding: 11px 13px; border-bottom: 1px solid var(--line-soft); vertical-align: top; }
+table.gtbl tr:last-child td { border-bottom: none; }
+table.gtbl .letter { font-family: var(--greek); font-size: 1.3rem; color: var(--greek-ink); white-space: nowrap; }
+table.gtbl .ipa { color: var(--ink-soft); font-size: .9rem; white-space: nowrap; }
+table.gtbl--narrow { min-width: 320px; }
+
+/* 소리내어 읽기 카드 */
+.readcard { display: grid; gap: 10px; margin: 18px 0; }
+.readrow { display: flex; align-items: baseline; gap: 16px; flex-wrap: wrap; padding: 15px 18px; border: 1px solid var(--line); border-radius: 14px; background: var(--surface); }
+.readrow .word { font-family: var(--greek); font-size: 1.75rem; color: var(--greek-ink); }
+.readrow .rom { color: var(--accent-deep); font-weight: 700; }
+.readrow .gloss { color: var(--ink-soft); font-size: .92rem; }
+
+/* 레슨 하단 내비 */
+.lesson-nav { display: flex; justify-content: space-between; gap: 14px; margin: 40px 0 8px; flex-wrap: wrap; }
+.lesson-nav .spacer { flex: 1; }
+.backlink { display: inline-block; margin: 8px 0 0; color: var(--ink-faint); text-decoration: none; font-size: .92rem; }
+.backlink:hover { color: var(--blue); }
+
+/* 참고문헌 (References) — 박사급 각주 스타일 */
+.refs { margin: 36px 0 8px; padding-top: 18px; border-top: 1px solid var(--line); }
+.refs h3 { font-size: .78rem; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-faint); font-weight: 700; margin: 0 0 12px; }
+.refs ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 9px; }
+.refs li { font-size: .84rem; color: var(--ink-soft); line-height: 1.6; padding-left: 15px; text-indent: -15px; }
+.refs li b { color: var(--ink); font-weight: 600; }
+.refs__note { font-size: .8rem; color: var(--ink-faint); margin: 14px 0 0; line-height: 1.6; }
+.refs__note b { color: var(--ink-soft); }
+
+/* ============================================================
+   인터랙티브 연습 (플래시카드 · 퀴즈 · 오디오 · 진도)
+   ============================================================ */
+.practice { margin: 22px 0 8px; }
+
+/* 오디오 버튼 */
+.audio-btn { display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; border-radius: 50%; cursor: pointer; border: 1px solid var(--line); background: #fff; color: var(--blue); font-size: .8rem; line-height: 1; padding: 0; transition: background .15s, border-color .15s, transform .1s, color .15s; vertical-align: middle; }
+.audio-btn:hover { background: #f4f9ff; border-color: var(--blue); }
+.audio-btn:active { transform: scale(.94); }
+.audio-btn.is-playing { background: var(--blue); color: #fff; border-color: var(--blue); }
+
+/* 플래시카드 */
+.flash { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); padding: 22px; text-align: center; }
+.flash__count { font-size: .82rem; color: var(--ink-faint); margin: 0 0 12px; letter-spacing: .04em; }
+.flash__card { min-height: 176px; border: 1px solid var(--line); border-radius: 14px; background: var(--surface-2); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; padding: 18px; cursor: pointer; user-select: none; transition: border-color .15s, box-shadow .15s; }
+.flash__card:hover { border-color: #d9c6ff; box-shadow: var(--shadow); }
+.flash__letter { font-family: var(--greek); font-size: 3.4rem; line-height: 1; color: var(--greek-ink); }
+.flash__hint { font-size: .82rem; color: var(--ink-faint); }
+.flash__back { display: none; }
+.flash.is-flipped .flash__back { display: block; }
+.flash.is-flipped .flash__hint { display: none; }
+.flash__name { font-family: var(--sans); font-weight: 700; font-size: 1.2rem; color: var(--ink); }
+.flash__ipa { color: var(--ink-soft); font-size: .95rem; }
+.flash__kr { color: var(--violet); font-weight: 700; font-size: 1.05rem; }
+.flash__note { color: var(--ink-faint); font-size: .82rem; max-width: 320px; margin: 4px auto 0; }
+.flash__controls { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin-top: 16px; }
+.mini-btn { font-family: inherit; font-size: .88rem; font-weight: 600; cursor: pointer; padding: 8px 14px; border-radius: 999px; border: 1px solid var(--line); background: #fff; color: var(--ink-soft); transition: background .15s, border-color .15s, color .15s; }
+.mini-btn:hover { border-color: var(--blue); color: var(--blue); background: #f4f9ff; }
+.mini-btn--know { border-color: #bcd6b0; color: #4a6b39; }
+.mini-btn--again { border-color: var(--line); color: var(--ink-soft); }
+.mini-btn--wide { flex: 1; min-width: 120px; }
+
+/* 퀴즈 */
+.quiz { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); padding: 22px; margin-top: 16px; }
+.quiz__head { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 12px; }
+.quiz__q { font-size: .84rem; color: var(--ink-faint); letter-spacing: .04em; }
+.quiz__score { font-size: .84rem; color: var(--violet); font-weight: 700; }
+.quiz__prompt { text-align: center; margin: 8px 0 18px; }
+.quiz__prompt .glyph { font-family: var(--greek); font-size: 3rem; color: var(--greek-ink); display: block; }
+.quiz__prompt .ask { font-size: .95rem; color: var(--ink-soft); margin-top: 6px; }
+.quiz__opts { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.quiz__opt { font-family: inherit; font-size: 1.05rem; cursor: pointer; padding: 14px 10px; border-radius: 12px; border: 1px solid var(--line); background: var(--surface-2); color: var(--ink); transition: background .12s, border-color .12s; }
+.quiz__opt:hover:not(:disabled) { border-color: #d9c6ff; background: var(--violet-wash); }
+.quiz__opt.correct { background: #e9f2e0; border-color: #9dc07f; color: #3b5a25; }
+.quiz__opt.wrong { background: #f6e6df; border-color: #e0a887; color: #8a4020; }
+.quiz__opt:disabled { cursor: default; }
+.quiz__done { text-align: center; }
+.quiz__done p { font-size: 1.05rem; margin: 6px 0 14px; }
+
+/* 진도 / 완료 */
+.progress-bar { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; background: var(--surface-2); border: 1px solid var(--line); border-radius: 14px; padding: 16px 20px; margin: 24px 0 8px; }
+.progress-bar__text { font-size: .92rem; color: var(--ink-soft); flex: 1; min-width: 180px; }
+.progress-bar__text b { color: var(--violet); }
+.badge-done { display: none; align-items: center; gap: 6px; font-size: .85rem; color: #4a6b39; background: #eaf3e1; border: 1px solid #bcd6b0; border-radius: 999px; padding: 5px 14px; }
+.is-complete .badge-done { display: inline-flex; }
+
+.toast { position: absolute; transform: translate(-50%, -130%); background: var(--ink); color: #fff; font-size: .76rem; padding: 5px 11px; border-radius: 8px; white-space: nowrap; pointer-events: none; opacity: 0; transition: opacity .18s; z-index: 50; }
+.toast.show { opacity: .96; }
+
+@media (max-width: 520px){
+  body { font-size: 16.5px; }
+  .hero { padding: 54px 0 40px; }
+  .quiz__opts { grid-template-columns: 1fr; }
+}
+
+
+/* 2026-07-17 가독성 오버라이드 — 강의 본문 전체 약 +1px, 키커 확대 (강의 페이지 한정) */
+.lesson p, .lesson li { font-size: 18px; }
+.lesson__kicker { font-size: .96rem; }
+.lesson__sub { font-size: 1.06rem; }
+.lesson__title { font-size: clamp(1.9rem, 4.8vw, 2.65rem); }
+.lesson h2 { font-size: 1.5rem; }
+.lesson h3 { font-size: 1.14rem; }
+.lesson .callout { font-size: 1.02rem; }
+.lesson table.gtbl { font-size: 1rem; }
+.lesson table.gtbl th { font-size: .88rem; }
+.lesson table.gtbl .letter { font-size: 1.38rem; }
+.lesson table.gtbl .ipa { font-size: .96rem; }

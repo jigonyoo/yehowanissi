@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>독서하는 헬라어 · 여호와 닛시</title>
+<meta name="description" content="신약을 헬라어 원문으로 읽는 길. 생김새(형태론)에서 문장의 결(통사론), 깊이 읽기(언어학)까지 — 한 걸음씩 스스로.">
+<link rel="canonical" href="https://yehowanissi.org/ko/reading-greek.html">
+<meta property="og:title" content="독서하는 헬라어 · 여호와 닛시">
+<meta property="og:description" content="신약을 헬라어 원문으로 읽는 길 — 한 걸음씩 스스로.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ko_KR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Gowun+Batang:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+<style>
+  :root{
+    --sans:'Pretendard',-apple-system,BlinkMacSystemFont,system-ui,'Apple SD Gothic Neo',sans-serif;
+    --script:'Nanum Brush Script',cursive;
+    --ink:#1d1d1f; --sub:#6e6e73; --faint:#86868b;
+    --line:#e6e6eb; --bg:#ffffff; --bg2:#f5f5f7;
+    --blue:#0071e3; --gold:#b0872f;
+    --maxw:820px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{font-family:var(--sans);color:var(--ink);background:var(--bg);
+    -webkit-font-smoothing:antialiased;line-height:1.5;letter-spacing:-.015em}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
+  a{color:var(--blue);text-decoration:none}
+
+  header{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.7);
+    backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);
+    border-bottom:1px solid rgba(0,0,0,.05)}
+  .nav{max-width:1040px;margin:0 auto;padding:0 28px;height:54px;display:flex;align-items:center;justify-content:space-between}
+  .brand{font-family:var(--script);font-size:2rem;line-height:1;color:var(--ink);padding-top:6px}
+  .nav-links{display:flex;gap:32px;align-items:center}
+  .nav-links a{color:var(--ink);font-size:.9rem;font-weight:500;opacity:.85}
+  .nav-links a:hover{opacity:1}
+
+  .intro{text-align:center;padding:96px 28px 40px}
+  .intro .eyebrow{font-size:.85rem;font-weight:700;letter-spacing:.02em;color:var(--gold)}
+  .intro h1{font-size:clamp(2.4rem,6vw,4rem);font-weight:800;letter-spacing:-.04em;line-height:1.08;margin-top:12px}
+  .intro p{margin:18px auto 0;max-width:560px;color:var(--sub);font-size:1.12rem;font-weight:500}
+
+  .stages{max-width:var(--maxw);margin:20px auto 0;padding:0 28px 120px;display:flex;flex-direction:column;gap:14px}
+  .stage{display:flex;align-items:center;gap:22px;padding:26px 28px;border-radius:20px;border:1px solid var(--line);
+    background:#fff;text-decoration:none;color:var(--ink);transition:transform .16s,border-color .2s,box-shadow .2s}
+  .stage__no{flex:0 0 auto;width:64px;height:64px;border-radius:16px;display:flex;align-items:center;justify-content:center;
+    font-weight:800;font-size:.95rem;letter-spacing:-.01em}
+  .stage__body{flex:1;min-width:0;display:flex;flex-direction:column}
+  .stage__name{display:block;font-size:1.3rem;font-weight:800;letter-spacing:-.03em}
+  .stage__meta{display:block;margin-top:5px;color:var(--sub);font-size:.98rem}
+  .stage__cta{flex:0 0 auto;font-weight:700;color:var(--blue)}
+  .stage__badge{flex:0 0 auto;color:var(--faint);font-weight:600;font-size:.95rem}
+
+  .stage--live{border-color:transparent;background:radial-gradient(120% 140% at 0% 0%,#f3efff 0%,#faf8ff 60%,#fff 100%)}
+  .stage--live .stage__no{background:radial-gradient(120% 120% at 0% 0%,#5b5bd6,#9333ea);color:#fff}
+  .stage--live:hover{transform:translateY(-2px);border-color:#e3d9ff;box-shadow:0 12px 30px rgba(124,58,237,.14)}
+  .stage--soon{background:var(--bg2)}
+  .stage--soon .stage__no{background:#eceaf3;color:var(--gold)}
+
+  .back{max-width:var(--maxw);margin:0 auto;padding:0 28px 90px}
+  .back a{color:var(--faint);font-weight:600;font-size:.95rem}
+  .back a:hover{color:var(--ink)}
+
+  footer{border-top:1px solid var(--line);padding:50px 28px;text-align:center;color:var(--faint);font-size:.9rem}
+  footer .fmark{font-family:var(--script);font-size:1.7rem;color:var(--sub);display:block;margin-bottom:10px}
+
+  @media(max-width:560px){.stage{gap:16px;padding:22px 20px}.stage__no{width:52px;height:52px}}
+</style>
+</head>
+<body>
+<!-- 홈 링크: 로컬 미리보기용 파일명. 배포 시 index.html → /ko/ (또는 index.html) 로 교체 -->
+<header>
+  <div class="nav">
+    <a class="brand" href="index.html">여호와 닛시</a>
+    <nav class="nav-links"><a href="index.html#about">About</a><a href="index.html#course">Course</a></nav>
+  </div>
+</header>
+
+<main>
+  <section class="intro">
+    <p class="eyebrow">신약 원어 · 헬라어</p>
+    <h1>독서하는 헬라어</h1>
+    <p>신약을 헬라어 원문으로 읽는 길. 생김새에서 문장의 결, 깊이 읽기까지 — 한 걸음씩 스스로.</p>
+  </section>
+
+  <section class="stages">
+    <a class="stage stage--live" href="hellenike-morphology.html">
+      <span class="stage__no">기초</span>
+      <span class="stage__body">
+        <span class="stage__name">생김새 — 형태론</span>
+        <span class="stage__meta">알파벳 스물넉 자의 모양과 소리부터.</span>
+      </span>
+      <span class="stage__cta">시작하기 →</span>
+    </a>
+
+    <div class="stage stage--soon">
+      <span class="stage__no">활용</span>
+      <span class="stage__body">
+        <span class="stage__name">문장의 결 — 통사론</span>
+        <span class="stage__meta">형태를 익힌 뒤 문장을 읽습니다.</span>
+      </span>
+      <span class="stage__badge">준비 중</span>
+    </div>
+
+    <div class="stage stage--soon">
+      <span class="stage__no">심화</span>
+      <span class="stage__body">
+        <span class="stage__name">깊이 읽기 — 언어학</span>
+        <span class="stage__meta">본문을 더 천천히, 더 깊이.</span>
+      </span>
+      <span class="stage__badge">준비 중</span>
+    </div>
+  </section>
+
+  <div class="back"><a href="index.html">← 홈으로</a></div>
+</main>
+
+<footer>
+  <span class="fmark">여호와 닛시</span>
+  여호와는 나의 깃발 · 출애굽기 17:15<br>© 2026 여호와 닛시 · 무료 신학·고전어 교육 사역
+</footer>
+</body>
+</html>

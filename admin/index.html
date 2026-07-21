@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>관리자 · 여호와 닛시</title>
+<style>
+  :root{--sans:'Pretendard',-apple-system,system-ui,'Apple SD Gothic Neo',sans-serif;
+    --ink:#1d1d1f;--sub:#6e6e73;--faint:#86868b;--line:#e6e6eb;--bg2:#f5f5f7;--violet:#7c3aed;--gold:#b0872f}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:var(--sans);color:var(--ink);background:#fff;line-height:1.5;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:900px;margin:0 auto;padding:52px 28px 90px}
+  .top{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+  h1{font-size:1.9rem;font-weight:800;letter-spacing:-.03em}
+  .who{font-size:.86rem;color:var(--faint)}
+  .who a{color:var(--violet);font-weight:600}
+  .lead{color:var(--sub);margin-top:10px;font-size:1.05rem}
+  .grp{margin-top:36px;font-size:.78rem;font-weight:700;letter-spacing:.02em;color:var(--violet);text-transform:uppercase}
+  .cards{margin-top:14px;display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+  @media(max-width:640px){.cards{grid-template-columns:1fr}}
+  .card{display:block;border:1px solid var(--line);border-radius:16px;padding:20px 22px;text-decoration:none;color:inherit;transition:border-color .15s,transform .15s}
+  .card:hover{border-color:var(--ink);transform:translateY(-2px)}
+  .card.dim{opacity:.5}
+  .card .t{font-size:1.15rem;font-weight:700}
+  .card .d{font-size:.9rem;color:var(--sub);margin-top:6px}
+  .card .m{font-size:.76rem;color:var(--faint);margin-top:10px;font-family:ui-monospace,monospace}
+  .badge{display:inline-block;font-size:.72rem;background:var(--bg2);color:var(--faint);border-radius:6px;padding:2px 8px;margin-top:10px}
+  /* 강의 목록 */
+  #lessonWrap{margin-top:14px}
+  #lessonStatus{color:var(--faint);font-size:.9rem}
+  details.u{border:1px solid var(--line);border-radius:12px;margin-bottom:8px;overflow:hidden;background:#fff}
+  details.u>summary{cursor:pointer;list-style:none;padding:13px 16px;font-weight:700;font-size:.98rem;display:flex;align-items:center;gap:8px}
+  details.u>summary::-webkit-details-marker{display:none}
+  details.u>summary::before{content:'▸';color:var(--violet);font-size:.8rem}
+  details.u[open]>summary::before{content:'▾'}
+  details.u>summary .cnt{margin-left:auto;font-weight:500;font-size:.78rem;color:var(--faint)}
+  .llist{padding:2px 10px 10px}
+  a.ll{display:flex;align-items:center;gap:8px;padding:8px 12px;border-radius:8px;text-decoration:none;color:var(--ink);font-size:.92rem}
+  a.ll:hover{background:var(--bg2)}
+  a.ll .ic{color:var(--violet);font-size:.8rem}
+  a.ll .lp{color:var(--faint);font-size:.74rem;margin-left:auto;font-family:ui-monospace,monospace}
+  .note{margin-top:36px;background:var(--bg2);border-radius:14px;padding:16px 18px;font-size:.88rem;color:var(--sub)}
+  .note b{color:var(--ink)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <div>
+      <h1>🔧 관리자</h1>
+      <p class="lead">로그인된 관리자만 페이지 내용을 수정할 수 있습니다.</p>
+    </div>
+    <div class="who">보안: Cloudflare 로그인 · <a href="/cdn-cgi/access/logout">로그아웃</a></div>
+  </div>
+
+  <div class="grp">홈</div>
+  <div class="cards">
+    <a class="card" href="editor.html?page=/ko/index.html">
+      <div class="t">홈 (첫 화면)</div>
+      <div class="d">히어로·배너·코스 카드·About·구독·푸터의 문구를 수정합니다.</div>
+      <div class="m">/ko/index.html</div>
+    </a>
+  </div>
+
+  <div class="grp">강의 편집 · 독서하는 헬라어(형태론)</div>
+  <div id="lessonWrap"><div id="lessonStatus">강의 목록을 불러오는 중…</div></div>
+
+  <div class="grp">곧 추가 예정</div>
+  <div class="cards">
+    <a class="card" href="editor.html?page=/ko/reading-greek.html">
+      <div class="t">기초(헬라어 안내)</div>
+      <div class="d">reading-greek 페이지. (구조가 달라 실험적)</div>
+      <span class="badge">실험적</span>
+    </a>
+    <a class="card" href="editor.html?page=/ko/hellenike-morphology.html">
+      <div class="t">형태론 목록</div>
+      <div class="d">33유닛 강의 목록 페이지. (구조가 달라 실험적)</div>
+      <span class="badge">실험적</span>
+    </a>
+  </div>
+
+  <div class="note">
+    <b>사용 방법.</b> 페이지를 골라 슬롯별로 글자를 고치고 → <b>미리보기</b>로 확인 → <b>내보내기</b>로 파일을 받은 뒤,
+    받은 파일을 배포하면 반영됩니다. 강의는 <b>산문</b>(제목·문단·소제목·콜아웃·예문 설명)만 편집 대상이고,
+    표·플래시카드·그리스어 예문 원문·서지는 안전을 위해 제외됩니다.
+  </div>
+</div>
+
+<script>
+(function(){
+  var wrap = document.getElementById('lessonWrap');
+  var status = document.getElementById('lessonStatus');
+  fetch('/ko/hellenike-morphology.html', {cache:'no-store'})
+    .then(function(r){ if(!r.ok) throw new Error('HTTP '+r.status); return r.text(); })
+    .then(function(html){
+      var d = new DOMParser().parseFromString(html, 'text/html');
+      var units = Array.prototype.slice.call(d.querySelectorAll('details.unit'));
+      if(!units.length){ status.textContent = '유닛을 찾지 못했습니다.'; return; }
+      wrap.innerHTML = '';
+      var total = 0;
+      units.forEach(function(u){
+        var head = u.querySelector('.unit__head');
+        var name = head ? head.textContent.replace(/\s+/g,' ').trim() : '유닛';
+        var links = Array.prototype.slice.call(u.querySelectorAll('a.lesson, a.paradigm-link'));
+        if(!links.length) return;
+        var det = document.createElement('details'); det.className='u';
+        var sm = document.createElement('summary');
+        sm.innerHTML = '<span>'+name+'</span><span class="cnt">'+links.length+'강</span>';
+        det.appendChild(sm);
+        var list = document.createElement('div'); list.className='llist';
+        links.forEach(function(a){
+          var href = a.getAttribute('href') || '';
+          if(href.indexOf('lessons/')!==0) return;
+          var page = '/ko/' + href;
+          var t = a.textContent.replace(/\s+/g,' ').trim() || href;
+          var ea = document.createElement('a'); ea.className='ll';
+          ea.href = 'editor.html?page=' + encodeURIComponent(page);
+          ea.innerHTML = '<span class="ic">✎</span><span>'+t+'</span><span class="lp">'+href.replace('lessons/hellenike-','').replace('.html','')+'</span>';
+          list.appendChild(ea); total++;
+        });
+        det.appendChild(list);
+        wrap.appendChild(det);
+      });
+      var hdr = document.createElement('div');
+      hdr.style.cssText='color:var(--faint);font-size:.82rem;margin:0 0 10px';
+      hdr.textContent = units.length + '개 유닛 · ' + total + '강 — 유닛을 펼쳐 편집할 강을 고르세요.';
+      wrap.insertBefore(hdr, wrap.firstChild);
+    })
+    .catch(function(e){ status.textContent = '강의 목록을 불러오지 못했습니다: ' + e.message + ' (배포 후 /admin에서 정상 작동합니다.)'; });
+})();
+</script>
+</body>
+</html>
