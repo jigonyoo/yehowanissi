@@ -83,6 +83,11 @@
   <span class="sep"></span>
   <button class="tb" data-cmd="undo" title="실행취소">↶</button>
   <button class="tb" data-cmd="redo" title="다시">↷</button>
+  <span class="sep"></span>
+  <span class="tlabel">칸(문단)</span>
+  <button class="tb" id="boxAdd" title="커서가 있는 칸 아래에 빈 칸(문단)을 추가">＋ 칸 추가</button>
+  <button class="tb" id="boxDel" title="커서가 있는 칸을 삭제(표·연습·콜아웃은 보호)">칸 삭제</button>
+  <button class="tb" id="boxClean" title="본문의 빈 칸(빈 상자)을 한 번에 모두 정리">🧹 빈 칸 정리</button>
 </div>
 <div class="canvas">
   <div class="hint" id="hint">편집할 곳(보라 점선)을 클릭해 고치세요 · 그리스어 글자는 실수로 지우지 않게 주의</div>
@@ -179,9 +184,62 @@
     else if(t.dataset.size){ exec('fontSize',t.dataset.size,true); }
     else if(t.dataset.pxstep){ var cur=selectionPx()||parseInt($('pxSize').value,10)||17; applyPx(clampPx(cur+parseInt(t.dataset.pxstep,10))); }
     else if(t.id==='pxApply'){ var v=parseInt($('pxSize').value,10); if(v) applyPx(clampPx(v)); }
+    else if(t.id==='boxAdd'){ blockAdd(); }
+    else if(t.id==='boxDel'){ blockDel(); }
+    else if(t.id==='boxClean'){ boxClean(); }
     else if(t.dataset.align){ exec(t.dataset.align,null,true); }
     else if(t.dataset.color==='reset'){ exec('foreColor','#1d1d1f',true); }
   });
+
+  // 칸(문단·상자) 관리 — 빈 상자 추가/삭제/일괄정리
+  function ynArticle(){ var idoc=iframe().contentDocument; if(!idoc) return null; return idoc.querySelector('article.lesson')||idoc.body; }
+  function curBlock(){
+    var idoc=iframe().contentDocument, w=iframe().contentWindow; if(!idoc||!w) return null;
+    var s=w.getSelection(); if(!s||!s.rangeCount) return null;
+    var n=s.getRangeAt(0).startContainer; if(n && n.nodeType===3) n=n.parentNode;
+    var art=ynArticle(); var BLK={P:1,DIV:1,LI:1,H1:1,H2:1,H3:1};
+    while(n && n!==art && n.nodeType===1){ if(BLK[n.tagName]) return n; n=n.parentNode; }
+    return null;
+  }
+  // 표·연습·콜아웃·읽기카드·네비 등 구조 요소는 절대 삭제하지 않는다
+  function isProtected(el){
+    if(!el || el.nodeType!==1) return true;
+    if(el.querySelector && el.querySelector('table,img,button,input,script,.practice,.readcard,[data-audio]')) return true;
+    var c=el.className||'';
+    return /\b(tbl-scroll|callout|practice|readcard|readrow|lesson-nav|progress-bar|refs|site-\w+)\b/.test(c);
+  }
+  function isEmptyBox(el){
+    if(isProtected(el)) return false;
+    if(el.querySelector && el.querySelector('p,div,ul,ol,table,img')) return false; // 다른 블록을 품은 컨테이너는 제외
+    var txt=(el.textContent||'').replace(/ /g,' ').trim();
+    return txt.length===0;
+  }
+  function blockAdd(){
+    var idoc=iframe().contentDocument, w=iframe().contentWindow; if(!idoc) return;
+    var art=ynArticle(), b=curBlock();
+    var p=idoc.createElement('p'); p.innerHTML='<br>';
+    p.setAttribute('data-yn-edit','1'); p.setAttribute('contenteditable','true'); p.setAttribute('spellcheck','false');
+    if(b && b.parentNode && !/^H[123]$/.test(b.tagName)) b.parentNode.insertBefore(p, b.nextSibling);
+    else if(b && b.parentNode) b.parentNode.insertBefore(p, b.nextSibling);
+    else art.appendChild(p);
+    try{ var r=idoc.createRange(); r.selectNodeContents(p); r.collapse(true); var s=w.getSelection(); s.removeAllRanges(); s.addRange(r); }catch(e){}
+    w.focus(); setStatus('빈 칸을 추가했습니다 — 여기에 내용을 입력하세요');
+  }
+  function blockDel(){
+    var b=curBlock();
+    if(!b){ setStatus('삭제할 칸 안을 먼저 클릭해 커서를 놓으세요'); return; }
+    if(isProtected(b) || (b.querySelector && b.querySelector('p,div,ul,ol,table,img'))){ setStatus('표·연습·콜아웃 등 구조 요소는 삭제할 수 없습니다'); return; }
+    var art=ynArticle(); if(art && art.children.length<=1){ setStatus('마지막 칸은 삭제할 수 없습니다'); return; }
+    b.parentNode.removeChild(b); iframe().contentWindow.focus(); setStatus('칸을 삭제했습니다');
+  }
+  function boxClean(){
+    var art=ynArticle(); if(!art) return;
+    var all=Array.prototype.slice.call(art.querySelectorAll('p,div'));
+    var removed=0;
+    all.forEach(function(el){ if(el.parentNode && isEmptyBox(el)){ el.parentNode.removeChild(el); removed++; } });
+    iframe().contentWindow.focus();
+    setStatus(removed ? ('빈 칸 '+removed+'개를 정리했습니다 · 저장을 눌러 반영하세요') : '지울 빈 칸이 없습니다');
+  }
   $('fc').addEventListener('input',function(){ exec('foreColor',$('fc').value,true); });
 
   // px 글자 크기 — 선택 영역을 <span style="font-size:Npx">로 감싼다(execCommand는 1~7만 지원해 직접 구현)
