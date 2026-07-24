@@ -60,13 +60,7 @@
   <button class="tb i" data-cmd="italic" title="기울임">I</button>
   <button class="tb u" data-cmd="underline" title="밑줄">U</button>
   <span class="sep"></span>
-  <span class="tlabel">글자 크기</span>
-  <button class="tb" data-size="2">작게</button>
-  <button class="tb" data-size="3">보통</button>
-  <button class="tb" data-size="5">크게</button>
-  <button class="tb" data-size="6">더 크게</button>
-  <span class="sep"></span>
-  <span class="tlabel">px</span>
+  <span class="tlabel">글자 크기(px)</span>
   <button class="tb step" data-pxstep="-1" title="1px 작게">−</button>
   <input type="number" id="pxSize" min="8" max="200" step="1" value="17" title="글자 크기(px) — 글자를 선택한 뒤 값을 넣고 Enter 또는 「적용」" spellcheck="false">
   <button class="tb step" data-pxstep="1" title="1px 크게">＋</button>
@@ -208,6 +202,39 @@
     });
   }
 
+  // 산문의 맨 그리스어를 .grk(사이트 그리스어 폰트)로 감싼다 — 표(.letter)·IPA·플래시카드 JSON·기존 .grk·읽기카드는 건드리지 않음
+  function wrapGreek(art){
+    if(!art) return;
+    var GREEK=/[Ͱ-Ͽἀ-῿]/;
+    var RUN=/[Ͱ-Ͽἀ-῿](?:[Ͱ-Ͽἀ-῿\s·,]*[Ͱ-Ͽἀ-῿])?/g;
+    var SKIPTAG={SCRIPT:1,STYLE:1};
+    var SKIPCLASS=/(^|\s)(grk|letter|ipa|word|glyph|rom|num)(\s|$)/;
+    var doc=art.ownerDocument;
+    var walker=doc.createTreeWalker(art, NodeFilter.SHOW_TEXT, null);
+    var targets=[], node;
+    while(node=walker.nextNode()){
+      if(!GREEK.test(node.nodeValue)) continue;
+      var skip=false, p=node.parentNode;
+      while(p && p!==art.parentNode){
+        if(SKIPTAG[p.tagName]){ skip=true; break; }
+        if(p.className && SKIPCLASS.test(' '+p.className+' ')){ skip=true; break; }
+        p=p.parentNode;
+      }
+      if(!skip) targets.push(node);
+    }
+    targets.forEach(function(tn){
+      var text=tn.nodeValue; if(!GREEK.test(text)) return;
+      var frag=doc.createDocumentFragment(), last=0, m, any=false; RUN.lastIndex=0;
+      while(m=RUN.exec(text)){
+        if(m.index>last) frag.appendChild(doc.createTextNode(text.slice(last,m.index)));
+        var sp=doc.createElement('span'); sp.className='grk'; sp.textContent=m[0];
+        frag.appendChild(sp); any=true;
+        last=m.index+m[0].length;
+      }
+      if(any){ if(last<text.length) frag.appendChild(doc.createTextNode(text.slice(last))); tn.parentNode.replaceChild(frag, tn); }
+    });
+  }
+
   function exportHtml(){
     var idoc=iframe().contentDocument;
     var clone=idoc.documentElement.cloneNode(true);
@@ -215,7 +242,7 @@
     var e=clone.querySelector('#__edit'); if(e) e.remove();
     function strip(attr){ Array.prototype.forEach.call(clone.querySelectorAll('['+attr+']'),function(x){ x.removeAttribute(attr); }); }
     strip('contenteditable'); strip('data-yn-edit'); strip('spellcheck');
-    var artc=clone.querySelector('article.lesson'); if(artc) cleanArticleEl(artc); // 저장·내보내기 시 자동 청소
+    var artc=clone.querySelector('article.lesson'); if(artc){ cleanArticleEl(artc); wrapGreek(artc); } // 저장·내보내기 시 자동 청소 + 그리스어 폰트 적용
     return '<!DOCTYPE html>\n'+clone.outerHTML+'\n';
   }
   function download(){
