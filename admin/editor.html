@@ -87,7 +87,7 @@
   <span class="tlabel">칸(문단)</span>
   <button class="tb" id="boxAdd" title="커서가 있는 칸 아래에 빈 칸(문단)을 추가">＋ 칸 추가</button>
   <button class="tb" id="boxDel" title="커서가 있는 칸을 삭제(표·연습·콜아웃은 보호)">칸 삭제</button>
-  <button class="tb" id="boxClean" title="본문의 빈 칸(빈 상자)을 한 번에 모두 정리">🧹 빈 칸 정리</button>
+  <button class="tb" id="boxClean" title="빈 칸·중복 문단·붙여넣기 찌꺼기를 한 번에 정리(저장 시 자동으로도 실행됨)">🧹 정리</button>
 </div>
 <div class="canvas">
   <div class="hint" id="hint">편집할 곳(보라 점선)을 클릭해 고치세요 · 그리스어 글자는 실수로 지우지 않게 주의</div>
@@ -143,6 +143,15 @@
     idoc.addEventListener('selectionchange',function(){ captureSel(); reflectPx(); });
     idoc.addEventListener('mouseup',function(){ captureSel(); reflectPx(); });
     idoc.addEventListener('keyup',function(){ captureSel(); reflectPx(); });
+    // 붙여넣기 자동 정리 — Gemini·문서에서 붙일 때 서식을 벗겨 깨끗한 글자만 넣는다(찌꺼기 원천 차단)
+    idoc.addEventListener('paste',function(e){
+      try{
+        var cd=e.clipboardData||window.clipboardData; if(!cd) return;
+        var text=cd.getData('text/plain'); if(text==null) return;
+        e.preventDefault();
+        idoc.execCommand('insertText',false,text);
+      }catch(err){}
+    });
     try{ idoc.execCommand('styleWithCSS',false,true); }catch(e){}
     $('btnExport').disabled=false; $('btnSave').disabled=false;
     setStatus('불러왔습니다 · 편집 가능 '+n+'곳');
@@ -155,6 +164,50 @@
       .then(function(t){ loadHtml(t); }).catch(function(e){ setStatus('자동 불러오기 실패 — 「파일」 버튼으로 여세요.'); });
   }
 
+  // 본문 자동 청소 — 내용·글자크기(px)·그리스어·구조는 보존, 빈칸/중복/붙여넣기 찌꺼기만 제거
+  function cleanArticleEl(art){
+    if(!art) return;
+    ['data-path-to-node','data-index-in-node'].forEach(function(a){
+      Array.prototype.slice.call(art.querySelectorAll('['+a+']')).forEach(function(e){ e.removeAttribute(a); });
+    });
+    var DEF=['rgb(0,0,0)','rgb(29,29,31)','#1d1d1f','#000','#000000','black'];
+    Array.prototype.slice.call(art.querySelectorAll('[style]')).forEach(function(e){
+      var st=e.style;
+      ['font-family','background-color','background','background-image','letter-spacing','line-height','margin','margin-top','margin-bottom','margin-left','margin-right','white-space','font-variant-ligatures','orphans','widows'].forEach(function(p){ st.removeProperty(p); });
+      if(st.color){ var c=st.color.replace(/\s+/g,'').toLowerCase(); if(DEF.map(function(x){return x.replace(/\s+/g,'').toLowerCase();}).indexOf(c)>=0) st.removeProperty('color'); }
+      var s=e.getAttribute('style'); if(!s || !s.trim()) e.removeAttribute('style');
+    });
+    for(var pass=0; pass<8; pass++){
+      var bare=art.querySelectorAll('span:not([class]):not([style]):not([data-audio]):not([id])');
+      if(!bare.length) break;
+      Array.prototype.slice.call(bare).forEach(function(sp){
+        var pa=sp.parentNode; if(!pa) return;
+        while(sp.firstChild) pa.insertBefore(sp.firstChild, sp);
+        pa.removeChild(sp);
+      });
+    }
+    try{ art.normalize(); }catch(e){}
+    var norm=function(s){ return (s||'').replace(/[\s ]/g,''); };
+    var STRUCT=function(el){ return el.classList && /tbl-scroll|callout|practice|readcard|readrow|lesson-nav|progress-bar|refs/.test(el.className); };
+    var seen={};
+    Array.prototype.slice.call(art.children).forEach(function(el){
+      var tag=el.tagName;
+      if(tag==='P'){
+        var t=norm(el.textContent);
+        if(t==='' && !el.querySelector('img,table,button,input')){ el.remove(); return; }
+        if(t) seen[t]=1; return;
+      }
+      if(tag==='DIV'){
+        if(STRUCT(el)) return;
+        if(el.querySelector && el.querySelector('table,img,button,input,[data-audio]')) return;
+        var t2=norm(el.textContent);
+        if(t2===''){ el.remove(); return; }
+        if(seen[t2]){ el.remove(); return; }
+        seen[t2]=1; return;
+      }
+    });
+  }
+
   function exportHtml(){
     var idoc=iframe().contentDocument;
     var clone=idoc.documentElement.cloneNode(true);
@@ -162,6 +215,7 @@
     var e=clone.querySelector('#__edit'); if(e) e.remove();
     function strip(attr){ Array.prototype.forEach.call(clone.querySelectorAll('['+attr+']'),function(x){ x.removeAttribute(attr); }); }
     strip('contenteditable'); strip('data-yn-edit'); strip('spellcheck');
+    var artc=clone.querySelector('article.lesson'); if(artc) cleanArticleEl(artc); // 저장·내보내기 시 자동 청소
     return '<!DOCTYPE html>\n'+clone.outerHTML+'\n';
   }
   function download(){
@@ -234,11 +288,11 @@
   }
   function boxClean(){
     var art=ynArticle(); if(!art) return;
-    var all=Array.prototype.slice.call(art.querySelectorAll('p,div'));
-    var removed=0;
-    all.forEach(function(el){ if(el.parentNode && isEmptyBox(el)){ el.parentNode.removeChild(el); removed++; } });
+    var before=art.querySelectorAll('*').length;
+    cleanArticleEl(art);
+    var delta=before-art.querySelectorAll('*').length;
     iframe().contentWindow.focus();
-    setStatus(removed ? ('빈 칸 '+removed+'개를 정리했습니다 · 저장을 눌러 반영하세요') : '지울 빈 칸이 없습니다');
+    setStatus(delta>0 ? ('정리 완료 — 빈 칸·중복·찌꺼기 '+delta+'곳 제거 · 저장하세요') : '이미 깨끗합니다 (저장 시에도 자동 정리됩니다)');
   }
   $('fc').addEventListener('input',function(){ exec('foreColor',$('fc').value,true); });
 
