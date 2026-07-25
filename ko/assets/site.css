@@ -294,6 +294,7 @@ table.gtbl--narrow { min-width: 320px; }
    표(.letter)·플래시카드·읽기카드·퀴즈는 각자 고유 크기를 그대로 유지한다. */
 .lesson p .grk,
 .lesson li .grk,
+.lesson td .grk,
 .lesson .callout .grk { font-size: 20px; }
 .lesson__kicker { font-size: .96rem; }
 .lesson__sub { font-size: 1.06rem; }
