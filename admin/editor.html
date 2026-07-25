@@ -75,6 +75,12 @@
   <button class="tb" data-align="justifyCenter" title="가운데">↔</button>
   <button class="tb" data-align="justifyRight" title="오른쪽">➡</button>
   <span class="sep"></span>
+  <span class="tlabel">폰트</span>
+  <button class="tb" data-font="grk" title="선택한 글자를 SBL 그리스어 폰트로 지정">SBL</button>
+  <button class="tb" data-font="sans" title="선택한 글자를 기본 폰트로 되돌리기">기본</button>
+  <span class="sep"></span>
+  <button class="tb" data-cmd="insertUnorderedList" title="글머리 점(•) 목록 — 다시 누르면 점이 사라집니다">• 목록</button>
+  <span class="sep"></span>
   <button class="tb" data-cmd="undo" title="실행취소">↶</button>
   <button class="tb" data-cmd="redo" title="다시">↷</button>
   <span class="sep"></span>
@@ -283,6 +289,7 @@
     else if(t.id==='boxClean'){ boxClean(); }
     else if(t.dataset.align){ exec(t.dataset.align,null,true); }
     else if(t.dataset.color==='reset'){ exec('foreColor','#1d1d1f',true); }
+    else if(t.dataset.font){ applyFont(t.dataset.font); }
   });
 
   // 칸(문단·상자) 관리 — 빈 상자 추가/삭제/일괄정리
@@ -380,6 +387,40 @@
     w.focus();
   }
   $('pxSize').addEventListener('keydown',function(e){ if(e.key==='Enter'){ e.preventDefault(); var v=parseInt($('pxSize').value,10); if(v) applyPx(clampPx(v)); } });
+
+  // 폰트 지정 — 선택 영역을 SBL(.grk) 또는 기본(--sans)으로 감싼다(px 크기와 같은 wrap 방식)
+  function applyFont(kind){
+    var w=selWin(), idoc=iframe().contentDocument; if(!w||!idoc) return;
+    var s=w.getSelection();
+    if((!s.rangeCount||s.isCollapsed) && savedRange){ s.removeAllRanges(); s.addRange(savedRange); s=w.getSelection(); }
+    if(!s.rangeCount || s.isCollapsed){ setStatus('폰트를 바꿀 글자를 먼저 드래그해 선택하세요'); return; }
+    try{ idoc.execCommand('styleWithCSS',false,false); idoc.execCommand('fontSize',false,'7'); }catch(e){}
+    var fonts=Array.prototype.slice.call(idoc.querySelectorAll('font[size="7"]'));
+    var spans=[];
+    fonts.forEach(function(f){
+      var sp=idoc.createElement('span');
+      if(kind==='grk'){ sp.className='grk'; }
+      else { sp.style.fontFamily='var(--sans)'; sp.style.color='var(--ink)'; }
+      while(f.firstChild) sp.appendChild(f.firstChild);
+      f.parentNode.replaceChild(sp,f);
+      Array.prototype.slice.call(sp.querySelectorAll('*')).forEach(function(x){
+        if(kind==='grk'){
+          if(x.style && /--sans/.test(x.style.fontFamily||'')){ x.style.removeProperty('font-family'); x.style.removeProperty('color'); }
+        } else {
+          if(x.classList && x.classList.contains('grk')){ x.classList.remove('grk'); if(!x.className) x.removeAttribute('class'); }
+          if(x.style){ x.style.removeProperty('font-family'); }
+        }
+        if(x.tagName==='SPAN' && !x.getAttribute('style') && !x.getAttribute('class')){ var pa=x.parentNode; while(x.firstChild) pa.insertBefore(x.firstChild,x); pa.removeChild(x); }
+      });
+      spans.push(sp);
+    });
+    if(spans.length){
+      var r=idoc.createRange(); r.setStartBefore(spans[0]); r.setEndAfter(spans[spans.length-1]);
+      s.removeAllRanges(); s.addRange(r); savedRange=r.cloneRange();
+      setStatus(kind==='grk'?'SBL 그리스어 폰트 적용':'기본 폰트로 되돌림');
+    }
+    w.focus();
+  }
 
   $('pv').addEventListener('load',onLoaded);
   $('btnReload').addEventListener('click',function(){ if(confirm('편집 중인 내용을 버리고 다시 불러올까요?')) fetchTarget(); });
