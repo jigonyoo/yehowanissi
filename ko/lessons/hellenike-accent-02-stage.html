@@ -1,44 +1,18 @@
 <!DOCTYPE html>
-<html lang="ko">
-<head>
+<html lang="ko"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>강세가 움직이는 무대 · 독서하는 헬라어 — 강세(Lesson 2) · 여호와 닛시</title>
-<meta name="description" content="강세는 말음절·제2말음절·제3말음절 안에서만 움직이며, 말음절의 음장이 그 한계를 정합니다. 어말 αι·οι 예외 포함.">
-<meta property="og:title" content="강세가 움직이는 무대 · 독서하는 헬라어 — 강세(Lesson 2)">
-<meta property="og:description" content="강세는 말음절·제2말음절·제3말음절 안에서만 움직이며, 말음절의 음장이 그 한계를 정합니다. 어말 αι·οι 예외 포함.">
+<title>2과 모음과 이중모음 · 독서하는 헬라어 — 생김새(형태론) · 여호와 닛시</title>
+<meta name="description" content="헬라어 모음의 장·단과 양·질, 이중모음과 이오타 하기. Vox Graeca 발음 기준으로, 소리의 뼈대를 눈과 입에 익히는 두 번째 걸음.">
+<meta property="og:title" content="2과 모음과 이중모음 · 독서하는 헬라어 — 생김새(형태론)">
+<meta property="og:description" content="헬라어 모음의 장·단과 양·질, 이중모음과 이오타 하기. 소리의 뼈대를 익히는 두 번째 걸음.">
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ko_KR">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="../assets/site.css">
-<style>
-  /* 강세 유닛 전용 (페이지 스코프) */
-  details.rulecard{background:var(--accent-wash);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:10px;padding:0;margin:22px 0;overflow:hidden}
-  details.rulecard>summary{cursor:pointer;list-style:none;padding:14px 20px;font-weight:600;color:var(--accent-deep);font-size:.95rem}
-  details.rulecard>summary::-webkit-details-marker{display:none}
-  details.rulecard>summary::after{content:'▾';float:right;color:var(--accent);transition:transform .2s}
-  details.rulecard[open]>summary::after{transform:rotate(180deg)}
-  .rulecard__body{padding:2px 20px 16px}
-  ol.rule6{margin:0;padding:0;list-style:none}
-  ol.rule6>li{padding:10px 0;border-top:1px solid var(--line-soft);font-size:.92rem;color:var(--ink-soft)}
-  ol.rule6>li:first-child{border-top:none}
-  ol.rule6 .rn{display:inline-block;min-width:1.6em;font-weight:700;color:var(--accent-deep)}
-  ol.rule6 b{color:var(--accent-deep)}
-  .badge{display:inline-block;font-size:.72rem;font-weight:700;padding:2px 9px;border-radius:999px;vertical-align:middle;margin-right:8px;white-space:nowrap}
-  .badge--wrong{background:#f6e6df;color:#8a4020;border:1px solid #e0a887}
-  .badge--right{background:#eaf3e1;color:#3b5a25;border:1px solid #bcd6b0}
-  .exlist{display:grid;gap:12px;margin:16px 0}
-  .ex{border:1px solid var(--line);border-radius:10px;background:var(--surface);padding:14px 18px}
-  .ex .exhead{display:flex;align-items:center;gap:4px;flex-wrap:wrap;margin-bottom:4px}
-  .ex .exw{font-family:'EB Garamond',serif;font-size:1.5rem;color:var(--greek-ink)}
-  .ex .exr{color:var(--accent-deep);font-weight:600;font-size:.9rem;margin-left:4px}
-  .ex p{margin:4px 0 0;font-size:.92rem;color:var(--ink-soft)}
-  .syl{font-family:'EB Garamond',serif;font-size:1.15rem;color:var(--greek-ink);letter-spacing:.02em}
-  u.str{text-decoration-color:var(--accent);text-underline-offset:3px}
-</style>
 </head>
-<body data-lesson="accent02">
+<body data-lesson="morph02">
 
 <header class="site-head">
   <div class="site-head__row">
@@ -56,71 +30,217 @@
 <main class="wrap">
 
   <article class="lesson">
-    <p class="lesson__kicker">독서하는 헬라어 · 생김새(형태론) · Lesson 2 강세 · 2강</p>
-    <h1 class="lesson__title">강세가 움직이는 무대</h1>
-    <p class="lesson__sub">세 자리와, 그 자리를 정하는 음장.</p>
+    <p class="lesson__kicker">독서하는 헬라어 · 생김새(형태론) · Lesson 1 · 2강</p>
+    <h1 class="lesson__title">모음과 이중모음 — 소리의 뼈대</h1>
+    <p class="lesson__sub">길고 짧음, 그리고 두 글자로 된 하나의 소리.</p>
 
     <hr class="rule">
 
-    <p>
-      강세는 아무 데나 오지 않습니다. 마치 배우가 정해진 무대 위에서만 움직이듯, 강세도 <b>단어의 마지막 세 음절</b>
-      안에서만 움직입니다. 그리고 그 음절이 <b>긴지 짧은지(음장)</b>에 따라 설 수 있는 자리가 더 좁아집니다. 오늘은
-      규칙을 외우기 전에, 강세가 노니는 이 <b>무대</b>부터 눈에 익혀 보면 좋겠습니다 — 무대가 손에 잡히면, 다음 강의
-      규칙들이 한결 자연스럽게 다가옵니다.
-    </p>
+    <p>지난 강에서 스물네 글자의 생김새와 소리를 익히셨습니다. 한 글자씩 눈에 들어오기 시작하셨다면, 헬라어의 첫 큰 산을 이미 넘으신 것입니다.</p>
 
-    <h2><span class="num">①</span> 세 자리 — 말음절·제2말음절·제3말음절</h2>
-    <p>
-      <b>음절</b>은 모음을 중심으로 한 소리 단위입니다. 단어의 마지막 음절을 <strong>말음절(ultima)</strong>,
-      끝에서 둘째를 <strong>제2말음절(penult)</strong>, 끝에서 셋째를 <strong>제3말음절(antepenult)</strong>이라 부릅니다.
-    </p>
-    <div class="ex">
-      <div class="exhead"><span class="exw grk">λαμβάνομεν</span> <span class="exr">람바노멘</span></div>
-      <p class="syl">λαμ · βά · <b>νο</b> · μεν</p>
-      <p>말음절 <span class="grk">-μεν</span> · 제2말음절 <span class="grk">-νο-</span> · 제3말음절 <span class="grk">-βα-</span></p>
-    </div>
-    <p>
-      핵심은 <b>헬라어 강세가 이 세 자리 밖으로 나갈 수 없다</b>는 것. 그래서 강세를 배운다는 건 결국
-      “<b>말음절·제2말음절·제3말음절 사이에서의 이동</b>”을 이해하는 일입니다.
-    </p>
+    <p>오늘은 그 가운데 <b>모음</b>을 더욱 깊이 배워보려 합니다. 모음은 단어의 뼈대를 이루는 소리입니다. <span style="font-weight: bold;">자음</span>이 뼈에 붙는 <span style="font-weight: bold;">살</span>이라면, <span style="font-weight: bold;">모음</span>은 그 뼈를 세우고 단어가 숨 쉬게 하는 <span style="font-weight: bold;">골격</span>이라 할 수 있죠. 이 골격의 길이와 성질이 손과 입에 익으면, 헬라어는 성경의 저자가 살아 있는 호흡으로 우리에게 다가옵니다. 지금 내 곁에서 읽어 주는 목소리, 그 목소리를 귀로 들으며 살아 있는 말씀을 읽는 길이 열리는 것이죠.</p>
 
-    <h2><span class="num">②</span> 음장 — 장음절과 단음절</h2>
-    <p>
-      음절의 길이를 <strong>음장(quantity)</strong>이라 합니다. <b>장모음이나 이중모음</b>을 가진 음절은 <strong>장음절</strong>,
-      <b>단모음만</b> 가진 음절은 <strong>단음절</strong>입니다. 이 구분이 “강세가 얼마나 뒤로 물러날 수 있는지”를 정합니다.
-    </p>
-    <ul>
-      <li>말음절이 <b>장음절</b>이면 → 강세는 <b>제2말음절</b>까지만.</li>
-      <li>말음절이 <b>단음절</b>이면 → 강세는 <b>제3말음절</b>까지.</li>
-    </ul>
-    <div class="callout">
-      <b>꼭 기억할 예외.</b> 단어 <b>맨 끝</b>의 <span class="grk">αι</span>·<span class="grk">οι</span>는 이중모음이지만,
-      <b>강세와 관련해서는 단음절로</b> 취급합니다. (단, 뒤에 자음이 더 붙으면 보통의 장음절로 봅니다.)
-    </div>
-    <div class="exlist">
-      <div class="ex"><div class="exhead"><span class="exw grk">ἀνθρώπους</span></div>
-        <p class="syl">ἀν · θρώ · <b>πους</b></p><p>말음절 <span class="grk">-πους</span>는 <span class="grk">ου</span>(이중모음)라 <b>장음절</b>.</p></div>
-      <div class="ex"><div class="exhead"><span class="exw grk">ἄνθρωποι</span></div>
-        <p class="syl">ἄν · θρω · <b>ποι</b></p><p>말음절 <span class="grk">-ποι</span>의 <span class="grk">οι</span>는 <b>어말이라 단음절로</b> 취급(예외).</p></div>
-      <div class="ex"><div class="exhead"><span class="exw grk">ἀνθρώποις</span></div>
-        <p class="syl">ἀν · θρώ · <b>ποις</b></p><p><span class="grk">οι</span> 뒤에 자음 <span class="grk">ς</span>가 붙어 <b>장음절</b>로 취급.</p></div>
-    </div>
+    <p>오늘 함께 다룰 <span style="font-weight: bold;">핵심</span>은 둘입니다. 하나는 모음의 <b>길고 짧음(장·단)</b>을 가려내는 것. 다른 하나는 두 글자가 모여 하나의 소리를 내는 <b>이중모음</b>을 한 덩어리로 알아보는 것.</p>
+
+    <p>이 감각이 먼저 자리를 잡아야 합니다. 그래야 훗날 <span style="font-weight: bold;">단어의 형태</span>가 변할 때 — 이 강의가 ‘생김새(형태론)’라는 이름을 단 이유가 여기 있습니다 — ‘왜 하필 이 모음으로 바뀌는가’라는 물음 앞에, 훗날 배우게 될 원리들이 낯설지 않게 다가올 것입니다.&nbsp;</p><p>서두르지 않으셔도 괜찮습니다. 소리를 천천히 입으로 발음해 보며, 가벼운 마음으로 함께 나아가면 좋겠습니다.</p>
 
     <div class="callout">
-      <b>오늘 기억할 한 문장.</b> 헬라어 강세는 언제나 <b>말음절·제2말음절·제3말음절</b>이라는 세 자리 안에서만 움직이며,
-      그중 <b>말음절의 길이(음장)</b>가 강세가 올 수 있는 한계를 정해 줍니다.
+      <b>발음 기준.</b> 여호와 닛시는 W. 시드니 알렌의 <i>Vox Graeca</i>가 복원한
+      <b>고전 아티카(기원전 5~4세기) 발음</b>을 교육용 기준음으로 삼습니다. 아래
+      <b>한글 표기는 교육용 근사값</b>이며 최종 기준은 <b>IPA 음가</b>입니다. IPA 뒤의
+      <b>ː</b>는 <b>장모음</b>(길게)을 뜻합니다. (숨표와 악센트는 <b>3강</b>에서 다루니, 오늘은
+      모음의 길이와 이중모음 소리에만 먼저 집중해 보면 좋겠습니다.)
     </div>
 
-    <div class="callout" style="background:var(--surface-2);border-left-color:var(--accent)">
-      <b>다음 강 예고 — 3강: 강세 일반 규칙 6가지.</b> 이 무대 위에서 “무엇이 가능하고 무엇이 안 되는지”를 가르는
-      여섯 가지 울타리를 배웁니다.
+    <h2><span class="num">①</span> 모음 일곱 자 — 장모음과 단모음</h2>
+    <p>헬라어 모음은 모두 일곱 자입니다 — <span class="grk"><span style="font-size: 20px;">α ε η ι ο υ ω</span></span>.</p>
+
+    <p>이 일곱 모음 가운데 길이가 아예 정해져 있는 ‘짝꿍’이 있습니다. <span class="grk"><span style="font-size: 20px;">ε</span></span>는 언제나 짧게 나는 소리이고, 그 긴 짝꿍이 <span class="grk"><span style="font-size: 20px;">η</span></span>입니다. <span class="grk"><span style="font-size: 20px;">ο</span></span> 또한 언제나 짧고, 그 긴 짝꿍은 <span class="grk"><span style="font-size: 20px;">ω</span></span>입니다. 짧은 소리와 긴 소리가 서로를 마주 보고 서 있는 셈이지요.</p>
+
+    <p>그렇다면 나머지 셋, <span class="grk"><span style="font-size: 20px;">α·ι·υ</span></span>는 어떨까요? 이 셋은 정해진 짝이 없습니다. 같은 글자가 단어에 따라 짧게도, 길게도 납니다. 지금은 ‘<span class="grk"><span style="font-size: 20px;">ε</span></span>와 <span class="grk"><span style="font-size: 20px;">ο</span></span>만 고정된 짝을 가진다’ — 이 하나만 기억해놓으셔도 충분합니다.</p>
+
+    <div class="tbl-scroll">
+      <table class="gtbl gtbl--narrow">
+        <thead><tr><th>짧게(단모음)</th><th>길게(장모음)</th><th>메모</th></tr></thead>
+        <tbody>
+          <tr><td class="letter">α</td><td class="letter">α</td><td>같은 글자, 길이만 다름</td></tr>
+          <tr><td class="letter">ε</td><td class="letter">η</td><td>짧은 e / 긴 e</td></tr>
+          <tr><td class="letter">ο</td><td class="letter">ω</td><td>짧은 o / 긴 o</td></tr>
+          <tr><td class="letter">ι</td><td class="letter">ι</td><td>같은 글자, 길이만 다름</td></tr>
+          <tr><td class="letter">υ</td><td class="letter">υ</td><td>같은 글자, 길이만 다름</td></tr>
+        </tbody>
+      </table>
     </div>
 
-    <h3>플래시카드 · 스스로 점검</h3>
-    <div class="practice"><div id="flashcards"></div></div>
-<script id="lesson-cards" type="application/json">
-    [{"letter": "λαμβάνομεν", "name": "음절 나누기", "ipa": "", "kr": "람-바-노-멘", "note": "말음절 -μεν / 제3말음절 -βα-", "audio": ""}, {"letter": "ἀνθρώπους", "name": "말음절 음장", "ipa": "", "kr": "장음절", "note": "-πους의 ου(이중모음)", "audio": ""}, {"letter": "ἄνθρωποι", "name": "말음절 음장", "ipa": "", "kr": "단음절(예외)", "note": "어말 οι는 단음절 취급", "audio": ""}, {"letter": "ἀνθρώποις", "name": "말음절 음장", "ipa": "", "kr": "장음절(ς 뒤)", "note": "οι+자음ς → 장음절", "audio": ""}]
+    <p>표에서 보신 그대로입니다. <span class="grk"><span style="font-size: 20px;">ε</span> ↔ <span style="font-size: 20px;">η</span></span>는 ‘짧은 e / 긴 e’, <span class="grk"><span style="font-size: 20px;">ο</span> ↔ <span style="font-size: 20px;">ω</span></span>는 ‘짧은 o / 긴 o’로 서로 짝을 이룹니다.</p>
+
+    <p>여기서 한국어를 쓰는 우리에게 반가운 소식이 하나 있습니다. 헬라어는 긴 소리와 짧은 소리가 아예 글자 모양에서부터 갈라져 있습니다. <b>길이를 눈으로 볼 수 있는 언어</b>라는 뜻입니다.&nbsp;</p>
+
+    <p class="note">
+      혀의 위치를 기준으로 나눠 보면, <span class="grk">ι·υ</span>는 입을 좁혀 내는 <b>폐모음(close vowel, 닫힌 모음)</b>이고,
+      나머지는 입을 벌려 내는 <b>개모음(open vowel, 열린 모음)</b>입니다. 낯선 용어일 수 있는데, 말 그대로 입이 닫히느냐 열리느냐의 차이입니다.
+      이 구별은 이중모음과 모음 변화를 이해하는 데 밑바탕이 될 것입니다.</p>
+
+    <h2><span class="num">②</span> 양(quantity)과 질(quality) — 길이와 성질</h2>
+    <p>
+      모음을 조금 더 깊이 들여다보면, 두 가지 잣대로 나뉩니다. 하나는 <b>양(quantity)</b>, 곧 소리의 <b>길이</b>입니다.
+      다른 하나는 <b>질(quality)</b>, 곧 혀의 높낮이와 입이 열린 정도가 만들어내는&nbsp;<b>소리의 결</b>입니다.
+      ‘양’과 ‘질’이라는 말이 조금 딱딱하게 들리신다면, 그저 ‘길이’와 ‘결’로 바꿔 들으셔도 좋습니다.
+    </p>
+    <p>
+      <span class="grk"><span style="font-size: 20px;">ε</span><span style="font-size: 20px;">/</span><span style="font-size: 20px;">η</span></span>와 <span class="grk"><span style="font-size: 20px;">ο/ω</span></span>의 짝은 단순히 길이만 다른 것이 아닙니다. 긴 쪽이 입을 조금 더 벌려 내는
+      <b>열린 소리</b>라는 점이 다르고, 그 결과 소리의 결까지 함께 달라집니다.&nbsp;<span class="grk"><span style="font-size: 20px;">η</span></span>는 긴 열린 e여서 ‘애ː’에 가깝고,
+      <span class="grk"><span style="font-size: 20px;">ω</span></span>는 긴 열린 o여서 ‘오ː’에 가깝습니다.
+    </p>
+    <div class="tbl-scroll">
+      <table class="gtbl gtbl--narrow">
+        <thead><tr><th>문자</th><th>IPA</th><th>한글 근사</th><th>성질</th></tr></thead>
+        <tbody>
+          <tr><td class="letter">ε</td><td class="ipa">[e]</td><td>에</td><td>짧은 e</td></tr>
+          <tr><td class="letter">η</td><td class="ipa">[ɛː]</td><td>애ː</td><td>긴 <b>열린</b> e</td></tr>
+          <tr><td class="letter">ο</td><td class="ipa">[o]</td><td>오</td><td>짧은 o</td></tr>
+          <tr><td class="letter">ω</td><td class="ipa">[ɔː]</td><td>오ː</td><td>긴 <b>열린</b> o</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>
+      이 차이를 머리로 외우기보다 입으로 한번 내보시면, ‘소리가 이렇게 움직이니 글자도 이렇게 변하는구나’ 하는 감각이 생깁니다.
+      이 감각이 바로 다음 단계의 <b>모음 교체</b>(예: <span class="grk">α→η</span>, <span class="grk">ε→η/ει</span>, <span class="grk">ο→ω/ου</span>)를
+      한결 덜 낯설게 만들어 줍니다. 지금 이 교체를 외우실 필요는 없습니다. ‘소리에는 결이 있고, 그 결이 형태를 움직인다’ — 이 문장 하나면 충분합니다.
+    </p>
+
+    <h2><span class="num">③</span> 이중모음 — 두 글자, 하나의 소리</h2>
+    <p>
+      <b>이중모음(diphthong)</b>은 두 모음이 <b>한 음절</b> 안에서 하나의 소리처럼 나는 것을 말합니다.
+      규칙은 의외로 단순합니다. 두 번째 자리에 오는 글자는 <b>언제나 폐모음 <span class="grk">ι</span> 또는 <span class="grk">υ</span></b>이고,
+      첫 글자는 <span class="grk">υι</span> 하나를 빼면 모두 개모음입니다.
+    </p>
+    <p>
+      가장 중요한 것은 이 한 문장입니다 — <b>“두 글자지만, 소리는 한 덩어리.”</b>
+      글자를 하나씩 끊어 읽지 마시고, 한 소리 단위로 눈에 담아 두시면 좋겠습니다.
+    </p>
+    <div class="tbl-scroll">
+      <table class="gtbl gtbl--narrow">
+        <thead><tr><th>철자</th><th>IPA</th><th>한글 근사</th></tr></thead>
+        <tbody>
+          <tr><td class="letter">αι</td><td class="ipa">[ai]</td><td>아이</td></tr>
+          <tr><td class="letter">ει</td><td class="ipa">[eː]</td><td>에ː (초기 에이)</td></tr>
+          <tr><td class="letter">οι</td><td class="ipa">[oi]</td><td>오이</td></tr>
+          <tr><td class="letter">υι</td><td class="ipa">[yi]</td><td>위이</td></tr>
+          <tr><td class="letter">αυ</td><td class="ipa">[au]</td><td>아우</td></tr>
+          <tr><td class="letter">ευ</td><td class="ipa">[eu]</td><td>유(에우)</td></tr>
+          <tr><td class="letter">ου</td><td class="ipa">[oː]</td><td>오ː (후기 우ː)</td></tr>
+          <tr><td class="letter">ηυ</td><td class="ipa">[ɛːu]</td><td>에우 <span style="color:var(--ink-faint);font-size:.85em">(드묾)</span></td></tr>
+          <tr><td class="letter">ωυ</td><td class="ipa">[ɔːu]</td><td>오우 <span style="color:var(--ink-faint);font-size:.85em">(드묾)</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="callout">
+      <b><span class="grk">ευ</span> — 관습은 ‘유’, 본래는 ‘에우’.</b> <span class="grk">ευ</span>의 고전 발음은 정확히는
+      <b>[eu] ‘에우’</b>(<span class="grk">ε</span>+<span class="grk">υ</span>를 이은 소리)입니다. 다만 한국 신학계에서는 오래도록 관습적으로
+      <b>‘유’</b>로 읽어 왔는데, 이는 틀린 것이 아니라 <b>‘에우’를 최대한 빨리 이어 발음하면 자연스럽게 ‘유’처럼 들리기</b> 때문입니다.
+      그래서 우리 표기는 관습을 존중해 <b>유(에우)</b>로 적되, 본래 소리가 ‘에우’임을 함께 기억합니다. (짝인 <span class="grk">αυ</span>는 ‘아우’.)
+      또 <span class="grk">ει</span>와 <span class="grk">η</span>는 소리가 같아져(둘 다 긴 e), Machen도 “<span class="grk">ει</span>와 <span class="grk">η</span>는 똑같이 발음된다”고 적습니다.
+    </div>
+
+    <p style="font-size:.92rem;color:var(--ink-soft)">
+      <b><span class="grk">ηυ</span>·<span class="grk">ωυ</span>는 드문 이중모음</b>입니다 — 각 글자의 소리를 바짝 이어 발음하며(<span class="grk">η</span>+<span class="grk">υ</span>=에우, <span class="grk">ω</span>+<span class="grk">υ</span>=오우), 신약에는 거의 나오지 않습니다. 우선은 흔히 쓰는 일곱(<span class="grk">αι·ει·οι·υι·αυ·ευ·ου</span>)만 익혀도 충분합니다.
+    </p>
+
+    <h2><span class="num">④</span> 이오타 하기 — 표기에 남은 <span class="grk">ι</span></h2>
+    <p>
+      <span class="grk">ι</span>가 장모음 <span class="grk">α·η·ω</span> 아래에서 만날 때는, 옆에 나란히 서지 않고
+      <b>글자 밑에 작게 몸을 낮춰</b> 앉습니다. 이것을 <b>이오타 하기(iota subscript, 밑에 쓴 이오타)</b>라고 부릅니다:
+      <span class="grk" style="font-size:1.2rem">ᾳ ῃ ῳ</span>.
+      이 <span class="grk">ι</span>는 <b>발음에는 거의 드러나지 않아서</b>, <span class="grk">ᾳ</span>는 긴 <span class="grk">α</span>처럼,
+      <span class="grk">ῃ</span>는 <span class="grk">η</span>처럼, <span class="grk">ῳ</span>는 <span class="grk">ω</span>처럼 읽으면 됩니다.
+    </p>
+    <div class="tbl-scroll">
+      <table class="gtbl gtbl--narrow">
+        <thead><tr><th>철자</th><th>읽기</th><th>메모</th></tr></thead>
+        <tbody>
+          <tr><td class="letter">ᾳ</td><td>긴 <span class="grk">α</span>처럼 ‘아ː’</td><td>아래 작은 <span class="grk">ι</span></td></tr>
+          <tr><td class="letter">ῃ</td><td><span class="grk">η</span>처럼 ‘애ː’</td><td>아래 작은 <span class="grk">ι</span></td></tr>
+          <tr><td class="letter">ῳ</td><td><span class="grk">ω</span>처럼 ‘오ː’</td><td>아래 작은 <span class="grk">ι</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>
+      지금은 “<b>표기는 남아 있지만 소리는 거의 드러나지 않는 <span class="grk">ι</span></b>”라고만 기억하시면 충분합니다.
+      이 생김새를 눈에 익혀 두면, 훗날 자주 만나는 <b>여격 단수 어미</b>(<span class="grk">τῇ, λόγῳ</span> 등)를
+      한눈에 알아보게 되고, 본문에서 그 단어가 맡은 역할을 빠르게 가늠하게 됩니다.
+    </p>
+
+    <h2><span class="num">⑤</span> 소리 내어 읽어 보기</h2>
+    <p>
+      이제 실제 단어에서 모음의 길이와 이중모음을 몸으로 느껴 봅니다. <b>단어 앞·위의 작은 부호(숨표·악센트)는 3강</b>에서
+      배우니, 지금은 <b>모음이 길게 나는지 짧게 나는지</b>, 그리고 <b>이중모음이 한 소리로 이어지는지</b>에만 귀를 기울여 보면 좋겠습니다.
+    </p>
+    <div class="readcard">
+      <div class="readrow"><button class="audio-btn" data-audio="../assets/audio/words/kome.mp3" aria-label="꼬메 발음 듣기">▶</button> <span class="word grk">κώμη</span> <span class="rom">꼬ː메ː</span> <span class="gloss">마을 — <span class="grk">ω·η</span> 둘 다 장모음, 길게</span></div>
+      <div class="readrow"><button class="audio-btn" data-audio="../assets/audio/words/logos.mp3" aria-label="로고스 발음 듣기">▶</button> <span class="word grk">λόγος</span> <span class="rom">로고스</span> <span class="gloss">말씀 — <span class="grk">ο</span>는 짧은 o</span></div>
+      <div class="readrow"><button class="audio-btn" data-audio="../assets/audio/words/kai.mp3" aria-label="까이 발음 듣기">▶</button> <span class="word grk">καί</span> <span class="rom">까이</span> <span class="gloss">그리고 — <span class="grk">αι</span> 이중모음(아이)</span></div>
+      <div class="readrow"><button class="audio-btn" data-audio="../assets/audio/words/doulos.mp3" aria-label="둘로스 발음 듣기">▶</button> <span class="word grk">δοῦλος</span> <span class="rom">둘로스</span> <span class="gloss">종 — <span class="grk">ου</span> 이중모음(우ː)</span></div>
+      <div class="readrow"><button class="audio-btn" data-audio="../assets/audio/words/legei.mp3" aria-label="레게이 발음 듣기">▶</button> <span class="word grk">λέγει</span> <span class="rom">레게이</span> <span class="gloss">그가 말한다 — <span class="grk">ει</span> 이중모음(에ː/에이)</span></div>
+    </div>
+    <p class="note">▶ 버튼은 Vox Graeca 기준으로 재구성한 발음을 재생합니다. (녹음 파일 준비 중 — 곧 추가됩니다.)</p>
+
+    <h2>반드시 기억할 다섯 가지</h2>
+    <div class="tbl-scroll">
+      <table class="gtbl">
+        <thead><tr><th>포인트</th><th>내용</th></tr></thead>
+        <tbody>
+          <tr><td>1. <span class="grk">ε</span>는 짧게, <span class="grk">η</span>는 길게</td><td>‘짧은 e / 긴 e’ 짝. <span class="grk">η</span>는 입을 넓게 벌린 <b>긴 열린 e ‘애ː’</b>.</td></tr>
+          <tr><td>2. <span class="grk">ο</span>는 짧게, <span class="grk">ω</span>는 길게</td><td>‘짧은 o / 긴 o’ 짝. <span class="grk">ω</span>는 <b>긴 열린 o ‘오ː’</b>.</td></tr>
+          <tr><td>3. 이중모음 = 한 소리</td><td>두 글자지만 <b>한 음절</b>. 두 번째는 늘 <span class="grk">ι</span>나 <span class="grk">υ</span>.</td></tr>
+          <tr><td>4. <span class="grk">ευ</span> = 유(에우)</td><td>관습상 <b>‘유’</b>로 읽지만, 본래는 <b>‘에우’</b>[eu]를 빨리 이어 ‘유’처럼 들리는 것. 짝은 <span class="grk">αυ</span>(아우).</td></tr>
+          <tr><td>5. 이오타 하기</td><td><span class="grk">ᾳ ῃ ῳ</span> — 아래 작은 <span class="grk">ι</span>는 소리에 거의 드러나지 않음. <b>여격 단수</b>에서 자주 만남.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2><span class="num">⑥</span> 연습 — 스스로 익히기</h2>
+    <p>눈으로 본 것을 손과 귀로 익힙니다. 카드를 눌러 뒤집고 소리를 확인한 뒤, 아래 퀴즈로 점검해 보세요. 진도는 이 브라우저에 저장됩니다.</p>
+
+    <h3>플래시카드 · 모음과 이중모음</h3>
+    <div class="practice"><div id="flashcards" class="flash"><p class="flash__count">1 / 14</p><div class="flash__card" id="fcard"><div class="flash__letter grk">α</div><div class="flash__hint">눌러서 확인하기</div><div class="flash__back"><div class="flash__name">알파 <button class="audio-btn" data-audio="../assets/audio/letters/alpha.mp3" aria-label="발음 듣기">▶</button></div><div class="flash__ipa grk">[a] / [aː]</div><div class="flash__kr">아</div><div class="flash__note">짧을 수도 길 수도. father의 a</div></div></div><div class="flash__controls"><button class="mini-btn" data-fc="flip">확인하기</button><button class="mini-btn" data-fc="prev">← 이전</button><button class="mini-btn" data-fc="next">다음 →</button><button class="mini-btn" data-fc="shuffle">섞기</button></div></div></div>
+
+    <h3>소리 맞히기 퀴즈</h3>
+    <div class="practice"><div id="quiz"><div class="quiz__head"><span class="quiz__q">문제 1 / 8</span><span class="quiz__score">0점</span></div><div class="quiz__prompt"><span class="glyph grk">α</span><span class="ask">이 글자의 소리는?</span></div><div class="quiz__opts"><button class="quiz__opt" data-kr="위">위</button><button class="quiz__opt" data-kr="아">아</button><button class="quiz__opt" data-kr="이">이</button><button class="quiz__opt" data-kr="오">오</button></div></div></div>
+
+    <script id="lesson-cards" type="application/json">
+    [
+      {"letter":"α","name":"알파","ipa":"[a] / [aː]","kr":"아","note":"짧을 수도 길 수도. father의 a","audio":"../assets/audio/letters/alpha.mp3"},
+      {"letter":"ε","name":"엡실론","ipa":"[e]","kr":"에","note":"항상 짧은 e","audio":"../assets/audio/letters/epsilon.mp3"},
+      {"letter":"η","name":"에따","ipa":"[ɛː]","kr":"애ː","note":"항상 긴 열린 e. '애'에 가깝게 길게","audio":"../assets/audio/letters/eta.mp3"},
+      {"letter":"ι","name":"이오따","ipa":"[i] / [iː]","kr":"이","note":"짧을 수도 길 수도. machine의 i","audio":"../assets/audio/letters/iota.mp3"},
+      {"letter":"ο","name":"오미끄론","ipa":"[o]","kr":"오","note":"항상 짧은 o","audio":"../assets/audio/letters/omicron.mp3"},
+      {"letter":"υ","name":"윕실론","ipa":"[y] / [yː]","kr":"위","note":"프랑스어 u. 입술 원순 + '이'","audio":"../assets/audio/letters/upsilon.mp3"},
+      {"letter":"ω","name":"오메가","ipa":"[ɔː]","kr":"오ː","note":"항상 긴 열린 o. saw의 o","audio":"../assets/audio/letters/omega.mp3"},
+      {"letter":"αι","name":"이중모음 알파-이오따","ipa":"[ai]","kr":"아이","note":"한 음절로 '아이'","audio":"../assets/audio/diphthongs/ai.mp3"},
+      {"letter":"ει","name":"이중모음 엡실론-이오따","ipa":"[eː]","kr":"에ː","note":"긴 e. η와 소리가 같음(초기 '에이')","audio":"../assets/audio/diphthongs/ei.mp3"},
+      {"letter":"οι","name":"이중모음 오미끄론-이오따","ipa":"[oi]","kr":"오이","note":"한 음절로 '오이'","audio":"../assets/audio/diphthongs/oi.mp3"},
+      {"letter":"υι","name":"이중모음 윕실론-이오따","ipa":"[yi]","kr":"위이","note":"드문 결합. 폐모음끼리","audio":"../assets/audio/diphthongs/yi.mp3"},
+      {"letter":"αυ","name":"이중모음 알파-윕실론","ipa":"[au]","kr":"아우","note":"한 음절로 '아우'","audio":"../assets/audio/diphthongs/au.mp3"},
+      {"letter":"ευ","name":"이중모음 엡실론-윕실론","ipa":"[eu]","kr":"유(에우)","note":"관습상 '유', 본래는 '에우'를 빨리 이은 소리","audio":"../assets/audio/diphthongs/eu.mp3"},
+      {"letter":"ου","name":"이중모음 오미끄론-윕실론","ipa":"[oː] / [uː]","kr":"우ː","note":"food의 oo. 후기 긴 우","audio":"../assets/audio/diphthongs/ou.mp3"}
+    ]
     </script>
+
+    <hr class="rule">
+
+    <h2>정리</h2>
+    <p>
+      오늘 우리는 모음의 <b>장·단</b>과 <b>양·질</b>, 이중모음이 빚는 <b>하나의 소리</b>, 그리고 표기에만 남은
+      <b>이오타 하기</b>까지 걸어왔습니다. 열매는 하나로 모입니다 — 이제 단어를 마주할 때,
+      <strong>어느 모음이 길게 울리고, 어디가 한 소리로 이어지는지</strong>를 가늠할 눈이 조금씩 열립니다.
+      그 눈이 열릴수록, 말씀의 문장은 더 또렷한 목소리로 우리에게 다가옵니다.
+      다음 강에서는 여기에 <b>숨표(기식)와 악센트</b>를 더해, 그 목소리에 숨결과 높낮이까지 입혀 보면 좋겠습니다.
+    </p>
+    <div class="callout" style="border-left-color: var(--accent);">
+      <b>다음 강 예고 — 3강: 숨표와 악센트.</b> 모음 앞의 작은 부호(<span class="grk">ἁ ἀ</span>)가 h 소리를 넣는지 아닌지,
+      그리고 세 가지 악센트(<span class="grk">´ ῀ `</span>)가 어느 음절에 힘을 싣는지를 배웁니다.
+    </div>
 
     <div class="progress-bar">
       <span class="progress-bar__text">이 과를 다 익히셨다면 <b>완료</b>로 표시해 두세요. 이 브라우저에 기억됩니다.</span>
@@ -129,19 +249,19 @@
     </div>
 
     <nav class="lesson-nav">
-      <a class="btn btn--ghost" href="hellenike-accent-01-why.html">← 1강 강세, 왜 중요한가</a>
+      <a class="btn btn--ghost" href="hellenike-morphology-01-alphabet.html">← 1강 알파벳</a>
       <span class="spacer"></span>
-      <a class="btn btn--ghost" href="hellenike-accent-03-rules.html">3강 강세 일반 규칙 6가지 →</a>
+      <a class="btn btn--ghost" href="hellenike-morphology-03-breathings.html">3강 숨표와 강세 →</a>
     </nav>
 
     <div class="refs">
       <h3>참고문헌</h3>
       <ul>
-        <li>J. Gresham Machen, <i>New Testament Greek for Beginners</i> (New York: Macmillan, 1924), Lesson II §10, 13–14쪽 — 공개도메인. 본 강의의 순서·형태 근거.</li>
-        <li>William D. Mounce, <i>Basics of Biblical Greek Grammar</i>, ed. Verlyn D. Verbrugge and Christopher A. Beetham, 4th ed. (Grand Rapids: Zondervan, 2019), ch. 4 (Punctuation and Syllabification) — 같은 주제를 다루는 대표 현대 교재(서지 참고).</li>
-        <li>W. Sidney Allen, <i>Vox Graeca: The Pronunciation of Classical Greek</i>, 3rd ed. (Cambridge: Cambridge University Press, 1987) — 발음 기준(교육용 기준음).</li>
+        <li><span style="font-size: 16px;">J. Gresham Machen, <i>New Testament Greek for Beginners</i> (New York: Macmillan, 1924), Lesson I §3–4, 10–11쪽 — 공개도메인. 본 강의의 순서·형태 근거.</span></li>
+        <li><span style="font-size: 16px;">William D. Mounce, <i>Basics of Biblical Greek Grammar</i>, ed. Verlyn D. Verbrugge and Christopher A. Beetham, 4th ed. (Grand Rapids: Zondervan, 2019), ch. 3 (The Alphabet and Pronunciation) — 같은 주제를 다루는 대표 현대 교재(서지 참고).</span></li>
+        <li><span style="font-size: 16px;">W. Sidney Allen, <i>Vox Graeca: The Pronunciation of Classical Greek</i>, 3rd ed. (Cambridge: Cambridge University Press, 1987) — 발음 기준(교육용 기준음).</span></li>
       </ul>
-      <p class="refs__note">본 과의 서술·예시는 여호와 닛시의 <b>자체 저작</b>이며, 위 문헌의 본문을 복제하지 않습니다. 한글 표기는 한국어 화자를 위한 교육용 근사값이고 최종 기준은 IPA 음가입니다. 이 문서는 가안으로, 세부 음가·표기는 이후 원서 대조로 다듬어 갑니다.</p>
+      <p class="refs__note"><span style="font-size: 16px;">본 과의 서술·예시는 여호와 닛시의 <b>자체 저작</b>이며, 위 문헌의 본문을 복제하지 않습니다. 한글 표기는 한국어 화자를 위한 교육용 근사값이고 최종 기준은 IPA 음가입니다. 이 문서는 가안으로, 세부 음가·표기는 이후 원서 대조로 다듬어 갑니다.</span></p>
     </div>
     <a class="backlink" href="../index.html">← 여호와 닛시 홈으로</a>
   </article>
@@ -156,5 +276,6 @@
 </footer>
 
 <script src="../assets/practice.js"></script>
-</body>
-</html>
+
+
+</body></html>
