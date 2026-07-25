@@ -143,6 +143,9 @@
         var cd=e.clipboardData||window.clipboardData; if(!cd) return;
         var text=cd.getData('text/plain'); if(text==null) return;
         e.preventDefault();
+        // 여러 줄을 그대로 넣으면 contenteditable이 bare <div>/<br>를 만들어 찌꺼기가 된다.
+        // 줄바꿈을 공백으로 접어 현재 문단에 깨끗한 인라인 텍스트로만 삽입한다.
+        text=text.replace(/\r\n?/g,'\n').replace(/[ \t]*\n[ \t]*/g,' ').replace(/[ \t]{2,}/g,' ').trim();
         idoc.execCommand('insertText',false,text);
       }catch(err){}
     });
@@ -200,6 +203,16 @@
         seen[t2]=1; return;
       }
     });
+    // 백스톱: 속성 없는 <div> 프로즈 찌꺼기 제거 — 빈 것, 또는 다른 블록 텍스트에 통째로 겹치는 중복(구두점만 달라 위 검사를 빠져나간 경우 포함)
+    (function(){
+      var blocks=Array.prototype.slice.call(art.querySelectorAll('p, li, h1, h2, h3, .callout')).map(function(b){ return norm(b.textContent); }).filter(Boolean);
+      Array.prototype.slice.call(art.querySelectorAll('div:not([class])')).forEach(function(d){
+        if(d.querySelector && d.querySelector('table,img,button,input,[data-audio],div,[class]')) return;
+        var t=norm(d.textContent);
+        if(!t){ d.remove(); return; }
+        for(var i=0;i<blocks.length;i++){ if(blocks[i].indexOf(t)>=0){ d.remove(); return; } }
+      });
+    })();
   }
 
   // 산문의 맨 그리스어를 .grk(사이트 그리스어 폰트)로 감싼다 — 표(.letter)·IPA·플래시카드 JSON·기존 .grk·읽기카드는 건드리지 않음
