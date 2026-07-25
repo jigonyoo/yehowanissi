@@ -290,6 +290,11 @@ table.gtbl--narrow { min-width: 320px; }
 
 /* 2026-07-17 가독성 오버라이드 — 강의 본문 전체 약 +1px, 키커 확대 (강의 페이지 한정) */
 .lesson p, .lesson li { font-size: 18px; }
+/* 본문 흐름 속 그리스어는 한글(18px)보다 시원하게 20px로 — 강마다 수작업 없이 자동 적용.
+   표(.letter)·플래시카드·읽기카드·퀴즈는 각자 고유 크기를 그대로 유지한다. */
+.lesson p .grk,
+.lesson li .grk,
+.lesson .callout .grk { font-size: 20px; }
 .lesson__kicker { font-size: .96rem; }
 .lesson__sub { font-size: 1.06rem; }
 .lesson__title { font-size: clamp(1.9rem, 4.8vw, 2.65rem); }
