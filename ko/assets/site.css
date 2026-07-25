@@ -8,10 +8,20 @@
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Nanum+Brush+Script&display=swap');
 
+/* SBL Greek — 성경 그리스어 전용 폰트 (John Hudson/Tiro Typeworks). SBL EULA: 비상업 웹페이지 임베딩 허용.
+   서브셋(그리스어·폴리토닉·라틴·구두점) WOFF2로 자체 호스팅. */
+@font-face {
+  font-family: 'SBL Greek';
+  src: url('SBLGreek.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --sans: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, 'Apple SD Gothic Neo', sans-serif;
   --script: 'Nanum Brush Script', cursive;
-  --greek: 'EB Garamond', 'Noto Serif KR', Georgia, serif;
+  --greek: 'SBL Greek', 'EB Garamond', 'Noto Serif KR', Georgia, serif;
 
   --bg: #ffffff;
   --surface: #ffffff;
