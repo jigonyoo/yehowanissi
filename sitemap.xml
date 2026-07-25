@@ -7,8 +7,983 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/"/>
   </url>
   <url>
+    <loc>https://yehowanissi.org/ko/reading-greek.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/reading-greek.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/reading-greek.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/hellenike-morphology.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/hellenike-morphology.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/hellenike-morphology.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-accent-01-why.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-accent-01-why.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-accent-01-why.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-accent-02-stage.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-accent-02-stage.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-accent-02-stage.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-accent-03-rules.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-accent-03-rules.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-accent-03-rules.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-accent-04-verb.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-accent-04-verb.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-accent-04-verb.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-accent-05-noun.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-accent-05-noun.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-accent-05-noun.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-accent-06-review.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-accent-06-review.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-accent-06-review.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-adj-01-article.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-adj-01-article.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-adj-01-article.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-adj-02-adjective.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-adj-02-adjective.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-adj-02-adjective.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-adj-03-agreement.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-adj-03-agreement.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-adj-03-agreement.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-adj-04-position.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-adj-04-position.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-adj-04-position.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-adj-05-review.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-adj-05-review.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-adj-05-review.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-aor-01-active.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-aor-01-active.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-aor-01-active.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-aor-02-middle.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-aor-02-middle.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-aor-02-middle.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-aor-03-aspect.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-aor-03-aspect.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-aor-03-aspect.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-aor-04-consonant.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-aor-04-consonant.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-aor-04-consonant.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-aor-05-vocab.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-aor-05-vocab.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-aor-05-vocab.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-aor-06-review.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-aor-06-review.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-aor-06-review.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-aor2-01-active.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-aor2-01-active.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-aor2-01-active.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-aor2-02-middle.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-aor2-02-middle.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-aor2-02-middle.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-aor2-03-vs-imperfect.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-aor2-03-vs-imperfect.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-aor2-03-vs-imperfect.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-aor2-04-first-vs-second.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-aor2-04-first-vs-second.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-aor2-04-first-vs-second.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-aor2-05-vocab.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-aor2-05-vocab.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-aor2-05-vocab.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-aor2-06-review.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-aor2-06-review.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-aor2-06-review.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-aorpass-01-voice.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-aorpass-01-voice.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-aorpass-01-voice.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-aorpass-02-paradigm.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-aorpass-02-paradigm.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-aorpass-02-paradigm.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-aorpass-03-consonant.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-aorpass-03-consonant.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-aorpass-03-consonant.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-aorpass-04-future.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-aorpass-04-future.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-aorpass-04-future.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-aorpass-05-second.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-aorpass-05-second.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-aorpass-05-second.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-aorpass-06-review.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-aorpass-06-review.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-aorpass-06-review.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-comp-01-degrees.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-comp-01-degrees.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-comp-01-degrees.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-comp-02-meizon.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-comp-02-meizon.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-comp-02-meizon.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-comp-03-than.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-comp-03-than.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-comp-03-than.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-comp-04-adverbs.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-comp-04-adverbs.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-comp-04-adverbs.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-comp-05-cases.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-comp-05-cases.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-comp-05-cases.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-comp-06-review.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-comp-06-review.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-comp-06-review.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-contract-01-meaning.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-contract-01-meaning.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-contract-01-meaning.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-contract-02-rules.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-contract-02-rules.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-contract-02-rules.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-contract-03-epsilon.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-contract-03-epsilon.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-contract-03-epsilon.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-contract-04-alpha-omicron.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-contract-04-alpha-omicron.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-contract-04-alpha-omicron.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-contract-05-principal.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-contract-05-principal.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-contract-05-principal.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-contract-06-review.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-contract-06-review.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-contract-06-review.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-demon-01-houtos.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-demon-01-houtos.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-demon-01-houtos.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-demon-02-ekeinos.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-demon-02-ekeinos.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-demon-02-ekeinos.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-demon-03-alone.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-demon-03-alone.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-demon-03-alone.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-demon-04-autos3.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-demon-04-autos3.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-demon-04-autos3.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-demon-05-review.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-demon-05-review.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-demon-05-review.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-didomi-01-intro.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-didomi-01-intro.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-didomi-01-intro.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-didomi-02-present.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-didomi-02-present.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-didomi-02-present.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-didomi-03-participle.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-didomi-03-participle.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-didomi-03-participle.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-didomi-04-aorist.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-didomi-04-aorist.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-didomi-04-aorist.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-didomi-05-syntax.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-didomi-05-syntax.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-didomi-05-syntax.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-didomi-06-review.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-didomi-06-review.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-didomi-06-review.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-eimi-01-enclitic.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-eimi-01-enclitic.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-eimi-01-enclitic.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-eimi-02-accent.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-eimi-02-accent.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-eimi-02-accent.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-eimi-03-egosu.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-eimi-03-egosu.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-eimi-03-egosu.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-eimi-04-autos.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-eimi-04-autos.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-eimi-04-autos.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-eimi-05-eimi.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-eimi-05-eimi.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-eimi-05-eimi.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-eimi-06-review.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-eimi-06-review.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-eimi-06-review.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-fut-01-form.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-fut-01-form.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-fut-01-form.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-fut-02-middle.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-fut-02-middle.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-fut-02-middle.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-fut-03-consonant.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-fut-03-consonant.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-fut-03-consonant.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-fut-04-principal.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-fut-04-principal.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-fut-04-principal.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-fut-05-irregular.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-fut-05-irregular.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-fut-05-irregular.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-fut-06-review.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-fut-06-review.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-fut-06-review.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-histemi-01-present.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-histemi-01-present.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-histemi-01-present.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-histemi-02-perfect.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-histemi-02-perfect.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-histemi-02-perfect.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-histemi-03-oida.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-histemi-03-oida.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-histemi-03-oida.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-histemi-04-optative.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-histemi-04-optative.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-histemi-04-optative.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-histemi-05-ginomai.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-histemi-05-ginomai.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-histemi-05-ginomai.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-histemi-06-review.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-histemi-06-review.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-histemi-06-review.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-imper-01-meaning.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-imper-01-meaning.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-imper-01-meaning.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-imper-02-present.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-imper-02-present.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-imper-02-present.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-imper-03-aorist.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-imper-03-aorist.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-imper-03-aorist.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-imper-04-eimi-use.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-imper-04-eimi-use.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-imper-04-eimi-use.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-imper-05-prohibition.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-imper-05-prohibition.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-imper-05-prohibition.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-imper-06-review.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-imper-06-review.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-imper-06-review.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-imperf-01-meaning.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-imperf-01-meaning.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-imperf-01-meaning.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-imperf-02-augment.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-imperf-02-augment.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-imperf-02-augment.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-imperf-03-paradigm.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-imperf-03-paradigm.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-imperf-03-paradigm.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-imperf-04-compound.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-imperf-04-compound.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-imperf-04-compound.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-imperf-05-eimi.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-imperf-05-eimi.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-imperf-05-eimi.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-imperf-06-review.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-imperf-06-review.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-imperf-06-review.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-impfmp-01-paradigm.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-impfmp-01-paradigm.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-impfmp-01-paradigm.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-impfmp-02-voice.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-impfmp-02-voice.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-impfmp-02-voice.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-impfmp-03-deponent.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-impfmp-03-deponent.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-impfmp-03-deponent.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-impfmp-04-neuter.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-impfmp-04-neuter.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-impfmp-04-neuter.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-impfmp-05-kai.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-impfmp-05-kai.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-impfmp-05-kai.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-impfmp-06-review.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-impfmp-06-review.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-impfmp-06-review.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-inf-01-meaning.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-inf-01-meaning.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-inf-01-meaning.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-inf-02-forms.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-inf-02-forms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-inf-02-forms.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-inf-03-articular.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-inf-03-articular.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-inf-03-articular.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-inf-04-subject.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-inf-04-subject.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-inf-04-subject.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-inf-05-indirect.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-inf-05-indirect.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-inf-05-indirect.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-inf-06-review.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-inf-06-review.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-inf-06-review.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-liquid-01-future.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-liquid-01-future.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-liquid-01-future.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-liquid-02-aorist.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-liquid-02-aorist.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-liquid-02-aorist.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-liquid-03-eimi-future.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-liquid-03-eimi-future.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-liquid-03-eimi-future.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-liquid-04-reflexive.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-liquid-04-reflexive.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-liquid-04-reflexive.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-liquid-05-reciprocal.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-liquid-05-reciprocal.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-liquid-05-reciprocal.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-liquid-06-review.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-liquid-06-review.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-liquid-06-review.html"/>
+  </url>
+  <url>
     <loc>https://yehowanissi.org/ko/lessons/hellenike-morphology-01-alphabet.html</loc>
     <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-morphology-01-alphabet.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-morphology-01-alphabet.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-morphology-02-vowels.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-morphology-02-vowels.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-morphology-02-vowels.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-morphology-03-breathings.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-morphology-03-breathings.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-morphology-03-breathings.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-morphology-04-reading.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-morphology-04-reading.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-morphology-04-reading.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-morphology-05-writing.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-morphology-05-writing.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-morphology-05-writing.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-morphology-06-review.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-morphology-06-review.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-morphology-06-review.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-mp-01-voice.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-mp-01-voice.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-mp-01-voice.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-mp-02-paradigm.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-mp-02-paradigm.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-mp-02-paradigm.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-mp-03-agent.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-mp-03-agent.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-mp-03-agent.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-mp-04-deponent.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-mp-04-deponent.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-mp-04-deponent.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-mp-05-cases.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-mp-05-cases.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-mp-05-cases.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-mp-06-review.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-mp-06-review.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-mp-06-review.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-noun1-01-meet.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-noun1-01-meet.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-noun1-01-meet.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-noun1-02-hora.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-noun1-02-hora.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-noun1-02-hora.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-noun1-03-structure.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-noun1-03-structure.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-noun1-03-structure.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-noun1-04-types.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-noun1-04-types.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-noun1-04-types.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-noun1-05-review.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-noun1-05-review.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-noun1-05-review.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-noun2-01-meet.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-noun2-01-meet.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-noun2-01-meet.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-noun2-02-anthropos.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-noun2-02-anthropos.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-noun2-02-anthropos.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-noun2-03-structure.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-noun2-03-structure.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-noun2-03-structure.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-noun2-04-neuter.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-noun2-04-neuter.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-noun2-04-neuter.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-noun2-05-review.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-noun2-05-review.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-noun2-05-review.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-paradigms.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-paradigms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-paradigms.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-partaor-01-meaning.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-partaor-01-meaning.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-partaor-01-meaning.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-partaor-02-active.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-partaor-02-active.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-partaor-02-active.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-partaor-03-middle.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-partaor-03-middle.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-partaor-03-middle.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-partaor-04-second.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-partaor-04-second.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-partaor-04-second.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-partaor-05-vs-negatives.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-partaor-05-vs-negatives.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-partaor-05-vs-negatives.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-partaor-06-review.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-partaor-06-review.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-partaor-06-review.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-partpass-01-meaning.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-partpass-01-meaning.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-partpass-01-meaning.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-partpass-02-paradigm.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-partpass-02-paradigm.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-partpass-02-paradigm.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-partpass-03-consonant.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-partpass-03-consonant.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-partpass-03-consonant.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-partpass-04-summary.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-partpass-04-summary.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-partpass-04-summary.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-partpass-05-genabs.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-partpass-05-genabs.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-partpass-05-genabs.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-partpass-06-review.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-partpass-06-review.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-partpass-06-review.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-partpres-01-intro.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-partpres-01-intro.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-partpres-01-intro.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-partpres-02-active.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-partpres-02-active.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-partpres-02-active.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-partpres-03-midpass.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-partpres-03-midpass.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-partpres-03-midpass.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-partpres-04-tense.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-partpres-04-tense.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-partpres-04-tense.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-partpres-05-uses.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-partpres-05-uses.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-partpres-05-uses.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-partpres-06-review.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-partpres-06-review.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-partpres-06-review.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-pas-01-declension.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-pas-01-declension.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-pas-01-declension.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-pas-02-use.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-pas-02-use.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-pas-02-use.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-pas-03-polys-megas.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-pas-03-polys-megas.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-pas-03-polys-megas.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-pas-04-numerals.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-pas-04-numerals.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-pas-04-numerals.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-pas-05-attributive.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-pas-05-attributive.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-pas-05-attributive.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-pas-06-review.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-pas-06-review.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-pas-06-review.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-perf-01-meaning.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-perf-01-meaning.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-perf-01-meaning.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-perf-02-active.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-perf-02-active.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-perf-02-active.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-perf-03-midpass.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-perf-03-midpass.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-perf-03-midpass.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-perf-04-reduplication.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-perf-04-reduplication.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-perf-04-reduplication.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-perf-05-use.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-perf-05-use.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-perf-05-use.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-perf-06-review.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-perf-06-review.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-perf-06-review.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-prep-01-masc.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-prep-01-masc.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-prep-01-masc.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-prep-02-what.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-prep-02-what.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-prep-02-what.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-prep-03-onecase.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-prep-03-onecase.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-prep-03-onecase.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-prep-04-multicase.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-prep-04-multicase.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-prep-04-multicase.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-prep-05-review.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-prep-05-review.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-prep-05-review.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-relpron-01-interrog.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-relpron-01-interrog.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-relpron-01-interrog.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-relpron-02-indef.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-relpron-02-indef.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-relpron-02-indef.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-relpron-03-questions.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-relpron-03-questions.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-relpron-03-questions.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-relpron-04-relative.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-relpron-04-relative.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-relpron-04-relative.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-relpron-05-uses.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-relpron-05-uses.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-relpron-05-uses.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-relpron-06-review.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-relpron-06-review.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-relpron-06-review.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-subj-01-meaning.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-subj-01-meaning.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-subj-01-meaning.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-subj-02-present.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-subj-02-present.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-subj-02-present.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-subj-03-aorist.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-subj-03-aorist.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-subj-03-aorist.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-subj-04-hortatory-purpose.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-subj-04-hortatory-purpose.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-subj-04-hortatory-purpose.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-subj-05-conditions.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-subj-05-conditions.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-subj-05-conditions.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-subj-06-review.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-subj-06-review.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-subj-06-review.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-thirddec-01-intro.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-thirddec-01-intro.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-thirddec-01-intro.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-thirddec-02-endings.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-thirddec-02-endings.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-thirddec-02-endings.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-thirddec-03-datplural.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-thirddec-03-datplural.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-thirddec-03-datplural.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-thirddec-04-stemtypes.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-thirddec-04-stemtypes.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-thirddec-04-stemtypes.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-thirddec-05-neuter.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-thirddec-05-neuter.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-thirddec-05-neuter.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-thirddec-06-review.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-thirddec-06-review.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-thirddec-06-review.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-thirddec2-01-charis.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-thirddec2-01-charis.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-thirddec2-01-charis.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-thirddec2-02-polis.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-thirddec2-02-polis.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-thirddec2-02-polis.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-thirddec2-03-genos.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-thirddec2-03-genos.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-thirddec2-03-genos.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-thirddec2-04-basileus.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-thirddec2-04-basileus.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-thirddec2-04-basileus.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-thirddec2-05-adjective.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-thirddec2-05-adjective.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-thirddec2-05-adjective.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-thirddec2-06-review.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-thirddec2-06-review.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-thirddec2-06-review.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-tithemi-01-present.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-tithemi-01-present.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-tithemi-01-present.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-tithemi-02-aorist.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-tithemi-02-aorist.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-tithemi-02-aorist.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-tithemi-03-aphiemi.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-tithemi-03-aphiemi.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-tithemi-03-aphiemi.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-tithemi-04-deiknymi.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-tithemi-04-deiknymi.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-tithemi-04-deiknymi.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-tithemi-05-hoste-heos.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-tithemi-05-hoste-heos.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-tithemi-05-hoste-heos.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-tithemi-06-review.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-tithemi-06-review.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-tithemi-06-review.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-verb-01-meet.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-verb-01-meet.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-verb-01-meet.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-verb-02-paradigm.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-verb-02-paradigm.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-verb-02-paradigm.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-verb-03-structure.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-verb-03-structure.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-verb-03-structure.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-verb-04-translate.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-verb-04-translate.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-verb-04-translate.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-verb-05-review.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-verb-05-review.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-verb-05-review.html"/>
+  </url>
+  <url>
+    <loc>https://yehowanissi.org/ko/lessons/hellenike-vocabulary.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yehowanissi.org/ko/lessons/hellenike-vocabulary.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://yehowanissi.org/ko/lessons/hellenike-vocabulary.html"/>
   </url>
 </urlset>
