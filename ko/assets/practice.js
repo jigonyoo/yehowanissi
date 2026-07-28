@@ -92,11 +92,13 @@
   /* ---------- 퀴즈 (글자 → 소리 고르기) ---------- */
   var qz = document.getElementById('quiz');
   if (qz && cards.length >= 4) {
-    var N = Math.min(8, cards.length), qi = 0, score = 0, quizOrder = [];
+    var N = Math.min(8, cards.length), qi = 0, score = 0, quizOrder = [], wrong = [];
     function shuffleArr(arr) { for (var i = arr.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var t = arr[i]; arr[i] = arr[j]; arr[j] = t; } return arr; }
-    function startQuiz() {
-      qi = 0; score = 0;
-      quizOrder = shuffleArr(cards.map(function (_, i) { return i; })).slice(0, N);
+    function startQuiz(list) {
+      qi = 0; score = 0; wrong = [];
+      quizOrder = (list && list.length)
+        ? list.slice()
+        : shuffleArr(cards.map(function (_, i) { return i; })).slice(0, N);
       renderQ();
     }
     function renderQ() {
@@ -113,11 +115,27 @@
     }
     function finishQuiz() {
       var msg = score === quizOrder.length ? '완벽합니다! 생김새를 다 익히셨네요.' : (score >= quizOrder.length - 2 ? '거의 다 왔어요. 조금만 더!' : '천천히 다시 한 번 익혀 볼까요?');
-      qz.innerHTML = '<div class="quiz__done"><p><b>' + score + ' / ' + quizOrder.length + '</b></p><p style="color:var(--ink-soft);font-size:.95rem">' + msg + '</p><button class="mini-btn mini-btn--wide" data-quiz="retry">다시 풀기</button></div>';
+      var missed = '';
+      if (wrong.length) {
+        var glyphs = wrong.map(function (i) { return '<span class="grk">' + cards[i].letter + '</span>'; }).join(' · ');
+        missed = '<p class="quiz__missed">놓친 글자 — ' + glyphs + '</p>';
+      }
+      var again = wrong.length
+        ? '<button class="mini-btn mini-btn--wide" data-quiz="retry-wrong">틀린 ' + wrong.length + '문제만 다시 풀어 보기</button>'
+        : '';
+      qz.innerHTML = '<div class="quiz__done">' +
+        '<p><b>' + score + ' / ' + quizOrder.length + '</b></p>' +
+        '<p style="color:var(--ink-soft);font-size:.95rem">' + msg + '</p>' +
+        missed +
+        '<div class="quiz__actions">' + again +
+        '<button class="mini-btn mini-btn--wide" data-quiz="retry">처음부터 다시 풀기</button></div>' +
+        '</div>';
     }
     qz.addEventListener('click', function (e) {
       var opt = e.target.closest('.quiz__opt');
       var re = e.target.closest('[data-quiz="retry"]');
+      var rw = e.target.closest('[data-quiz="retry-wrong"]');
+      if (rw) { return startQuiz(wrong.slice()); }
       if (re) { return startQuiz(); }
       if (opt && !opt.disabled) {
         var c = cards[quizOrder[qi]];
@@ -127,7 +145,7 @@
           if (b.getAttribute('data-kr') === c.kr) b.classList.add('correct');
           else if (b === opt) b.classList.add('wrong');
         });
-        if (chosen === c.kr) score++;
+        if (chosen === c.kr) score++; else wrong.push(quizOrder[qi]);
         setTimeout(function () { qi++; renderQ(); }, 850);
       }
     });
