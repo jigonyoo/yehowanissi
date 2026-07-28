@@ -297,7 +297,7 @@ table.gtbl--narrow { min-width: 320px; }
 .lesson td .grk,
 .lesson .callout .grk { font-size: 20px; }
   /* 정리표(반드시 기억할 N가지) — 본문과 같은 크기로 */
-  .lesson table.gtbl--recall td { font-size: 18px; }
+  .lesson table.gtbl--recall td { font-size: 19px; }
   .lesson table.gtbl--recall td .grk { font-size: 20px; }
 .lesson__kicker { font-size: .96rem; }
 .lesson__sub { font-size: 1.06rem; }
@@ -305,10 +305,10 @@ table.gtbl--narrow { min-width: 320px; }
 .lesson h2 { font-size: 1.5rem; }
 .lesson h3 { font-size: 1.14rem; }
 .lesson .callout { font-size: 1.02rem; }
-.lesson table.gtbl { font-size: 1rem; }
-.lesson table.gtbl th { font-size: .88rem; }
+.lesson table.gtbl { font-size: 17px; }
+.lesson table.gtbl th { font-size: 15px; }
 .lesson table.gtbl .letter { font-size: 1.38rem; }
-.lesson table.gtbl .ipa { font-size: .96rem; }
+.lesson table.gtbl .ipa { font-size: 16.4px; }
 
 /* 퀴즈 — 놓친 글자·재시도 버튼 (2026-07-27) */
 .quiz__missed { color: var(--ink-soft); font-size: .95rem; margin: 10px 0 0; }
