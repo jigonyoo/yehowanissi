@@ -37,7 +37,7 @@
     <hr class="rule">
 
     <p>지난 두 강에서 스물네 자의 생김새와 모음의 길이를 익히셨습니다. 이제 글자 자체는 눈에 들어오기 시작하셨을 것입니다.</p>
-    <p>그런데 헬라어 본문을 펼치면 글자 위에 붙은 <b>작은 부호</b>들이 함께 눈에 들어옵니다. 낯설고 사소해 보이지만, 이 표시들은 말씀을 <b>바르게 소리 내어 읽도록</b> 돕는 안내 표지판입니다. 사도들이 이 부호를 따라 읽고 들었던 그 소리에, 우리도 한 걸음 다가서게 됩니다.</p>
+    <p>그런데 헬라어 본문을 펼치면 글자 위에 붙은 <b>작은 부호</b>들이 함께 눈에 들어옵니다. 낯설고 사소해 보이지만, 이 표시들은 말씀을 <b>바르게 소리 내어 읽도록</b> 돕는 안내 표지판입니다.</p>
     <p>오늘 목표는 둘입니다 — 단어 앞에 <b>h 소리를 넣을지 말지</b>를 정하는 <b>숨표(기식)</b>, 그리고 <b>어느 음절에 힘을 줄지</b>를 알려 주는 <b>악센트</b>. <b>10분</b>이면 충분합니다.</p>
     <div class="callout">
       <b>오늘의 범위.</b> 악센트는 오늘 <b>맛보기</b>로만 익힙니다 — <b>있다는 것</b>과 <b>붙은 자리에 힘을 준다</b>는 것,
@@ -147,10 +147,10 @@
     <p>카드를 눌러 뒤집고, <b>h가 들어가는지 아닌지</b>를 확인해 보시면 좋겠습니다. 그다음 퀴즈로 점검합니다. 진도는 이 브라우저에 저장됩니다.</p>
 
     <h3>플래시카드 · 숨표로 갈리는 소리</h3>
-    <div class="practice"><div id="flashcards"></div></div>
+    <div class="practice"><div id="flashcards" class="flash"><p class="flash__count">1 / 7</p><div class="flash__card" id="fcard"><div class="flash__letter grk">ἐν</div><div class="flash__hint">눌러서 확인하기</div><div class="flash__back"><div class="flash__name">부드러운 숨표 <button class="audio-btn" data-audio="../assets/audio/words/en.mp3" aria-label="발음 듣기">▶</button></div><div class="flash__ipa grk">[en]</div><div class="flash__kr">엔</div><div class="flash__note">h 없음(smooth breathing)</div></div></div><div class="flash__controls"><button class="mini-btn" data-fc="flip">확인하기</button><button class="mini-btn" data-fc="prev">← 이전</button><button class="mini-btn" data-fc="next">다음 →</button><button class="mini-btn" data-fc="shuffle">섞기</button></div></div></div>
 
     <h3>소리 맞히기 퀴즈</h3>
-    <div class="practice"><div id="quiz"></div></div>
+    <div class="practice"><div id="quiz"><div class="quiz__head"><span class="quiz__q">문제 1 / 7</span><span class="quiz__score">0점</span></div><div class="quiz__prompt"><span class="glyph grk">ὀ</span><span class="ask">이 글자의 소리는?</span></div><div class="quiz__opts"><button class="quiz__opt" data-kr="오">오</button><button class="quiz__opt" data-kr="흐르">흐르</button><button class="quiz__opt" data-kr="엔">엔</button><button class="quiz__opt" data-kr="호">호</button></div></div></div>
 
     <script id="lesson-cards" type="application/json">
     [
@@ -216,6 +216,7 @@
 </footer>
 
 <script src="../assets/practice.js"></script>
+
 
 
 </body></html>
