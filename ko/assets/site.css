@@ -297,8 +297,7 @@ table.gtbl--narrow { min-width: 320px; }
 .lesson td .grk,
 .lesson .callout .grk { font-size: 20px; }
   /* 정리표(반드시 기억할 N가지) — 본문과 같은 크기로 */
-  .lesson table.gtbl--recall td { font-size: 19px; }
-  .lesson table.gtbl--recall td .grk { font-size: 20px; }
+  /* (2026-07-30) 정리표 전용 19px 규칙 폐지 — 모든 표를 같은 크기로 통일 */
 .lesson__kicker { font-size: .96rem; }
 .lesson__sub { font-size: 1.06rem; }
 .lesson__title { font-size: clamp(1.9rem, 4.8vw, 2.65rem); }
@@ -309,6 +308,7 @@ table.gtbl--narrow { min-width: 320px; }
 .lesson table.gtbl th { font-size: 15px; }
 .lesson table.gtbl .letter { font-size: 1.38rem; }
 .lesson table.gtbl .ipa { font-size: 16.4px; }
+.lesson table.gtbl td .grk { font-size: 20px; }
 
 /* 퀴즈 — 놓친 글자·재시도 버튼 (2026-07-27) */
 .quiz__missed { color: var(--ink-soft); font-size: .95rem; margin: 10px 0 0; }
