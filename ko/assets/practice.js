@@ -91,6 +91,7 @@
 
   /* ---------- 퀴즈 (글자 → 소리 고르기) ---------- */
   var qz = document.getElementById('quiz');
+  var ASK = (qz && qz.getAttribute('data-ask')) || '이 글자의 소리는?';
   if (qz && cards.length >= 4) {
     var N = Math.min(8, cards.length), qi = 0, score = 0, quizOrder = [], wrong = [];
     function shuffleArr(arr) { for (var i = arr.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var t = arr[i]; arr[i] = arr[j]; arr[j] = t; } return arr; }
@@ -110,7 +111,7 @@
       opts = shuffleArr(opts);
       qz.innerHTML =
         '<div class="quiz__head"><span class="quiz__q">문제 ' + (qi + 1) + ' / ' + quizOrder.length + '</span><span class="quiz__score">' + score + '점</span></div>' +
-        '<div class="quiz__prompt"><span class="glyph grk">' + c.letter + '</span><span class="ask">이 글자의 소리는?</span></div>' +
+        '<div class="quiz__prompt"><span class="glyph grk">' + c.letter + '</span><span class="ask">' + ASK + '</span></div>' +
         '<div class="quiz__opts">' + opts.map(function (o) { return '<button class="quiz__opt" data-kr="' + o + '">' + o + '</button>'; }).join('') + '</div>';
     }
     function finishQuiz() {
