@@ -217,9 +217,9 @@ table.gtbl--narrow { min-width: 320px; }
 .refs { margin: 36px 0 8px; padding-top: 18px; border-top: 1px solid var(--line); }
 .refs h3 { font-size: .78rem; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-faint); font-weight: 700; margin: 0 0 12px; }
 .refs ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 9px; }
-.refs li { font-size: .84rem; color: var(--ink-soft); line-height: 1.6; padding-left: 15px; text-indent: -15px; }
+.refs li { font-size: 16px;   /* (2026-07-31) .84rem→16px */ color: var(--ink-soft); line-height: 1.6; padding-left: 15px; text-indent: -15px; }
 .refs li b { color: var(--ink); font-weight: 600; }
-.refs__note { font-size: .8rem; color: var(--ink-faint); margin: 14px 0 0; line-height: 1.6; }
+.refs__note { font-size: 15px;  /* (2026-07-31) .8rem→15px — 문헌 3칸보다 한 단계 작게 */ color: var(--ink-faint); margin: 14px 0 0; line-height: 1.6; }
 .refs__note b { color: var(--ink-soft); }
 
 /* ============================================================
@@ -303,7 +303,8 @@ table.gtbl--narrow { min-width: 320px; }
 .lesson__title { font-size: clamp(1.9rem, 4.8vw, 2.65rem); }
 .lesson h2 { font-size: 1.5rem; }
 .lesson h3 { font-size: 1.14rem; }
-.lesson .callout { font-size: 1.02rem; }
+.lesson .callout { font-size: 17px; }        /* (2026-07-31) 1.02rem→17px · 표 본문과 눈금 맞춤 */
+.lesson .note { font-size: 16px; }           /* (2026-07-31) .9rem→16px — 5강 인라인 px를 여기로 승격(§3-8) */
 .lesson table.gtbl { font-size: 17px; }
 .lesson table.gtbl th { font-size: 15px; }
 .lesson table.gtbl .letter { font-size: 1.38rem; }
