@@ -98,6 +98,12 @@
     .lessons{padding:2px 10px 14px}
     .lesson{gap:12px;padding:12px 12px}
   }
+
+  /* (2026-08-05) 준비 중 잠금 — 이 페이지는 site.css를 쓰지 않으므로 여기에 둔다.
+     `<a href>`는 그대로이므로 /admin 편집 목록에는 영향이 없다. */
+  a.lesson[data-draft], a.paradigm-link[data-draft]{pointer-events:none;cursor:default;opacity:.5}
+  a.lesson[data-draft] .lesson__t, a.lesson[data-draft] .lesson__idx{color:var(--faint,#9a9a9a)}
+  a.lesson[data-draft] .lesson__time{color:var(--accent,#8a6a3b);font-weight:700;letter-spacing:.02em}
 </style>
 </head>
 <body>
