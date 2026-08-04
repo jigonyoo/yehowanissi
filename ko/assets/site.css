@@ -316,3 +316,13 @@ table.gtbl--narrow { min-width: 320px; }
 .quiz__missed .grk { font-family: var(--greek); font-size: 1.15rem; color: var(--greek-ink); }
 .quiz__actions { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-top: 12px; }
 .quiz__actions .mini-btn--wide { flex: 1 1 auto; min-width: 180px; }
+
+
+/* ============================================================
+   (2026-08-01) 준비 중 강의 잠금 — 공개 목록에서만 적용.
+   `<a href>`는 그대로 두므로 /admin 편집 목록에는 영향이 없다.
+   ============================================================ */
+.lesson[data-draft], .paradigm-link[data-draft] { pointer-events: none; opacity: .5; }
+.lesson[data-draft] .lesson__t,
+.lesson[data-draft] .lesson__idx { color: var(--ink-faint); }
+.lesson[data-draft] .lesson__time { color: var(--accent); font-weight: 700; letter-spacing: .02em; }
