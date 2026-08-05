@@ -33,8 +33,8 @@
   .ex .exhead{display:flex;align-items:center;gap:4px;flex-wrap:wrap;margin-bottom:4px}
   .ex .exw{font-family:'EB Garamond',serif;font-size:1.5rem;color:var(--greek-ink)}
   .ex .exr{color:var(--accent-deep);font-weight:600;font-size:.9rem;margin-left:4px}
-  .ex p{margin:4px 0 0;font-size:.92rem;color:var(--ink-soft)}
-  .syl{font-family:'EB Garamond',serif;font-size:1.15rem;color:var(--greek-ink);letter-spacing:.02em}
+  .ex p{margin:4px 0 0;font-size:16px;color:var(--ink-soft)}   /* (2026-08-05) .92rem→16px */
+  .syl{font-family:'EB Garamond',serif;font-size:22px;color:var(--greek-ink);letter-spacing:.02em}   /* (2026-08-05) 1.15rem→22px — 음절 구분이 또렷하도록 */
   u.str{text-decoration-color:var(--accent);text-underline-offset:3px}
 </style>
 </head>
@@ -68,13 +68,13 @@
 
     <h2><span class="num">①</span> 세 자리 — 말음절·제2말음절·제3말음절</h2>
     <p>
-      <b>음절</b>은 모음을 중심으로 한 소리 단위입니다. 지난 강에서 만난 음절의 이름을 다시 한번 배워봅시다 —&nbsp;<b>맨 끝 음절</b>은&nbsp;<b>말음절</b>, <b>뒤에서 둘째 음절</b>은&nbsp;<b>제2말음절</b>, <b>뒤에서 셋째 음절</b>은&nbsp;<b>제3말음절</b>이라 부릅니다.
+      <b>음절</b>은 모음을 중심으로 한 소리 단위입니다. 지난 강에서 만난 음절의 이름을 다시 한번 배워 봅시다 — <b>맨 끝 음절</b>은 <b>말음절</b>, <b>뒤에서 둘째 음절</b>은 <b>제2말음절</b>, <b>뒤에서 셋째 음절</b>은 <b>제3말음절</b>입니다.
     </p>
     <div class="ex">
       <div class="exhead"><span class="exw grk">λαμβάνομεν</span> <span class="exr">람바노멘</span></div>
-      <p class="syl"><span style="font-size: 22px;"><span class="grk">λαμ</span> · <b><span class="grk">βά</span></b> · <span class="grk">νο · μεν</span></span></p>
-      <p><span style="font-size: 16px;">말음절 <span class="grk">-μεν</span> · 제2말음절 <span class="grk">-νο-</span> · 제3말음절 <span class="grk">-βα-</span>.
-        강세는 <b>제3말음절</b> <span class="grk">βά</span>에 있습니다 — <b>가장 멀리 물러난 자리</b>입니다.</span></p>
+      <p class="syl"><span class="grk">λαμ</span> · <b><span class="grk">βά</span></b> · <span class="grk">νο · μεν</span></p>
+      <p>말음절 <span class="grk">-μεν</span> · 제2말음절 <span class="grk">-νο-</span> · 제3말음절 <span class="grk">-βα-</span>.
+        강세는 <b>제3말음절</b> <span class="grk">βά</span>에 있습니다 — <b>가장 멀리 물러난 자리</b>입니다.</p>
     </div>
     <p>
       핵심은 하나입니다 — <b>헬라어 강세는 이 세 자리 밖으로 나가지 않습니다.</b>
@@ -97,17 +97,18 @@
     <p>같은 낱말이 형태를 바꿀 때 무슨 일이 일어나는지 보시면 규칙이 한눈에 잘 들어옵니다.</p>
     <div class="exlist">
       <div class="ex"><div class="exhead"><span class="exw grk">ἀνθρώπους</span></div>
-        <p class="syl"><span style="font-size: 22px;"><span class="grk">ἀν · θρώ</span> · <b><span class="grk">πους</span></b></span></p><p>말음절 <span class="grk">-πους</span>는 <span class="grk">ου</span>(이중모음)라 <b>장음절</b>.</p></div>
+        <p class="syl"><span class="grk">ἀν · θρώ</span> · <b><span class="grk">πους</span></b></p><p>말음절 <span class="grk">-πους</span>는 <span class="grk">ου</span>(이중모음)라 <b>장음절</b>.</p></div>
       <div class="ex"><div class="exhead"><span class="exw grk">ἄνθρωποι</span></div>
-        <p class="syl"><span style="font-size: 22px;"><span class="grk">ἄν · θρω</span> · <b><span class="grk">ποι</span></b></span></p><p>말음절 <span class="grk">-ποι</span>의 <span class="grk">οι</span>는 <b>어말이라 단음절로</b> 취급(예외).</p></div>
+        <p class="syl"><span class="grk">ἄν · θρω</span> · <b><span class="grk">ποι</span></b></p><p>말음절 <span class="grk">-ποι</span>의 <span class="grk">οι</span>는 <b>어말이라 단음절로</b> 취급(예외).</p></div>
       <div class="ex"><div class="exhead"><span class="exw grk">ἀνθρώποις</span></div>
-        <p class="syl"><span style="font-size: 22px;"><span class="grk">ἀν · θρώ</span> · <b><span class="grk">ποις</span></b></span></p><p><span class="grk">οι</span> 뒤에 자음 <span class="grk">ς</span>가 붙어 <b>장음절</b>로 취급.</p></div>
+        <p class="syl"><span class="grk">ἀν · θρώ</span> · <b><span class="grk">ποις</span></b></p><p><span class="grk">οι</span> 뒤에 자음 <span class="grk">ς</span>가 붙어 <b>장음절</b>로 취급.</p></div>
     </div>
 
 
     <div class="callout">
-      <p><b>흔한 실수.</b>&nbsp;<span class="grk">λαμβάνομεν</span>과 같이 긴 낱말을 만나면, 흔히&nbsp;<span class="grk">λαμ</span>처럼 <b>맨 앞 음절</b>에 힘을 주어 읽게 됩니다.</p><p><b>짚어 보면.</b> 우리말은 낱말이 길어도 어디에 힘을 주든 뜻이 그대로라, 앞쪽을 세게 읽곤 합니다. 그러나 헬라어 강세는 <b>맨 뒤 세 음절 안</b>에만 있습니다. <span class="grk">λαμβάνομεν</span>은 네 음절이니, <b>첫 음절 <span class="grk">λαμ</span>에는 강세가 올 수 없습니다.</b></p>
-      <p><b>다듬으면.</b> 낱말이 길수록 음절을&nbsp;<b>뒤에서부터</b> 세어 보시면 좋겠습니다. 뒤에서 셋째 음절까지가 강세가 올 수 있는 전부입니다. 그리고 <b>기호가 붙은 자리가 곧 답</b>이니&nbsp;<b>눈으로 기호를 먼저 찾고, 그 위치를 확인하면</b> 됩니다.</p>
+      <p><b>흔한 실수.</b> <span class="grk">λαμβάνομεν</span>과 같이 긴 낱말을 만나면, 흔히 <span class="grk">λαμ</span>처럼 <b>맨 앞 음절</b>에 힘을 주어 읽게 됩니다.</p>
+      <p><b>짚어 보면.</b> 우리말은 낱말이 길어도 어디에 힘을 주든 뜻이 그대로라, 앞쪽을 세게 읽곤 합니다. 그러나 헬라어 강세는 <b>맨 뒤 세 음절 안</b>에만 있습니다. <span class="grk">λαμβάνομεν</span>은 네 음절이니, <b>첫 음절 <span class="grk">λαμ</span>에는 강세가 올 수 없습니다.</b></p>
+      <p><b>다듬으면.</b> 낱말이 길수록 음절을 <b>뒤에서부터</b> 세어 보시면 좋겠습니다. 뒤에서 셋째 음절까지가 강세가 올 수 있는 전부입니다. 그리고 <b>기호가 붙은 자리가 곧 답</b>이니 <b>눈으로 기호를 먼저 찾고, 그 위치를 확인하면</b> 됩니다.</p>
     </div>
 
     <div class="callout" style="border-left-color: var(--blue);">
@@ -118,20 +119,20 @@
       그런데 이 낱말이 <b>“~의”</b> 꼴이 되면 강세가 <b>한 칸 앞으로 </b>밀려납니다 —
       <span class="grk">ὁ υἱὸς τοῦ ἀνθρώπου</span>, “<b>인자</b>”(마 8:20). 말음절이 <span class="grk">-που</span>,
       곧 <b>장음절</b>이 되었기 때문입니다.
-      <b>예수님께서 자신을 부르신 그 이름 안에서, 오늘 배운 규칙이 그대로 적용됩니다.</b>&nbsp;강세는 외우는 것이 아니라 이렇게 <b>정해지는 것</b>입니다.</div>
+      <b>예수님께서 자신을 부르신 그 이름 안에서, 오늘 배운 규칙이 그대로 적용됩니다.</b> 강세는 외우는 것이 아니라 이렇게 <b>정해지는 것</b>입니다.</div>
 
     <div class="callout">
       <b>오늘 기억할 한 문장.</b> 헬라어 강세는 언제나 <b>말음절·제2말음절·제3말음절</b>이라는 세 자리 안에서만 움직이며,
-      그중 <b>말음절의 길이(음장)</b>가 강세가 올 수 있는 한계를 정해 줍니다.&nbsp;</div>
+      그중 <b>말음절의 길이(음장)</b>가 강세가 올 수 있는 한계를 정해 줍니다. </div>
 
     <h2><span class="num">③</span> 연습 — 스스로 점검</h2>
     <p>카드를 눌러 뒤집으며 강세의 자리와 음장을 확인해 봅시다. 그다음 퀴즈로 점검하면 좋겠습니다.</p>
 
     <h3>플래시카드 · 자리와 음장</h3>
-    <div class="practice"><div id="flashcards" class="flash"><p class="flash__count">8 / 8</p><div class="flash__card" id="fcard"><div class="flash__letter grk">-οι</div><div class="flash__hint">눌러서 확인하기</div><div class="flash__back"><div class="flash__name">어말 예외 </div><div class="flash__ipa grk"></div><div class="flash__kr">어말 예외</div><div class="flash__note">단어 맨 끝의 <span class="grk">οι·αι</span>는 단음절로 셈</div></div></div><div class="flash__controls"><button class="mini-btn" data-fc="flip">확인하기</button><button class="mini-btn" data-fc="prev">← 이전</button><button class="mini-btn" data-fc="next">다음 →</button><button class="mini-btn" data-fc="shuffle">섞기</button></div></div></div>
+    <div class="practice"><div id="flashcards"></div></div>
 
     <h3>확인 퀴즈 · 자리와 음장</h3>
-    <div class="practice"><div id="quiz" data-ask="이것의 핵심은?"><div class="quiz__head"><span class="quiz__q">문제 1 / 8</span><span class="quiz__score">0점</span></div><div class="quiz__prompt"><span class="glyph grk">ἄνθρωποι</span><span class="ask">이것의 핵심은?</span></div><div class="quiz__opts"><button class="quiz__opt" data-kr="제3말음절에 강세">제3말음절에 강세</button><button class="quiz__opt" data-kr="이중모음">이중모음</button><button class="quiz__opt" data-kr="람-바-노-멘">람-바-노-멘</button><button class="quiz__opt" data-kr="단음절(예외)">단음절(예외)</button></div></div></div>
+    <div class="practice"><div id="quiz" data-ask="이것의 핵심은?"></div></div>
 
     <script id="lesson-cards" type="application/json">
     [{"letter": "λαμβάνομεν", "name": "음절 나누기", "ipa": "", "kr": "람-바-노-멘", "note": "네 음절. 강세는 제3말음절 βά", "audio": ""}, {"letter": "ἀνθρώπους", "name": "말음절 음장", "ipa": "", "kr": "장음절", "note": "-πους의 ου(이중모음)", "audio": ""}, {"letter": "ἄνθρωποι", "name": "말음절 음장", "ipa": "", "kr": "단음절(예외)", "note": "어말 οι는 단음절 취급", "audio": ""}, {"letter": "ἀνθρώποις", "name": "말음절 음장", "ipa": "", "kr": "장음절(ς 뒤)", "note": "οι+자음 ς → 장음절", "audio": ""}, {"letter": "ἄνθρωπος", "name": "주격 단수 — 사람", "ipa": "", "kr": "제3말음절에 강세", "note": "말음절 -πος가 단음절이라 멀리 물러남 — 마 4:4", "audio": ""}, {"letter": "ἀνθρώπου", "name": "속격 단수 — 사람의", "ipa": "", "kr": "제2말음절에 강세", "note": "말음절 -που가 장음절이라 한 칸 밀림 — 마 8:20", "audio": ""}, {"letter": "ου", "name": "이중모음", "ipa": "", "kr": "이중모음", "note": "이중모음이 있으면 그 음절은 장음절", "audio": ""}, {"letter": "-οι", "name": "어말 예외", "ipa": "", "kr": "어말 예외", "note": "단어 맨 끝의 οι·αι는 단음절로 셈", "audio": ""}]
