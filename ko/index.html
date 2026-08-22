@@ -67,24 +67,24 @@
   .cine p{margin-top:26px;max-width:640px;font-size:clamp(1.15rem,2.4vw,1.5rem);color:#a1a1a6;font-weight:500;line-height:1.5}
 
   /* section */
-  .block{padding:110px 0}
+  .block{padding:170px 0}
   .eyebrow-c{text-align:center;font-size:.85rem;font-weight:600;letter-spacing:.02em;color:var(--gold)}
   .h-sec{text-align:center;font-size:clamp(2rem,4.6vw,3.2rem);font-weight:800;letter-spacing:-.04em;margin-top:10px;line-height:1.1}
   .sub-sec{text-align:center;color:var(--sub);margin-top:14px;font-size:1.12rem;font-weight:500}
 
   /* course cards */
-  .cards{margin-top:60px;display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-  .card{border-radius:24px;padding:30px 24px;min-height:300px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden;text-decoration:none;transition:transform .18s}
+  .cards{margin-top:76px;display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+  .card{border-radius:24px;padding:56px 24px 40px;min-height:330px;display:flex;flex-direction:column;justify-content:space-between;align-items:center;text-align:center;position:relative;overflow:hidden;text-decoration:none;transition:transform .18s}
   .card .tag{font-size:.8rem;font-weight:700;letter-spacing:.04em;opacity:.9}
-  .card .t{font-size:1.5rem;font-weight:800;letter-spacing:-.03em;line-height:1.15;margin-top:8px}
+  .card .t{font-size:clamp(1.6rem,2.1vw,1.95rem);font-weight:800;letter-spacing:-.03em;line-height:1.28}
   .card .d{font-size:.96rem;margin-top:12px;line-height:1.55;opacity:.92}
-  .card .go{margin-top:auto;font-weight:700;font-size:1.05rem;padding-top:22px}
+  .card .go{margin-top:auto;font-weight:700;font-size:1.05rem;padding-top:34px}
   .card.live{color:#fff;background:radial-gradient(120% 120% at 0% 0%,#5b5bd6 0%,#7c3aed 55%,#9333ea 100%)}
   .card.live .tag{color:#e9d5ff}
   .card.live:hover{transform:translateY(-3px)}
   .card.soon{background:var(--bg2);color:var(--ink)}
   .card.soon .tag{color:var(--gold)}
-  .card.soon .badge{margin-top:auto;color:var(--faint);font-weight:600;font-size:.95rem;padding-top:22px}
+  .card.soon .badge{margin-top:auto;color:var(--faint);font-weight:600;font-size:.95rem;padding-top:34px}
 
   /* values */
   .values{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:56px}
@@ -120,7 +120,7 @@
     <div class="mark" data-ek="hero-mark">여호와 닛시</div>
     <p class="hero-sub" data-ek="hero-sub">YEHOWA-NISSI</p>
     <h1 data-ek="hero-h1">성경을 원어로.</h1>
-    <p class="lede" data-ek="hero-lede">누구나 성경을 원어로 배울 수 있습니다.<br>하나님을 알아가고 경외하기 위하여<br>믿음으로 신학하고, 믿음으로 신앙해야 합니다.</p>
+    <p class="lede" data-ek="hero-lede">성경을 원어로 배웁니다.<br>하나님을 만남으로 경외하기 위하여,<br>믿음으로 신학하고, 믿음으로 신앙함으로.</p>
     <div class="cta">
       <a class="btn btn-ghost" href="#about" data-ek="hero-cta-about">About</a>
       <a class="btn btn-primary" href="#course" data-ek="hero-cta-course">Course</a>
@@ -140,26 +140,26 @@
       <p class="sub-sec" data-ek="course-sub">히브리어 · 아람어 · 헬라어 · 라틴어 — 원문으로 읽는 길을, 한 걸음씩 스스로.</p>
       <div class="cards">
         <div class="card soon">
-          <div><span class="tag" data-ek="c1-tag">구약 원어</span><div class="t" data-ek="c1-t">독서하는<br>히브리어</div><div class="d" data-ek="c1-d">구약을 히브리어 원문으로 읽는 길.</div></div>
+          <div class="t" data-ek="c1-t">독서하는<br>히브리어</div>
           <span class="badge" data-ek="c1-badge">준비 중</span>
         </div>
         <div class="card soon">
-          <div><span class="tag" data-ek="c2-tag">구약 아람어</span><div class="t" data-ek="c2-t">독서하는<br>아람어</div><div class="d" data-ek="c2-d">다니엘·에스라의 아람어 본문을 원문으로.</div></div>
+          <div class="t" data-ek="c2-t">독서하는<br>아람어</div>
           <span class="badge" data-ek="c2-badge">준비 중</span>
         </div>
         <a class="card live" href="reading-greek.html">
-          <div><span class="tag" data-ek="c3-tag">신약 원어 · 지금 열림</span><div class="t" data-ek="c3-t">독서하는<br>헬라어</div><div class="d" data-ek="c3-d">신약을 헬라어 원문으로. 알파벳 1과 열림.</div></div>
+          <div class="t" data-ek="c3-t">독서하는<br>헬라어</div>
           <span class="go" data-ek="c3-go">시작하기 →</span>
         </a>
         <div class="card soon">
-          <div><span class="tag" data-ek="c4-tag">교회 라틴어</span><div class="t" data-ek="c4-t">독서하는<br>라틴어</div><div class="d" data-ek="c4-d">불가타와 교부 문헌을 라틴어 원문으로.</div></div>
+          <div class="t" data-ek="c4-t">독서하는<br>라틴어</div>
           <span class="badge" data-ek="c4-badge">준비 중</span>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="block" id="about" style="background:var(--bg2);padding-top:110px;padding-bottom:110px">
+  <section class="block" id="about" style="background:var(--bg2);padding-top:170px;padding-bottom:170px">
     <div class="wrap">
       <p class="eyebrow-c" data-ek="about-eyebrow">이 공간에 대하여</p>
       <h2 class="h-sec" data-ek="about-title">군더더기 없이,<br>말씀 앞에 정직하게.</h2>
