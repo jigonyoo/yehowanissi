@@ -104,6 +104,10 @@
   a.lesson[data-draft], a.paradigm-link[data-draft]{pointer-events:none;cursor:default;opacity:.5}
   a.lesson[data-draft] .lesson__t, a.lesson[data-draft] .lesson__idx{color:var(--faint,#9a9a9a)}
   a.lesson[data-draft] .lesson__time{color:var(--accent,#8a6a3b);font-weight:700;letter-spacing:.02em}
+  /* (2026-08-22) 준비 중 Lesson 단위 잠금 — 펼칠 수 없게 한다. */
+  details.unit[data-draft]{opacity:.45}
+  details.unit[data-draft]>summary.unit__head{pointer-events:none;cursor:default}
+  details.unit[data-draft] .unit__chev{visibility:hidden}
 </style>
 </head>
 <body>
@@ -143,10 +147,6 @@
 
     <section class="units">
 
-        <div class="callout" style="border-left-color: var(--accent);">
-      <b>지금 열려 있는 강의.</b> <b>Lesson 1</b>(1~6강)과 <b>Lesson 2의 1강</b>까지 공개돼 있습니다.
-      나머지는 <b>준비 중</b>으로 표시해 두었습니다 — 하나씩 다듬어 차례로 열겠습니다.
-    </div>
     <details class="unit" open>
       <summary class="unit__head">
         <span class="unit__no">Lesson<br>1</span>
@@ -245,7 +245,7 @@
       </ul>
     </details>
 
-    <details class="unit">
+    <details class="unit" data-draft="1">
       <summary class="unit__head">
         <span class="unit__no">Lesson<br>3</span>
         <span class="unit__body">
@@ -288,7 +288,7 @@
       </ul>
     </details>
 
-    <details class="unit">
+    <details class="unit" data-draft="1">
       <summary class="unit__head">
         <span class="unit__no">Lesson<br>4</span>
         <span class="unit__body">
@@ -331,7 +331,7 @@
       </ul>
     </details>
 
-    <details class="unit">
+    <details class="unit" data-draft="1">
       <summary class="unit__head">
         <span class="unit__no">Lesson<br>5</span>
         <span class="unit__body">
@@ -374,7 +374,7 @@
       </ul>
     </details>
 
-    <details class="unit">
+    <details class="unit" data-draft="1">
       <summary class="unit__head">
         <span class="unit__no">Lesson<br>6</span>
         <span class="unit__body">
@@ -417,7 +417,7 @@
       </ul>
     </details>
 
-    <details class="unit">
+    <details class="unit" data-draft="1">
       <summary class="unit__head">
         <span class="unit__no">Lesson<br>7</span>
         <span class="unit__body">
@@ -460,7 +460,7 @@
       </ul>
     </details>
 
-    <details class="unit">
+    <details class="unit" data-draft="1">
       <summary class="unit__head">
         <span class="unit__no">Lesson<br>8</span>
         <span class="unit__body">
@@ -509,7 +509,7 @@
       </ul>
     </details>
 
-    <details class="unit">
+    <details class="unit" data-draft="1">
       <summary class="unit__head">
         <span class="unit__no">Lesson<br>9</span>
         <span class="unit__body">
@@ -552,7 +552,7 @@
       </ul>
     </details>
 
-        <details class="unit">
+        <details class="unit" data-draft="1">
       <summary class="unit__head">
         <span class="unit__no">Lesson<br>10</span>
         <span class="unit__body">
@@ -601,7 +601,7 @@
       </ul>
     </details>
 
-    <details class="unit">
+    <details class="unit" data-draft="1">
       <summary class="unit__head">
         <span class="unit__no">Lesson<br>11</span>
         <span class="unit__body">
@@ -650,7 +650,7 @@
       </ul>
     </details>
 
-    <details class="unit">
+    <details class="unit" data-draft="1">
       <summary class="unit__head">
         <span class="unit__no">Lesson<br>12</span>
         <span class="unit__body">
@@ -699,7 +699,7 @@
       </ul>
     </details>
 
-    <details class="unit">
+    <details class="unit" data-draft="1">
       <summary class="unit__head">
         <span class="unit__no">Lesson<br>13</span>
         <span class="unit__body">
@@ -748,7 +748,7 @@
       </ul>
     </details>
 
-    <details class="unit">
+    <details class="unit" data-draft="1">
       <summary class="unit__head">
         <span class="unit__no">Lesson<br>14</span>
         <span class="unit__body">
@@ -797,7 +797,7 @@
       </ul>
     </details>
 
-    <details class="unit">
+    <details class="unit" data-draft="1">
       <summary class="unit__head">
         <span class="unit__no">Lesson<br>15</span>
         <span class="unit__body">
@@ -846,7 +846,7 @@
       </ul>
     </details>
 
-    <details class="unit">
+    <details class="unit" data-draft="1">
       <summary class="unit__head">
         <span class="unit__no">Lesson<br>16</span>
         <span class="unit__body">
@@ -895,7 +895,7 @@
       </ul>
     </details>
 
-    <details class="unit">
+    <details class="unit" data-draft="1">
       <summary class="unit__head">
         <span class="unit__no">Lesson<br>17</span>
         <span class="unit__body">
@@ -944,7 +944,7 @@
       </ul>
     </details>
 
-    <details class="unit">
+    <details class="unit" data-draft="1">
       <summary class="unit__head">
         <span class="unit__no">Lesson<br>18</span>
         <span class="unit__body">
@@ -993,7 +993,7 @@
       </ul>
     </details>
 
-    <details class="unit">
+    <details class="unit" data-draft="1">
       <summary class="unit__head">
         <span class="unit__no">Lesson<br>19</span>
         <span class="unit__body">
@@ -1042,7 +1042,7 @@
       </ul>
     </details>
 
-    <details class="unit">
+    <details class="unit" data-draft="1">
       <summary class="unit__head">
         <span class="unit__no">Lesson<br>20</span>
         <span class="unit__body">
@@ -1091,7 +1091,7 @@
       </ul>
     </details>
 
-    <details class="unit">
+    <details class="unit" data-draft="1">
       <summary class="unit__head">
         <span class="unit__no">Lesson<br>21</span>
         <span class="unit__body">
@@ -1140,7 +1140,7 @@
       </ul>
     </details>
 
-    <details class="unit">
+    <details class="unit" data-draft="1">
       <summary class="unit__head">
         <span class="unit__no">Lesson<br>22</span>
         <span class="unit__body">
@@ -1189,7 +1189,7 @@
       </ul>
     </details>
 
-    <details class="unit">
+    <details class="unit" data-draft="1">
       <summary class="unit__head">
         <span class="unit__no">Lesson<br>23</span>
         <span class="unit__body">
@@ -1238,7 +1238,7 @@
       </ul>
     </details>
 
-    <details class="unit">
+    <details class="unit" data-draft="1">
       <summary class="unit__head">
         <span class="unit__no">Lesson<br>24</span>
         <span class="unit__body">
@@ -1287,7 +1287,7 @@
       </ul>
     </details>
 
-    <details class="unit">
+    <details class="unit" data-draft="1">
       <summary class="unit__head">
         <span class="unit__no">Lesson<br>25</span>
         <span class="unit__body">
@@ -1336,7 +1336,7 @@
       </ul>
     </details>
 
-    <details class="unit">
+    <details class="unit" data-draft="1">
       <summary class="unit__head">
         <span class="unit__no">Lesson<br>26</span>
         <span class="unit__body">
@@ -1385,7 +1385,7 @@
       </ul>
     </details>
 
-    <details class="unit">
+    <details class="unit" data-draft="1">
       <summary class="unit__head">
         <span class="unit__no">Lesson<br>27</span>
         <span class="unit__body">
@@ -1434,7 +1434,7 @@
       </ul>
     </details>
 
-    <details class="unit">
+    <details class="unit" data-draft="1">
       <summary class="unit__head">
         <span class="unit__no">Lesson<br>28</span>
         <span class="unit__body">
@@ -1483,7 +1483,7 @@
       </ul>
     </details>
 
-    <details class="unit">
+    <details class="unit" data-draft="1">
       <summary class="unit__head">
         <span class="unit__no">Lesson<br>29</span>
         <span class="unit__body">
@@ -1532,7 +1532,7 @@
       </ul>
     </details>
 
-    <details class="unit">
+    <details class="unit" data-draft="1">
       <summary class="unit__head">
         <span class="unit__no">Lesson<br>30</span>
         <span class="unit__body">
@@ -1581,7 +1581,7 @@
       </ul>
     </details>
 
-    <details class="unit">
+    <details class="unit" data-draft="1">
       <summary class="unit__head">
         <span class="unit__no">Lesson<br>31</span>
         <span class="unit__body">
@@ -1630,7 +1630,7 @@
       </ul>
     </details>
 
-    <details class="unit">
+    <details class="unit" data-draft="1">
       <summary class="unit__head">
         <span class="unit__no">Lesson<br>32</span>
         <span class="unit__body">
@@ -1679,7 +1679,7 @@
       </ul>
     </details>
 
-    <details class="unit">
+    <details class="unit" data-draft="1">
       <summary class="unit__head">
         <span class="unit__no">Lesson<br>33</span>
         <span class="unit__body">
