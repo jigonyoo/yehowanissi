@@ -68,7 +68,7 @@
 
   /* section */
   .block{padding:170px 0}
-  .eyebrow-c{text-align:center;font-size:.85rem;font-weight:600;letter-spacing:.02em;color:var(--gold)}
+  .eyebrow-c{text-align:center;font-size:clamp(1.05rem,1.9vw,1.3rem);font-weight:700;letter-spacing:-.01em;color:var(--gold)}
   .h-sec{text-align:center;font-size:clamp(2rem,4.6vw,3.2rem);font-weight:800;letter-spacing:-.04em;margin-top:10px;line-height:1.1}
   .sub-sec{text-align:center;color:var(--sub);margin-top:14px;font-size:1.12rem;font-weight:500}
 
@@ -143,9 +143,9 @@
 
   <section class="block" id="course" style="min-height:100vh;min-height:100dvh;display:flex;flex-direction:column;justify-content:center">
     <div class="wrap">
-      <p class="eyebrow-c" data-ek="course-eyebrow">코스 · 성경 원어와 고전어</p>
-      <h2 class="h-sec" data-ek="course-title">읽기 위한 언어.</h2>
-      <p class="sub-sec" data-ek="course-sub">히브리어 · 아람어 · 헬라어 · 라틴어 — 원문으로 읽는 길을, 한 걸음씩 스스로.</p>
+      <p class="eyebrow-c" data-ek="course-eyebrow">성경 원어·고전어 배우기</p>
+      <h2 class="h-sec" data-ek="course-title">독서하는 원어</h2>
+      <p class="sub-sec" data-ek="course-sub">하루 10분, 성경 원어를 차근차근 배워봅시다.</p>
       <div class="cards">
         <div class="card soon">
           <div><span class="tag" data-ek="c1-tag">구약 원어</span><div class="t" data-ek="c1-t">독서하는<br>히브리어</div></div>
@@ -170,26 +170,10 @@
   <section class="block" id="about" style="background:var(--bg2);padding-top:170px;padding-bottom:170px">
     <div class="wrap">
       <p class="eyebrow-c" data-ek="about-eyebrow">이 공간에 대하여</p>
-      <h2 class="h-sec" data-ek="about-title">군더더기 없이,<br>말씀 앞에 정직하게.</h2>
-      <div class="values">
-        <div class="value"><h3 data-ek="v1-h">거저 받았으니 거저</h3><p data-ek="v1-p">핵심 콘텐츠는 무료. 이 공간은 아무것도 수익화하지 않습니다.</p></div>
-        <div class="value"><h3 data-ek="v2-h">정직과 투명함</h3><p data-ek="v2-p">실제로 충족한 것만 “완료”. AI의 도움을 받되, 사람이 검수하고 책임집니다.</p></div>
-        <div class="value"><h3 data-ek="v3-h">스스로 읽게</h3><p data-ek="v3-p">많이 가르치기보다, 성도가 스스로 바르게 읽고 분별하도록.</p></div>
-      </div>
+      <h2 class="h-sec" data-ek="about-title">준비 중</h2>
     </div>
   </section>
 
-  <section class="block" id="subscribe" style="padding-top:0">
-    <div class="wrap">
-      <div class="subscribe">
-        <h3 data-ek="sub-h">새 과가 올라오면 알려드릴까요?</h3>
-        <p data-ek="sub-p">새 과와 자료가 준비되면 이메일로만 조용히. 광고는 없습니다.</p>
-        <!-- TODO(지곤): Kit(ConvertKit) 폼으로 연결 — action/uid 삽입, double opt-in. 현재는 자리표시. -->
-        <form class="sub-form" action="#" method="post" onsubmit="return false"><input type="email" name="email" placeholder="이메일 주소" aria-label="이메일 주소" required><button class="btn btn-primary" type="submit" data-ek="sub-btn">알림 받기</button></form>
-        <p class="note" data-ek="sub-note">이메일은 새 과 안내에만 사용하며 언제든 해지할 수 있습니다.</p>
-      </div>
-    </div>
-  </section>
 </main>
 <footer>
   <span class="fmark" data-ek="foot-mark">여호와 닛시</span>
