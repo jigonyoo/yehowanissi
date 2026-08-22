@@ -75,13 +75,21 @@
   /* course cards */
   .cards{margin-top:76px;display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
   .card{border-radius:24px;padding:56px 24px 40px;min-height:330px;display:flex;flex-direction:column;justify-content:space-between;align-items:center;text-align:center;position:relative;overflow:hidden;text-decoration:none;transition:transform .18s}
-  .card .tag{font-size:.8rem;font-weight:700;letter-spacing:.04em;opacity:.9}
-  .card .t{font-size:clamp(1.6rem,2.1vw,1.95rem);font-weight:800;letter-spacing:-.03em;line-height:1.28}
+  .card .tag{display:block;font-size:.85rem;font-weight:700;letter-spacing:.04em;opacity:.9;margin-bottom:14px}
+  .card .t{font-size:clamp(1.6rem,2.1vw,1.95rem);font-weight:800;letter-spacing:-.03em;line-height:1.28;color:var(--ink)}
   .card .d{font-size:.96rem;margin-top:12px;line-height:1.55;opacity:.92}
-  .card .go{margin-top:auto;font-weight:700;font-size:1.05rem;padding-top:34px}
-  .card.live{color:#fff;background:radial-gradient(120% 120% at 0% 0%,#5b5bd6 0%,#7c3aed 55%,#9333ea 100%)}
-  .card.live .tag{color:#e9d5ff}
+  .card .go{margin-top:auto;font-weight:700;font-size:1.05rem;padding-top:34px;color:var(--ink)}
+  .card.live{background:var(--bg2);color:var(--ink)}
+  .card.live .tag{color:var(--gold);transition:color .28s}
+  .card.live .t,.card.live .go{transition:color .28s}
+  .card.live::before{content:'';position:absolute;inset:0;
+    background:radial-gradient(120% 120% at 0% 0%,#5b5bd6 0%,#7c3aed 55%,#9333ea 100%);
+    opacity:0;transition:opacity .28s}
+  .card.live>*{position:relative;z-index:1}
   .card.live:hover{transform:translateY(-3px)}
+  .card.live:hover::before{opacity:1}
+  .card.live:hover .t,.card.live:hover .go{color:#fff}
+  .card.live:hover .tag{color:#e9d5ff}
   .card.soon{background:var(--bg2);color:var(--ink)}
   .card.soon .tag{color:var(--gold)}
   .card.soon .badge{margin-top:auto;color:var(--faint);font-weight:600;font-size:.95rem;padding-top:34px}
@@ -120,7 +128,7 @@
     <div class="mark" data-ek="hero-mark">여호와 닛시</div>
     <p class="hero-sub" data-ek="hero-sub">YEHOWA-NISSI</p>
     <h1 data-ek="hero-h1">성경을 원어로.</h1>
-    <p class="lede" data-ek="hero-lede">성경을 원어로 배웁니다.<br>하나님을 만남으로 경외하기 위하여,<br>믿음으로 신학하고, 믿음으로 신앙함으로.</p>
+    <p class="lede" data-ek="hero-lede">성경을 원어로 배웁니다.<br>하나님을 만남으로 경외하기 위하여,<br>믿음으로 신학하고 믿음으로 신앙함으로.</p>
     <div class="cta">
       <a class="btn btn-ghost" href="#about" data-ek="hero-cta-about">About</a>
       <a class="btn btn-primary" href="#course" data-ek="hero-cta-course">Course</a>
@@ -133,26 +141,26 @@
     <p data-ek="cine-p">Ecclesia reformata, semper reformanda.<br>개혁된 교회는 항상 개혁되고 있어야 한다.</p>
   </section>
 
-  <section class="block" id="course">
+  <section class="block" id="course" style="min-height:100vh;min-height:100dvh;display:flex;flex-direction:column;justify-content:center">
     <div class="wrap">
       <p class="eyebrow-c" data-ek="course-eyebrow">코스 · 성경 원어와 고전어</p>
       <h2 class="h-sec" data-ek="course-title">읽기 위한 언어.</h2>
       <p class="sub-sec" data-ek="course-sub">히브리어 · 아람어 · 헬라어 · 라틴어 — 원문으로 읽는 길을, 한 걸음씩 스스로.</p>
       <div class="cards">
         <div class="card soon">
-          <div class="t" data-ek="c1-t">독서하는<br>히브리어</div>
+          <div><span class="tag" data-ek="c1-tag">구약 원어</span><div class="t" data-ek="c1-t">독서하는<br>히브리어</div></div>
           <span class="badge" data-ek="c1-badge">준비 중</span>
         </div>
         <div class="card soon">
-          <div class="t" data-ek="c2-t">독서하는<br>아람어</div>
+          <div><span class="tag" data-ek="c2-tag">구약 원어</span><div class="t" data-ek="c2-t">독서하는<br>아람어</div></div>
           <span class="badge" data-ek="c2-badge">준비 중</span>
         </div>
         <a class="card live" href="reading-greek.html">
-          <div class="t" data-ek="c3-t">독서하는<br>헬라어</div>
+          <div><span class="tag" data-ek="c3-tag">신약 원어</span><div class="t" data-ek="c3-t">독서하는<br>헬라어</div></div>
           <span class="go" data-ek="c3-go">시작하기 →</span>
         </a>
         <div class="card soon">
-          <div class="t" data-ek="c4-t">독서하는<br>라틴어</div>
+          <div><span class="tag" data-ek="c4-tag">교회 원어</span><div class="t" data-ek="c4-t">독서하는<br>라틴어</div></div>
           <span class="badge" data-ek="c4-badge">준비 중</span>
         </div>
       </div>
