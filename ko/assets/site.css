@@ -6,7 +6,7 @@
    ============================================================ */
 
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Nanum+Myeongjo:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Song+Myung&display=swap');
 
 /* SBL Greek — 성경 그리스어 전용 폰트 (John Hudson/Tiro Typeworks). SBL EULA: 비상업 웹페이지 임베딩 허용.
    서브셋(그리스어·폴리토닉·라틴·구두점) WOFF2로 자체 호스팅. */
@@ -20,7 +20,7 @@
 
 :root {
   --sans: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, 'Apple SD Gothic Neo', sans-serif;
-  --script: 'Nanum Myeongjo', serif;   /* (2026-08-22) 로고 글자체 교체 — 붓글씨→명조 */
+  --script: 'Song Myung', serif;   /* (2026-08-22) 로고 글자체 교체 — 붓글씨→송명(고전 명조) */
   --greek: 'SBL Greek', 'EB Garamond', 'Noto Serif KR', Georgia, serif;
 
   --bg: #ffffff;
@@ -78,10 +78,10 @@ body {
 }
 .brand { display: flex; align-items: baseline; gap: 10px; text-decoration: none; color: inherit; }
 .brand__mark {
-  font-family: var(--script); font-weight: 800; font-size: 1.3rem; letter-spacing: -.02em; line-height: 1;
+  font-family: var(--script); font-weight: 400; font-size: 1.4rem; letter-spacing: -.01em; line-height: 1;
   color: var(--ink); padding-top: 6px; letter-spacing: .01em;
 }
-.brand__mark b { color: var(--ink); font-weight: 800; }
+.brand__mark b { color: var(--ink); font-weight: 400; }
 .brand__tag { display: none; }
 .site-nav { display: flex; gap: 26px; }
 .site-nav a {
